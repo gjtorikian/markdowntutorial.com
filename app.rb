@@ -11,10 +11,15 @@ class MarkdownTutorial < Sinatra::Base
   set :server, %w[thin webrick]
 
   assets {
+    js :app, [
+      '/js/*.js'
+    ]
+
     css :application, [
       '/css/site.css'
     ]
 
+    js_compression  :jsmin
     css_compression :sass
   }
 
@@ -29,7 +34,7 @@ class MarkdownTutorial < Sinatra::Base
 
 
   # for all markdown files, keep using layout.erb
-  set :markdown, :layout_engine => :erb, :layout => :layout
+  set :markdown, :layout_engine => :erb
 
   get "/" do
     markdown :index

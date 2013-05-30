@@ -2,7 +2,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.3.1)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.6.2)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
     jsmin (1.0.1)
+    multi_json (1.7.4)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -28,6 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-script (= 2.2.0)
   redcarpet (= 2.3.0)
   sass (= 3.2.9)
   shotgun (= 0.9)

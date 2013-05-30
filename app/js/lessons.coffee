@@ -1,20 +1,5 @@
 root = exports ? this
 
-lessons =
-  1:
-    0:
-      startingText: "Writing in Markdown is not that hard!"
-      answer: "<p>Writing in Markdown is <em>not</em> that hard!</p>"
-    1:
-      startingText: "I will complete these lessons!"
-      answer: "<p>I <strong>will</strong> complete these lessons!</p>"
-    2:
-      startingText: "\"Of course,\" she whispered. Then, she shouted: \"All I need is a little moxie!\""
-      answer: "<p>\"<em>Of course</em>,\" she whispered. Then, she shouted: \"All I need is <strong>a little moxie</strong>!\"</p>"
-    3:
-      startingText: "If you're thinking to yourself, This is unbelievable, you'd probably be right."
-      answer: "<p>If you're thinking to yourself, <strong><em>This is unbelievable</em></strong>, you'd probably be right.</p>"
-
 setupAce = (lessonNumber, pos, el) ->
   editor = ace.edit(el)
   editor.setStyle "ace-overrides"
@@ -26,7 +11,7 @@ setupAce = (lessonNumber, pos, el) ->
   editor.renderer.setShowGutter false
   editor.setHighlightActiveLine false
 
-  lesson = lessons[lessonNumber][pos]
+  lesson = root.lessons[lessonNumber][pos]
   editor.setValue(lesson.startingText);
   editor.clearSelection() # setValue also sets a selection? hm.
 
@@ -41,7 +26,7 @@ setupAce = (lessonNumber, pos, el) ->
 
   $(el).bind('keyup', (e) ->
     previewMd(pos, editor)
-    if $('.renderpad').eq(pos).html().trim() == lesson.answer
+    if $('.renderpad').eq(pos).html().trim() == lesson.renderedAnswer
       if environment == "development"
         console.log "Did it for #{pos}"
       showNextSection()

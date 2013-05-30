@@ -43,7 +43,7 @@ class MarkdownTutorial < Sinatra::Base
   end
 
   get '/lesson/:number' do
-    erb :"lesson#{params[:number]}"
+    erb :"lesson#{params[:number]}", :locals => { :environment => settings.environment }
   end
 
   helpers do

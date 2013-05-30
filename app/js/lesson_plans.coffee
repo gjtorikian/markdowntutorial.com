@@ -28,3 +28,21 @@ root.lessons =
       startingText: "Columbian Symbolism in One Hundred Years of Solitude\n\nHere's some words about this book."
       answer: "#### Columbian Symbolism in _One Hundred Years of Solitude_\n\nHere's some words about this book."
       renderedAnswer: "<h4>Columbian Symbolism in <em>One Hundred Years of Solitude</em></h4>\n<p>Here's some words about this book.</p>"
+
+  3:
+    0:
+      startingText: "Search for it."
+      answer: "[Search for it.](www.google.com)"
+      renderedAnswer:"<p><a href=\"www.google.com\">Search for it.</a></p>"
+    1:
+      startingText: "You're really, really going to want to see this."
+      answer: "[You're **really, really** going to want to see this.](www.dailykitten.com)"
+      renderedAnswer: "<a href=\"www.dailykitten.com\">You're <strong>really, really</strong> going to want to see this.</a>"
+    2:
+      startingText: "The Latest News from the BBC"
+      answer: "### The Latest News from [the BBC](bbc.com/news)"
+      renderedAnswer: "<h4>The Latest News from <a href=\"bbc.com/news\">the BBC</a></h4>"
+    3:
+      startingText: "Do you want to [see something fun][]?\n\nWell, do I have [the website for you][another fun place]!"
+      answer: "Do you want to [see something fun][a fun place]?\n\nWell, do I have [the website for you][another fun place]!\n\n[a fun place]: www.zombo.com\n\n[another fun place]: www.stumbleupon.com"
+      renderedAnswer: "<p>Do you want to <a href=\"www.zombo.com\">see something fun</a>?</p><p>Well, do I have <a href=\"www.stumbleupon.com\">the website for you</a>!</p>"

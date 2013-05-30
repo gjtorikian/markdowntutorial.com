@@ -39,11 +39,11 @@ class MarkdownTutorial < Sinatra::Base
   set :markdown, :layout_engine => :erb
 
   get "/" do
-    markdown :index, :locals => {:number => nil}
+    markdown :index
   end
 
   get '/lesson/:number' do
-    erb :"lesson#{params[:number]}", :locals => { :environment => settings.environment }
+    erb :"lesson#{params[:number]}"
   end
 
   helpers do

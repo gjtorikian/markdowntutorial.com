@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><%= title(:number) %></title>
+    <title><%= title(params[:number]) %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,14 +10,15 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <%= css :application, :media => 'screen' %>
+    <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
   </head>
 
   <body>
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
-          <li><a href="https://github.com/gjtorikian"><i class="icon-github"></i></a></li>
-          <li><a href="/"><i class="icon-home"></i></a></li>
+          <li><a class="nav-link" href="https://github.com/gjtorikian" data-toggle="tooltip" data-original-title="Get the source code to this website"><i class="icon-github"></i></a></li>
+          <li><a class="nav-link" href="/" data-toggle="tooltip" data-original-title="Return to the start"><i class="icon-home"></i></a></li>
         </ul>
         <div class="container">
           <ul id="progress-bar" class="nav">
@@ -32,8 +33,8 @@
     <div class="container">
 
       <hr>
-      
-        <%= yield %>  
+
+        <%= yield %>
 
       <hr>
 
@@ -43,8 +44,7 @@
 
     </div> <!-- /container -->
 
-    <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>  
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <%= js :app %>
   </body>
 </html>

@@ -2,4 +2,4 @@ $(document).ready ->
   options =
     placement: 'bottom'
 
-  $('a.lesson').tooltip(options)
+  $('a.nav-link, a.lesson').tooltip(options)

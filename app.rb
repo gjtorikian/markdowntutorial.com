@@ -16,8 +16,10 @@ class MarkdownTutorial < Sinatra::Base
     ]
 
     css :application, [
-      '/css/site.css'
+      '/css/*.css'
     ]
+
+    ignore '/js/ace'
 
     js_compression  :jsmin
     css_compression :sass
@@ -37,16 +39,17 @@ class MarkdownTutorial < Sinatra::Base
   set :markdown, :layout_engine => :erb
 
   get "/" do
-    markdown :index
+    markdown :index, :locals => {:number => nil}
   end
 
-  get '/lesson/:number' do  
-    erb :"lesson#{params[:number]}", :locals => {:number => params[:number]}
-  end  
+  get '/lesson/:number' do
+    erb :"lesson#{params[:number]}"
+  end
 
   helpers do
-    def title(number = nil)
+    def title(number=nil)
       title = "Markdown Tutorial"
+
       # helper for formatting your title string
       if number
         title + " | Lesson #{number}"

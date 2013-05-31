@@ -46,3 +46,13 @@ root.lessons =
       startingText: "Do you want to [see something fun][]?\n\nWell, do I have [the website for you][another fun place]!"
       answer: "Do you want to [see something fun][a fun place]?\n\nWell, do I have [the website for you][another fun place]!\n\n[a fun place]: www.zombo.com\n\n[another fun place]: www.stumbleupon.com"
       renderedAnswer: "<p>Do you want to <a href=\"www.zombo.com\">see something fun</a>?</p><p>Well, do I have <a href=\"www.stumbleupon.com\">the website for you</a>!</p>"
+
+  4:
+    0:
+      startingText: "[]()"
+      answer: "![Search for it.](www.google.com)"
+      renderedAnswer:"<p><a href=\"www.google.com\">Search for it.</a></p>"
+    1:
+      startingText: "You're really, really going to want to see this."
+      answer: "[You're **really, really** going to want to see this.](www.dailykitten.com)"
+      renderedAnswer: "<a href=\"www.dailykitten.com\">You're <strong>really, really</strong> going to want to see this.</a>"

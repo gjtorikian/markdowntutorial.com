@@ -42,6 +42,10 @@ class MarkdownTutorial < Sinatra::Base
     markdown :index
   end
 
+  get "/conclusion" do
+    markdown :conclusion
+  end
+
   get '/lesson/:number' do
     erb :"lesson#{params[:number]}"
   end

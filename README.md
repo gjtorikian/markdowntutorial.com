@@ -34,10 +34,10 @@ bundle exec shotgun
 
 Et voila!
 
-### Tech Stack Used
+### Tech Stack
 
-* Sinatra and Shotgun for the server
-* AssetPack for the Sass/CoffeeScript compilation
-* Ace for the code editors
-* Marked for the Markdown conversion
-* Boostrap for the design
+* [Sinatra](https://github.com/sinatra/sinatra) and ![Shotgun](https://github.com/rtomayko/shotgun) for the server
+* [AssetPack](https://github.com/rstacruz/sinatra-assetpack) for the Sass/CoffeeScript compilation
+* [Ace](https://github.com/ajaxorg/ace) for the code editors
+* [Marked](https://github.com/chjj/marked) for the Markdown conversion
+* [Bootstrap](http://twitter.github.io/bootstrap/) for the design

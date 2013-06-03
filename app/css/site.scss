@@ -14,6 +14,10 @@ body {
 .navbar-inner {
   border-radius: 0px;
   padding-left: 0px;
+
+  .nav li a {
+    margin-top: 3px;
+  }
 }
 
 #progress-bar {

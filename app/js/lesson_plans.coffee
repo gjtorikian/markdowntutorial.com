@@ -49,13 +49,13 @@ root.lessons =
 
   4:
     0:
-      startingText: "[]()"
-      answer: "![Search for it.](www.google.com)"
-      renderedAnswer:"<p><a href=\"www.google.com\">Search for it.</a></p>"
+      startingText: "[](http://octodex.github.com/images/octdrey-catburn.jpg)"
+      answer: "![A representation of A representation of Octdrey Catburn](http://octodex.github.com/images/octdrey-catburn.jpg)"
+      renderedAnswer:"<p><img alt=\"A representation of Octdrey Catburn\" src=\"http://octodex.github.com/images/octdrey-catburn.jpg\"></p>"
     1:
-      startingText: "You're really, really going to want to see this."
-      answer: "[You're **really, really** going to want to see this.](www.dailykitten.com)"
-      renderedAnswer: "<a href=\"www.dailykitten.com\">You're <strong>really, really</strong> going to want to see this.</a>"
+      startingText: "[The first father][]\n\n[The second first father][Second Father]"
+      answer: "[The first father][First Father]\n\n[The second first father][Second Father]\n\n[First Father]: http://octodex.github.com/images/founding-father.jpg\n\n[Second Father]: http://octodex.github.com/images/foundingfather_v2.png"
+      renderedAnswer: "<p><img src=\"http://octodex.github.com/images/founding-father.jpg\" alt=\"The first father\"></p><p><img src=\"http://octodex.github.com/images/foundingfather_v2.png\" alt=\"The second first father\"></p>"
 
   5:
     0:
@@ -70,3 +70,43 @@ root.lessons =
       startingText: "\n>He left her quickly, fearing that her intimacy might turn to jibing and wishing to be out of the way before she offered her ware to another, a tourist from England or a student of Trinity. Grafton Street, along which he walked, prolonged that moment of discouraged poverty. In the roadway at the head of the street a slab was set to the memory of Wolfe Tone and he remembered having been present with his father at its laying. He remembered with bitterness that scene of tawdry tribute. There were four French delegates in a brake and one, a plump smiling young man, held, wedged on a stick, a card on which were printed the words: VIVE L'IRLANDE!"
       answer: "\n>He left her quickly, fearing that her intimacy might turn to jibing and wishing to be out of the way before she offered her ware to another, a tourist from England or a student of Trinity. Grafton Street, along which he walked, prolonged that moment of discouraged poverty. In the roadway at the head of the street a slab was set to the memory of Wolfe Tone and he remembered having been present with his father at its laying. He remembered with bitterness that scene of tawdry tribute. There were four French delegates in a brake and one, a plump smiling young man, held, wedged on a stick, a card on which were printed the words: _VIVE L'IRLANDE_!"
       renderedAnswer: "<a href=\"www.dailykitten.com\">You're <strong>really, really</strong> going to want to see this.</a>"
+
+  6:
+    0:
+      startingText: "Flour, Cheese, Tomatoes"
+      answer: "* Flour\n* Cheese\n* Tomatoes"
+      renderedAnswer: "<ul><li>Flour</li><li>Cheese</li><li>Tomatoes</li></ul>"
+    1:
+      startingText: "Cut the cheese, Slice the tomatoes, Rub the tomatoes in flour"
+      answer: "1. Cut the cheese\n2. Slice the tomatoes\n3. Rub the tomatoes in flour"
+      renderedAnswer: "<ol><li>Cut the cheese</li><li>Slice the tomatoes</li><li>Rub the tomatoes in flour</li></ol>"
+    2:
+      startingText: "* Azalea (Ericaceae Rhododendron)\n* Chrysanthemum (Anthemideae Chrysanthemum)\n* Dahlia (Coreopsideae Dahlia)"
+      answer: "* Azalea (_Ericaceae Rhododendron_)\n* Chrysanthemum (_Anthemideae Chrysanthemum_)\n* Dahlia (_Coreopsideae Dahlia_)"
+      renderedAnswer: "<ul><li>Azalea (<em>Ericaceae Rhododendron</em>)</li><li>Chrysanthemum (<em>Anthemideae Chrysanthemum</em>)</li><li>Dahlia (<em>Coreopsideae Dahlia</em>)</li></ul>"
+    3:
+      startingText: "* Calculus, A professor, Has no hair, Often wears green\n* Castafiore, An opera singer, Has fantastic hair, Is possibly mentally unwell"
+      answer: "* **Calculus**\n  * A professor\n  * Has no hair\n  * Often wears green\n* **Castafiore**\n  * An opera singer\n  * Has fantastic hair\n  * Is possibly mentally unwell"
+      renderedAnswer: "<ul><li><strong>Calculus</strong><ul><li>A professor</li><li>Has no hair</li><li>Often wears green</li></ul></li><li><strong>Castafiore</strong><ul><li>An opera singer</li><li>Has fantastic hair</li><li>Is possibly mentally unwell</li></ul></li></ul>"
+    4:
+      startingText: "1. Cut the cheese\n  * Make sure that the cheese is cut into little triangles.\n\n2. Slice the tomatoes\n  * Be careful when holding the knife.\n  * For more help on tomato slicing, see Thomas Jefferson's seminal essay \"[Tom Ate Those](http://en.wikipedia.org/wiki/Tomato#cite_note-the_tomato_in_America-4)\""
+      answer: "1. Cut the cheese\n   Make sure that the cheese is cut into little triangles.\n\n2. Slice the tomatoes\n    Be careful when holding the knife.    For more help on tomato slicing, see Thomas Jefferson's seminal essay \"[Tom Ate Those](http://en.wikipedia.org/wiki/Tomato#cite_note-the_tomato_in_America-4)\""
+      renderedAnswer: "<ol><li><p>Cut the cheese</p><p>Make sure that the cheese is cut into little triangles.</p></li><li><p>Slice the tomatoes</p><p>Be careful when holding the knife.</p><p>For more help on tomato slicing, see Thomas Jefferson's seminal essay \"<a href=\"http://en.wikipedia.org/wiki/Tomato#cite_note-the_tomato_in_America-4\">Tom Ate Those</a>\"</p></li></ol>"
+
+  7:
+    0:
+      startingText: "Flour, Cheese, Tomatoes"
+      answer: "* Flour\n* Cheese\n* Tomatoes"
+      renderedAnswer: ""
+    1:
+      startingText: ""
+      answer: ""
+      renderedAnswer: ""
+    2:
+      startingText: ""
+      answer: ""
+      renderedAnswer: ""
+    3:
+      startingText: ""
+      answer: ""
+      renderedAnswer: ""

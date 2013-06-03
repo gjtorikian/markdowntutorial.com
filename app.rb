@@ -27,13 +27,13 @@ class MarkdownTutorial < Sinatra::Base
 
   # trim trailing slashes
   before do
+    @page_count ||= 0
     request.path_info.sub! %r{/$}, ''
   end
 
   not_found do
     markdown :notfound
   end
-
 
   # for all markdown files, keep using layout.erb
   set :markdown, :layout_engine => :erb
@@ -59,6 +59,16 @@ class MarkdownTutorial < Sinatra::Base
         title + " | Lesson #{number}"
       else
         title
+      end
+    end
+
+    # Draws a blank circle in the nav bar for every other page
+    def current_page_icon
+      @page_count += 1
+      if @page_count == params[:number].to_i
+        ""
+      else
+        "-blank"
       end
     end
   end

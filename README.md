@@ -9,7 +9,7 @@ Feedback and suggestions are _greatly_ welcome!
 As you might know, everyone and their sister has their own Markdown flavor and preference.
 Since this is intended to be a tutorial for new users of Markdown, I decided to just
 focus on the original specifics, leaving out tables, definition lists, and other
-"add ons." Curious writers that have mastered the basics can explore new syntaxes
+"addons." Curious writers that have mastered the basics can explore new syntaxes
 by themselves.
 
 In addition, I've omitted a lot of duplicity in the original Markdown syntax. For

@@ -27,7 +27,7 @@ class MarkdownTutorial < Sinatra::Base
 
   # trim trailing slashes
   before do
-    @page_count ||= 0
+    @page_count = 0
     request.path_info.sub! %r{/$}, ''
   end
 

@@ -95,18 +95,10 @@ root.lessons =
 
   7:
     0:
-      startingText: "Flour, Cheese, Tomatoes"
-      answer: "* Flour\n* Cheese\n* Tomatoes"
-      renderedAnswer: ""
+      startingText: "We pictured the meek mild creatures where\nThey dwelt in their strawy pen,\nNor did it occur to one of us there\nTo doubt they were kneeling then."
+      answer: "We pictured the meek mild creatures where\n  They dwelt in their strawy pen,\n  Nor did it occur to one of us there\n  To doubt they were kneeling then."
+      renderedAnswer: "<p>We pictured the meek mild creatures where<br>They dwelt in their strawy pen,<br>Nor did it occur to one of us there<br>To doubt they were kneeling then.</p>"
     1:
-      startingText: ""
-      answer: ""
-      renderedAnswer: ""
-    2:
-      startingText: ""
-      answer: ""
-      renderedAnswer: ""
-    3:
-      startingText: ""
-      answer: ""
-      renderedAnswer: ""
+      startingText: "1. Crack three eggs over a bowl.\n\n Now, you're going to want to crack the eggs in such a way that you don't make a mess.\n\n If you _do_ make a mess, use a towel to clean it up!\n\n2. Pour a gallon of milk into the bowl.\n\n Basically, take the same guidance as above: don't be messy, but if you are, clean it up!"
+      answer: "1. Crack three eggs over a bowl.  \nNow, you're going to want to crack the eggs in such a way that you don't make a mess.  \nIf you _do_ make a mess, use a towel to clean it up!\n\n2. Pour a gallon of milk into the bowl.  \nBasically, take the same guidance as above: don't be messy, but if you are, clean it up!"
+      renderedAnswer: "<ol><li><p>Crack three eggs over a bowl.<br>Now, you're going to want to crack the eggs in such a way that you don't make a mess.<br>If you <em>do</em> make a mess, use a towel to clean it up!</p></li><li><p>Pour a gallon of milk into the bowl.<br>Basically, take the same guidance as above: don't be messy, but if you are, clean it up!</p></li></ol>"

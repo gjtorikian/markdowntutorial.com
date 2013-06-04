@@ -42,12 +42,12 @@ class MarkdownTutorial < Sinatra::Base
     markdown :index
   end
 
-  get "/conclusion" do
-    markdown :conclusion
-  end
-
   get '/lesson/:number' do
-    erb :"lesson#{params[:number]}"
+    if params[:number] == "conclusion"
+      markdown :conclusion
+    else
+      erb :"lesson#{params[:number]}"
+    end
   end
 
   helpers do
@@ -65,7 +65,7 @@ class MarkdownTutorial < Sinatra::Base
     # Draws a blank circle in the nav bar for every other page
     def current_page_icon
       @page_count += 1
-      if @page_count == params[:number].to_i
+      if @page_count == params[:number].to_i || @page_count > 7
         ""
       else
         "-blank"

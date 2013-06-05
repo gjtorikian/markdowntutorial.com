@@ -4,7 +4,7 @@
 <p>There are two different link types in Markdown, but both of them render the exact
   same way. The first link style is called an <em>inline link</em>. To create an inline
   link, you wrap the link text in brackets ( <code>[ ]</code> ), and then you wrap the link
-  in parenthesis. For example, to create a hyperlink to www.github.com, with a link text
+  in parenthesis ( <code>( )</code> ). For example, to create a hyperlink to www.github.com, with a link text
   that says, Visit GitHub!, you'd write this in Markdown: <code>[Visit GitHub!](www.github.com)</code>.</p>
 
 <p>In the box below, make a link to www.google.com, with some text that says "Search for it."</p>
@@ -32,7 +32,7 @@
   <p>Although it might make for an awkward experience, you can make links within
   headers, too.</p>
   <p>For this next tutorial, make the text a heading four, and turn the phrase
-  "the BBC" into a link to bbc.com/news:</p>
+  "the BBC" into a link to www.bbc.com/news:</p>
   <div class="row">
     <div class="span5 scratchpad"></div>
     <div class="span5 renderpad"></div>
@@ -53,11 +53,11 @@
      [another place]: www.github.com
      [another-link]: www.google.com
   </pre>
-  <p>The "references" above are the second set of brackets: [another place] and
-    [another-link]. At the bottom of a Markdown document, these brackets are defined
+  <p>The "references" above are the second set of brackets: <code>[another place]</code> and
+    <code>[another-link]</code>. At the bottom of a Markdown document, these brackets are defined
     as proper links to outside website. An advantage of the reference link style
     is that multiple links to the same place only need to be updated once. For
-    example, if we decide to make all of the [another place] links go somewhere
+    example, if we decide to make all of the <code>[another place]</code> links go somewhere
     else, we only have to change the single reference link.</p>
   <p>Reference links don't appear in the rendered Markdown. You define them by providing
     the same tag name wrapped in brackets, followed by a colon, followed by the link.</p>

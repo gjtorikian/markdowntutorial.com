@@ -41,7 +41,7 @@ showNextSection = () ->
   nextSection = $(".toBeRevealed").first()
   if (nextSection?)
     nextSection.fadeIn('slow')
-    $('body').scrollTo(nextSection, {offsetTop: -50}, ->
+    $('body').scrollTo(nextSection, ->
       nextSection.removeClass("toBeRevealed")
     )
 

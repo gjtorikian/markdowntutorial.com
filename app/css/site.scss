@@ -11,6 +11,19 @@ body {
   margin: 60px 0;
 }
 
+.navbar .center-nav,
+.navbar .center-nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
+}
+
 .navbar-inner {
   border-radius: 0px;
   padding-left: 0px;
@@ -18,8 +31,4 @@ body {
   .nav li a {
     margin-top: 3px;
   }
-}
-
-#progress-bar {
-  height: 40px;
 }

@@ -7,4 +7,6 @@ task :clean do
   `rm -rf public/`
 end
 
-task :build  => [:clean, :'assetpack:build']
+task :build  => [:clean, :'assetpack:build'] do
+  FileUtils.cp("favicon.ico", "public/favicon.ico")
+end

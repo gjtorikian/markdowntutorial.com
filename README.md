@@ -36,7 +36,7 @@ Et voila!
 
 ### Tech Stack
 
-* [Sinatra](https://github.com/sinatra/sinatra) and ![Shotgun](https://github.com/rtomayko/shotgun) for the server
+* [Sinatra](https://github.com/sinatra/sinatra) and [Shotgun](https://github.com/rtomayko/shotgun) for the server
 * [AssetPack](https://github.com/rstacruz/sinatra-assetpack) for the Sass/CoffeeScript compilation
 * [Ace](https://github.com/ajaxorg/ace) for the code editors
 * [Marked](https://github.com/chjj/marked) for the Markdown conversion

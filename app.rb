@@ -19,20 +19,19 @@ class MarkdownTutorial < Sinatra::Base
       '/css/*.css'
     ]
 
-    ignore '/js/ace'
-
-    js_compression  :jsmin
+    js_compression :closure, :level => "SIMPLE_OPTIMIZATIONS"
     css_compression :sass
   }
 
   # trim trailing slashes
   before do
     @page_count = 0
+    @is_conclusion = false
     request.path_info.sub! %r{/$}, ''
   end
 
   not_found do
-    markdown :notfound
+    markdown :notfound, :locals => {:force => false}
   end
 
   # for all markdown files, keep using layout.erb
@@ -42,12 +41,13 @@ class MarkdownTutorial < Sinatra::Base
     markdown :index
   end
 
+  get "/conclusion" do
+    @is_conclusion = true
+    markdown :conclusion
+  end
+
   get '/lesson/:number' do
-    if params[:number] == "conclusion"
-      markdown :conclusion
-    else
-      erb :"lesson#{params[:number]}"
-    end
+    erb :"lesson#{params[:number]}"
   end
 
   helpers do
@@ -63,9 +63,9 @@ class MarkdownTutorial < Sinatra::Base
     end
 
     # Draws a blank circle in the nav bar for every other page
-    def current_page_icon
+    def current_page_icon(force=false)
       @page_count += 1
-      if @page_count == params[:number].to_i || @page_count > 7
+      if @page_count == params[:number].to_i || (force and @is_conclusion)
         ""
       else
         "-blank"

@@ -104,7 +104,7 @@ function Lexer(options) {
       this.rules = block.gfm;
     }
   }
-}
+};
 
 /**
  * Expose Block Rules

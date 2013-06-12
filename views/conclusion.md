@@ -1,8 +1,8 @@
 Congratulations! There are no more lessons left!
 
 Believe it or not, we've only scratched the beginnings of what can be accomplished
-with Markdown. There are many non-standard implementations of Markdown that supports
-things like tables, definition lists, footnotes, and more. Because
+with Markdown. There are many non-standard implementations of Markdown that support
+formats like tables, definition lists, footnotes, and more. Because
 they're non-standard, they're not essential to learning the basics, which we've
 introduced here.
 

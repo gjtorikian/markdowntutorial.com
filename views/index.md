@@ -1,13 +1,12 @@
 Markdown is a way to write content for the web. It's written in what nerds like to
-call "plaintext," which is exactly the sort of text you're used to writing. Plaintext
+call "plaintext," which is exactly the sort of text you're used to writing and seeing. Plaintext
 is just the regular alphabet, with a few familiar symbols, like asterisks ( <code>*</code>) and
 backticks ( <code>`</code>).
 
 Unlike cumbersome word processing applications, text written in
 Markdown can be easily shared between computers, mobile phones, and people. It's
 quickly becoming the writing standard for [academics][academics],
-[scientists][scientists],
-and [creative people][writers].
+[scientists][scientists], [writers][writers], and many more.
 Websites like [GitHub](https://www.github.com) and [reddit](http://www.reddit.com)
 use Markdown to style their comments.
 

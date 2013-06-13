@@ -1,2 +1,4 @@
 .sass-cache
-public/
+public/assets
+public/css
+public/js

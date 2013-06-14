@@ -29,7 +29,7 @@ setupAce = (lessonNumber, pos, el) ->
     if $('.renderpad').eq(pos).html().trim() == lesson.renderedAnswer
       if environment == "development"
         console.log "Did it for #{pos}"
-      showNextSection()
+      showNextSection(el)
   )
 
 previewMd = (pos, editor) ->
@@ -37,15 +37,25 @@ previewMd = (pos, editor) ->
   md = marked(text)
   $('.renderpad').eq(pos).html("").html(md)
 
-showNextSection = () ->
+showNextSection = (currentPad) ->
   nextSection = $(".toBeRevealed").first()
   if (nextSection?)
+    nextStepId = nextSection.data("step")
+    currStepId = $(currentPad).closest(".displayed").data("step") ? 0
+    
+    # Don't display the panel unless it is the next one
+    return unless currStepId + 1 == nextStepId  
+      
     nextSection.fadeIn('slow')
     $('body').scrollTo(nextSection, ->
-      nextSection.removeClass("toBeRevealed")
+      nextSection.removeClass("toBeRevealed").addClass("displayed")
     )
 
 $(document).ready ->
   lessonNumber = window.location.pathname.split( '/' ).pop()
+  
+  $(".toBeRevealed").each (idx, el) -> $(this).data("step", idx + 1)
+    
   $(".scratchpad").each (idx, el) ->
     setupAce(lessonNumber, idx, el)
+

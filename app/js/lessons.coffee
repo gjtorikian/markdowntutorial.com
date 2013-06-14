@@ -29,6 +29,13 @@ setupAce = (lessonNumber, pos, el) ->
     if $('.renderpad').eq(pos).html().trim() == lesson.renderedAnswer
       if environment == "development"
         console.log "Did it for #{pos}"
+
+      $('.renderpad a').each (idx, el) -> 
+        # In the link lesson, I don't want people to deal with typing http://
+        href = $(el).prop('href').match(/www\..+/)
+        href = "http://#{href}"
+        $(el).prop('href', href)
+
       showNextSection(el)
   )
 

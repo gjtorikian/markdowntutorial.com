@@ -47,12 +47,7 @@ class MarkdownTutorial < Sinatra::Base
   end
 
   get '/lesson/:number' do
-    # In the link lesson, I don't want people to deal with typing http://
-    if params[:number] =~ /^www\./
-      redirect to("http://" + params[:number])
-    else
-      erb :"lesson#{params[:number]}"
-    end
+    erb :"lesson#{params[:number]}"
   end
 
   helpers do

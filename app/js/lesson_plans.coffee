@@ -88,7 +88,7 @@ root.lessons =
     3:
       startingText: "* Calculus, A professor, Has no hair, Often wears green\n* Castafiore, An opera singer, Has white hair, Is possibly mentally unwell"
       answer: "* **Calculus**\n  * A professor\n  * Has no hair\n  * Often wears green\n* **Castafiore**\n  * An opera singer\n  * Has white hair\n  * Is possibly mentally unwell"
-      renderedAnswer: "<ul>\n<li>Calculus<ul>\n<li>A professor</li>\n<li>Has no hair</li>\n<li>Often wears green</li>\n</ul>\n</li>\n<li>Castafiore<ul>\n<li>An opera singer</li>\n<li>Has white hair</li>\n<li>Is possibly mentally unwell</li>\n</ul>\n</li>\n</ul>"
+      renderedAnswer: "<ul>\n<li><strong>Calculus</strong><ul>\n<li>A professor</li>\n<li>Has no hair</li>\n<li>Often wears green</li>\n</ul>\n</li>\n<li><strong>Castafiore</strong><ul>\n<li>An opera singer</li>\n<li>Has white hair</li>\n<li>Is possibly mentally unwell</li>\n</ul>\n</li>\n</ul>"
     4:
       startingText: "1. Cut the cheese\n  * Make sure that the cheese is cut into little triangles.\n\n2. Slice the tomatoes\n  * Be careful when holding the knife.\n  * For more help on tomato slicing, see Thomas Jefferson's seminal essay \"[Tom Ate Those](http://en.wikipedia.org/wiki/Tomato#cite_note-the_tomato_in_America-4)\""
       answer: "1. Cut the cheese\n   Make sure that the cheese is cut into little triangles.\n\n2. Slice the tomatoes\n    Be careful when holding the knife.    For more help on tomato slicing, see Thomas Jefferson's seminal essay \"[Tom Ate Those](http://en.wikipedia.org/wiki/Tomato#cite_note-the_tomato_in_America-4)\""

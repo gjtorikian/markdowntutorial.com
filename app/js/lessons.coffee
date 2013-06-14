@@ -41,7 +41,7 @@ showNextSection = (currentPad) ->
   nextSection = $(".toBeRevealed").first()
   if (nextSection?)
     nextStepId = nextSection.data("step")
-    currStepId = $(currentPad).closest(".displayed").data("step") ? 0
+    currStepId = $(currentPad).closest(".displayed").data("step") ? -1
     
     # Don't display the panel unless it is the next one
     return unless currStepId + 1 == nextStepId  
@@ -54,7 +54,7 @@ showNextSection = (currentPad) ->
 $(document).ready ->
   lessonNumber = window.location.pathname.split( '/' ).pop()
   
-  $(".toBeRevealed").each (idx, el) -> $(this).data("step", idx + 1)
+  $(".toBeRevealed").each (idx, el) -> $(this).data("step", idx)
     
   $(".scratchpad").each (idx, el) ->
     setupAce(lessonNumber, idx, el)

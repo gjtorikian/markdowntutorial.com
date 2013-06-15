@@ -1,4 +1,4 @@
-Congratulations! There are no more lessons left!
+Congratulations! You've completed all the lessons!
 
 Believe it or not, we've only _just begun_ exploring what can be accomplished
 with Markdown. There are many "extended" implementations of Markdown that support

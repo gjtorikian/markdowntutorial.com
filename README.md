@@ -41,3 +41,4 @@ Et voila!
 * [Ace](https://github.com/ajaxorg/ace) for the code editors
 * [Marked](https://github.com/chjj/marked) for the Markdown conversion
 * [Bootstrap](http://twitter.github.io/bootstrap/) for the design
+* [Font Awesome](https://github.com/FortAwesome/Font-Awesome) for the awesome fonts

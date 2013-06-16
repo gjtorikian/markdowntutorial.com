@@ -52,7 +52,7 @@ class MarkdownTutorial < Sinatra::Base
 
   helpers do
     def title(number=nil)
-      title = "Learn Markdown"
+      title = "Markdown Tutorial"
 
       # helper for formatting your title string
       if number

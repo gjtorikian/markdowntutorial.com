@@ -59,6 +59,13 @@ showNextSection = (currentPad) ->
     )
 
 $(document).ready ->
+  hostname = window.location.host
+
+  if !/herokuapp/.test(hostname)
+    $('#heroku-alert').remove()
+  else
+    $('#heroku-alert').css({ display: "block" })
+
   lessonNumber = window.location.pathname.split( '/' ).pop()
   
   $(".toBeRevealed").each (idx, el) -> $(this).data("step", idx)

@@ -20,8 +20,8 @@ root.lessons =
       startingText: "Header one\nHeader two\nHeader three\nHeader four\nHeader five\nHeader six"
       renderedAnswer:"<h1>Header one</h1>\n<h2>Header two</h2>\n<h3>Header three</h3>\n<h4>Header four</h4>\n<h5>Header five</h5>\n<h6>Header six</h6>"
     1:
-      startingText: "Columbian Symbolism in One Hundred Years of Solitude\n\nHere's some words about the book _One Hundred Years..._."
-      renderedAnswer: "<h4>Columbian Symbolism in <em>One Hundred Years of Solitude</em></h4>\n<p>Here's some words about the book <em>One Hundred Years...</em>.</p>"
+      startingText: "Colombian Symbolism in One Hundred Years of Solitude\n\nHere's some words about the book _One Hundred Years..._."
+      renderedAnswer: "<h4>Colombian Symbolism in <em>One Hundred Years of Solitude</em></h4>\n<p>Here's some words about the book <em>One Hundred Years...</em>.</p>"
 
   3:
     0:

@@ -32,9 +32,9 @@ setupAce = (lessonNumber, pos, el) ->
 
       $('.renderpad a').each (idx, el) -> 
         # In the link lesson, I don't want people to deal with typing http://
-        href = $(el).prop('href').match(/www\..+/)
+        href = $(el).attr('href').match(/www\..+/)
         href = "http://#{href}"
-        $(el).prop('href', href)
+        $(el).attr('href', href)
 
       showNextSection(el)
   )

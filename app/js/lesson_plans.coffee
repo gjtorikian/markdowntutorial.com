@@ -26,16 +26,16 @@ root.lessons =
   3:
     0:
       startingText: "Search for it.()"
-      renderedAnswer:"<p><a href=\"www.google.com\">Search for it.</a></p>"
+      renderedAnswer:"<p><a href=\"http://www.google.com\">Search for it.</a></p>"
     1:
       startingText: "You're really, really going to want to see this."
-      renderedAnswer: "<p><a href=\"www.dailykitten.com\">You're <strong>really, really</strong> going to want to see this.</a></p>"
+      renderedAnswer: "<p><a href=\"http://www.dailykitten.com\">You're <strong>really, really</strong> going to want to see this.</a></p>"
     2:
       startingText: "The Latest News from the BBC"
-      renderedAnswer: "<h4>The Latest News from <a href=\"www.bbc.com/news\">the BBC</a></h4>"
+      renderedAnswer: "<h4>The Latest News from <a href=\"http://www.bbc.com/news\">the BBC</a></h4>"
     3:
       startingText: "Do you want to [see something fun][]?\n\nWell, do I have [the website for you][another fun place]!"
-      renderedAnswer: "<p>Do you want to <a href=\"www.zombo.com\">see something fun</a>?</p>\n<p>Well, do I have <a href=\"www.stumbleupon.com\">the website for you</a>!</p>"
+      renderedAnswer: "<p>Do you want to <a href=\"http://www.zombo.com\">see something fun</a>?</p>\n<p>Well, do I have <a href=\"http://www.stumbleupon.com\">the website for you</a>!</p>"
 
   4:
     0:

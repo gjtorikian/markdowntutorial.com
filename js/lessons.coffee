@@ -70,7 +70,11 @@ $(document).ready ->
   else
     $('#heroku-alert').css({ display: "block" })
 
-  lessonNumber = window.location.pathname.split( '/' ).pop()
+  pathSegments = window.location.pathname.split( '/' )
+
+  # We need the second to last path segment because Jekyll makes pretty URLs by
+  # creating directories named after pages with a single index.html file in each
+  lessonNumber = pathSegments[pathSegments.length - 2]
   
   $(".toBeRevealed").each (idx, el) -> $(this).data("step", idx)
     

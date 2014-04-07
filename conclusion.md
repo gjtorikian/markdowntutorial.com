@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 Congratulations! You've completed all the lessons!
 
 Believe it or not, we've only _just begun_ exploring what can be accomplished

@@ -1,5 +1,6 @@
 ---
 layout: default
+number: 8
 ---
 
 Congratulations! You've completed all the lessons!

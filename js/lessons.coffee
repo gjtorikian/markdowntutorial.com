@@ -1,3 +1,6 @@
+---
+---
+
 root = exports ? this
 
 setupAce = (lessonNumber, pos, el) ->

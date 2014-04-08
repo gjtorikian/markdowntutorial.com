@@ -1,4 +1,2 @@
-.sass-cache
-public/assets
-public/css
-public/js
+_site
+Gemfile.lock

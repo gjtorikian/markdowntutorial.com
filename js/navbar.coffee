@@ -1,3 +1,6 @@
+---
+---
+
 $(document).ready ->
   options =
     placement: 'bottom'

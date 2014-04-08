@@ -26,18 +26,15 @@ After cloning the project, you need to run:
 ```
 # grabs the dependencies
 bundle install
-# builds the CSS and JS
-rake build
-# runs the project in development mode
-bundle exec shotgun
+# builds and serves the site
+jekyll serve
 ```
 
 Et voila!
 
 ### Tech Stack
 
-* [Sinatra](https://github.com/sinatra/sinatra) and [Shotgun](https://github.com/rtomayko/shotgun) for the server
-* [AssetPack](https://github.com/rstacruz/sinatra-assetpack) for the Sass/CoffeeScript compilation
+* [Jekyll](http://jekyllrb.com) for templating the site and compiling assets
 * [Ace](https://github.com/ajaxorg/ace) for the code editors
 * [Marked](https://github.com/chjj/marked) for the Markdown conversion
 * [Bootstrap](http://twitter.github.io/bootstrap/) for the design

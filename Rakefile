@@ -14,6 +14,7 @@ task :generate do
     "destination" => "_site"
   })).process
   FileUtils.mv('_site/404/index.html', '_site/404.html')
+  FileUtils.touch '_site/.nojekyll'
 end
 
 desc "Generate and publish blog to gh-pages"

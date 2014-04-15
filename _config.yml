@@ -2,4 +2,4 @@ name: Markdown Tutorial
 url: "http://www.markdowntutorial.com"
 permalink: pretty
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
-baseurl: ./
+baseurl: //markdowntutorial.com

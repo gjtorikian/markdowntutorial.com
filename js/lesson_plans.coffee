@@ -74,8 +74,8 @@ root.lessons =
       startingText: "* Calculus, A professor, Has no hair, Often wears green\n* Castafiore, An opera singer, Has white hair, Is possibly mentally unwell"
       renderedAnswer: "<ul>\n<li>Calculus<ul>\n<li>A professor</li>\n<li>Has no hair</li>\n<li>Often wears green</li>\n</ul>\n</li>\n<li>Castafiore<ul>\n<li>An opera singer</li>\n<li>Has white hair</li>\n<li>Is possibly mentally unwell</li>\n</ul>\n</li>\n</ul>"
     4:
-      startingText: "1. Cut the cheese\n  * Make sure that the cheese is cut into little triangles.\n\n2. Slice the tomatoes\n  * Be careful when holding the knife.\n  * For more help on tomato slicing, see Thomas Jefferson's seminal essay \"[Tom Ate Those](http://en.wikipedia.org/wiki/Tomato#cite_note-the_tomato_in_America-4)\""
-      renderedAnswer: "<ol>\n<li><p>Cut the cheese</p>\n<p>Make sure that the cheese is cut into little triangles.</p>\n</li>\n<li><p>Slice the tomatoes</p>\n<p>Be careful when holding the knife.</p>\n<p>For more help on tomato slicing, see Thomas Jefferson's seminal essay \"<a href=\"http://en.wikipedia.org/wiki/Tomato#cite_note-the_tomato_in_America-4\">Tom Ate Those</a>\"</p>\n</li>\n</ol>"
+      startingText: "1. Cut the cheese\n  * Make sure that the cheese is cut into little triangles.\n\n2. Slice the tomatoes\n  * Be careful when holding the knife.\n  * For more help on tomato slicing, see Thomas Jefferson's seminal essay **Tom Ate Those**."
+      renderedAnswer: "<ol>\n<li><p>Cut the cheese</p>\n<p>Make sure that the cheese is cut into little triangles.</p>\n</li>\n<li><p>Slice the tomatoes</p>\n<p>Be careful when holding the knife.</p>\n<p>For more help on tomato slicing, see Thomas Jefferson's seminal essay <em>Tom Ate Those</em>.</p>\n</li>\n</ol>"
 
   7:
     0:

@@ -1,5 +1,20 @@
 name: Markdown Tutorial
 url: "http://www.markdowntutorial.com"
 permalink: pretty
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: [
+  # Folders
+  "bin",
+  "script",
+  "vendor",
+  "spec",
+
+  # Files
+  "*.sublime*",
+  "Gemfile*",
+  "CONTRIBUTING.md",
+  "README.md",
+  "Rakefile",
+  "bower.json",
+  "config.ru"
+]
 baseurl: //markdowntutorial.com

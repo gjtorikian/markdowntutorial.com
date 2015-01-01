@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+script/bootstrap
+
+bundle exec jekyll serve --watch --baseurl= --config=_config.yml,_config.dev.yml

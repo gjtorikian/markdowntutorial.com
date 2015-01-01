@@ -66,7 +66,7 @@ root.lessons =
       renderedAnswer: "<ul>\n<li>Flour</li>\n<li>Cheese</li>\n<li>Tomatoes</li>\n</ul>"
     1:
       startingText: "Cut the cheese, Slice the tomatoes, Rub the tomatoes in flour"
-      renderedAnswer: "<ol>\n<li>Cut the cheese.</li>\n<li>Slice the tomatoes.</li>\n<li>Rub the tomatoes in flour.</li>\n</ol>"
+      renderedAnswer: "<ol>\n<li>Cut the cheese</li>\n<li>Slice the tomatoes</li>\n<li>Rub the tomatoes in flour</li>\n</ol>"
     2:
       startingText: "* Azalea (Ericaceae Rhododendron)\n* Chrysanthemum (Anthemideae Chrysanthemum)\n* Dahlia (Coreopsideae Dahlia)"
       renderedAnswer: "<ul>\n<li>Azalea (<em>Ericaceae Rhododendron</em>)</li>\n<li>Chrysanthemum (<em>Anthemideae Chrysanthemum</em>)</li>\n<li>Dahlia (<em>Coreopsideae Dahlia</em>)</li>\n</ul>"

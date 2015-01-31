@@ -81,3 +81,5 @@ $(document).ready ->
   $(".scratchpad").each (idx, el) ->
     setupAce(lessonNumber, idx, el)
 
+  $(".btn-skip").click ->
+    showNextSection(this)

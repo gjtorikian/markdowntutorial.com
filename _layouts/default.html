@@ -18,28 +18,24 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <ul class="nav">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
           <li><a class="nav-link icon-github" href="//github.com/gjtorikian/markdown-tutorial" data-toggle="tooltip" data-original-title="Get the source code to this website"></a></li>
           <li><a class="nav-link icon-home" href="//markdowntutorial.com" data-toggle="tooltip" data-original-title="Return to the start"></a></li>
         </ul>
-        <div class="container">
-          <div class="row">
-            <ul id="progress-bar" class="center-nav nav">
-              <li><a class="lesson icon-circle{% if page.number != 1 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/1" data-toggle="tooltip" data-original-title="Italics and Bold"></a></li>
-              <li><a class="lesson icon-circle{% if page.number != 2 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/2" data-toggle="tooltip" data-original-title="Headers"></a></li>
-              <li><a class="lesson icon-circle{% if page.number != 3 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/3" data-toggle="tooltip" data-original-title="Links"></a></li>
-              <li><a class="lesson icon-circle{% if page.number != 4 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/4" data-toggle="tooltip" data-original-title="Images"></a></li>
-              <li><a class="lesson icon-circle{% if page.number != 5 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/5" data-toggle="tooltip" data-original-title="Blockquotes"></a></li>
-              <li><a class="lesson icon-circle{% if page.number != 6 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/6" data-toggle="tooltip" data-original-title="Lists"></a></li>
-              <li><a class="lesson icon-circle{% if page.number != 7 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/7" data-toggle="tooltip" data-original-title="Paragraphs"></a></li>
-              <li><a class="lesson icon-circle{% if page.number != 8 %}-blank{% endif %}" href="{{ site.baseurl}}/conclusion" data-toggle="tooltip" data-original-title="Conclusion"></a></li>
-            </ul>
-          </div>
-        </div>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li><a class="lesson icon-circle{% if page.number != 1 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/1" data-toggle="tooltip" data-original-title="Italics and Bold"></a></li>
+          <li><a class="lesson icon-circle{% if page.number != 2 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/2" data-toggle="tooltip" data-original-title="Headers"></a></li>
+          <li><a class="lesson icon-circle{% if page.number != 3 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/3" data-toggle="tooltip" data-original-title="Links"></a></li>
+          <li><a class="lesson icon-circle{% if page.number != 4 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/4" data-toggle="tooltip" data-original-title="Images"></a></li>
+          <li><a class="lesson icon-circle{% if page.number != 5 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/5" data-toggle="tooltip" data-original-title="Blockquotes"></a></li>
+          <li><a class="lesson icon-circle{% if page.number != 6 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/6" data-toggle="tooltip" data-original-title="Lists"></a></li>
+          <li><a class="lesson icon-circle{% if page.number != 7 %}-blank{% endif %}" href="{{ site.baseurl}}/lesson/7" data-toggle="tooltip" data-original-title="Paragraphs"></a></li>
+          <li><a class="lesson icon-circle{% if page.number != 8 %}-blank{% endif %}" href="{{ site.baseurl}}/conclusion" data-toggle="tooltip" data-original-title="Conclusion"></a></li>
+        </ul>
       </div>
-    </div><!-- /.navbar -->
+    </nav><!-- /.navbar -->
 
     <div class="container">
       <div id="heroku-alert" class="alert alert-info" style="display:none">

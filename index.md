@@ -26,7 +26,7 @@ In each lesson, you'll be given an introduction to a single Markdown
 concept. Then, you'll be asked to complete several exercises with that
 new knowledge.
 
-<a class="btn btn-large btn-success" href="{{ site.baseurl}}/lesson/1">Ready? Let's get started!</a>
+<a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/1">Ready? Let's get started!</a>
 
 [academics]: http://chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295
 [scientists]: http://blogs.plos.org/mfenner/2012/12/13/a-call-for-scholarly-markdown/

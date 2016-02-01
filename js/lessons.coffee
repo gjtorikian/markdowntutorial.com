@@ -30,7 +30,7 @@ setupAce = (lessonNumber, pos, el) ->
   $(el).bind('keyup', (e) ->
     previewMd(pos, editor)
 
-    $('.renderpad a').each (idx, el) -> 
+    $('.renderpad a').each (idx, el) ->
       # In the link lesson, I don't want people to deal with typing http://
       href = $(el).attr('href').match(/www\..+/)
       href = "http://#{href}"
@@ -40,7 +40,9 @@ setupAce = (lessonNumber, pos, el) ->
       if environment == "development"
         console.log "Did it for #{pos}"
 
-      showNextSection(el)
+      setTimeout (->
+        showNextSection(el)
+      ), 500
   )
 
 previewMd = (pos, editor) ->
@@ -53,10 +55,10 @@ showNextSection = (currentPad) ->
   if (nextSection?)
     nextStepId = nextSection.data("step")
     currStepId = $(currentPad).closest(".displayed").data("step") ? -1
-    
+
     # Don't display the panel unless it is the next one
-    return unless currStepId + 1 == nextStepId  
-      
+    return unless currStepId + 1 == nextStepId
+
     nextSection.fadeIn('slow')
     $('body').scrollTo(nextSection, ->
       nextSection.removeClass("toBeRevealed").addClass("displayed")
@@ -75,9 +77,9 @@ $(document).ready ->
   # We need the second to last path segment because Jekyll makes pretty URLs by
   # creating directories named after pages with a single index.html file in each
   lessonNumber = pathSegments[pathSegments.length - 2]
-  
+
   $(".toBeRevealed").each (idx, el) -> $(this).data("step", idx)
-    
+
   $(".scratchpad").each (idx, el) ->
     setupAce(lessonNumber, idx, el)
 

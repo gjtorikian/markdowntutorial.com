@@ -18,3 +18,5 @@ exclude: [
   "config.ru"
 ]
 baseurl: //markdowntutorial.com
+gems:
+  - jekyll-coffeescript

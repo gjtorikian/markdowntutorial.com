@@ -7,7 +7,7 @@ require 'tmpdir'
 require 'jekyll'
 require 'fileutils'
 
-desc "Generate blog files"
+desc "Generate site"
 task :generate do
   Jekyll::Site.new(Jekyll.configuration({
     "source"      => ".",

@@ -17,6 +17,6 @@ exclude: [
   "bower.json",
   "config.ru"
 ]
-baseurl: //markdowntutorial.com
+baseurl: https://www.markdowntutorial.com
 gems:
   - jekyll-coffeescript

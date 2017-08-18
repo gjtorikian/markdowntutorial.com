@@ -19,3 +19,4 @@ to explore any number of other Markdown apps and tutorials. Here are just a few:
 * <http://spec.commonmark.org/dingus/>
 * <http://johnmacfarlane.net/babelmark2/faq.html>
 * <http://idratherbewriting.com/2013/06/04/exploring-markdown-in-collaborative-authoring-to-publishing-workflows/>
+* <https://www.markdownguide.org>

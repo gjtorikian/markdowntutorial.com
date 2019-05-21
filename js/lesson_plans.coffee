@@ -42,11 +42,11 @@ root.lessons =
 
   4:
     0:
-      startingText: "[](http://octodex.github.com/images/octdrey-catburn.jpg)"
-      renderedAnswer:"<p><img src=\"http://octodex.github.com/images/octdrey-catburn.jpg\" alt=\"A representation of Octdrey Catburn\"></p>"
+      startingText: "[](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)"
+      renderedAnswer:"<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg\" alt=\"A pretty tiger\"></p>"
     1:
-      startingText: "[The first father][]\n\n[The second first father][Second Father]"
-      renderedAnswer: "<p><img src=\"http://octodex.github.com/images/founding-father.jpg\" alt=\"The first father\"></p>\n<p><img src=\"http://octodex.github.com/images/foundingfather_v2.png\" alt=\"The second first father\"></p>"
+      startingText: "[Black cat][]\n\n[Orange cat][Orange]\n\n[Black]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg"
+      renderedAnswer: "<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg\" alt=\"Black cat\"></p>\n<p><img src=\"http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png\" alt=\"Orange cat\"></p>"
 
   5:
     0:

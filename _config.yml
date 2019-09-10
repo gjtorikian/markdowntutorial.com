@@ -20,3 +20,6 @@ exclude: [
 baseurl: https://www.markdowntutorial.com
 gems:
   - jekyll-coffeescript
+sass:
+  sass_dir: _sass
+  style: compressed

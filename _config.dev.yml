@@ -1,5 +1,6 @@
 sass:
-  http_path: ''
+  http_path: ""
   style: :expanded
+  sass_dir: _sass
 
 baseurl:

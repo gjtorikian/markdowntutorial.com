@@ -15,8 +15,6 @@ Ya que no son estándares, no son esenciales para aprender los conceptos básico
 Si le gustaría aprender más sobre esas implementciones de Markdown, está invitado/a
 a explorar cualquiera de estas otras apicaciones y tutoriales sobre Markdown. Aquí hay algunas opciones:
 
-* <http://en.wikipedia.org/wiki/Markdown#Example>
-* <http://spec.commonmark.org/dingus/>
-* <http://johnmacfarlane.net/babelmark2/faq.html>
-* <http://idratherbewriting.com/2013/06/04/exploring-markdown-in-collaborative-authoring-to-publishing-workflows/>
-* <https://www.markdownguide.org>
+{% for link in site.data.resources.links %}
+* <{{ link }}>
+{% endfor %}

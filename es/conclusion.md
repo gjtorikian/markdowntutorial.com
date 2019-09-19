@@ -2,6 +2,7 @@
 layout: default
 title: ¡Felicidades!
 number: 8
+locale: es
 ---
 
 ¡Ha completado todas las lecciones!

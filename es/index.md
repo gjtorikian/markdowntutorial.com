@@ -1,10 +1,11 @@
 ---
 layout: default
+locale: es
 ---
 
 Markdown es una forma de escribir contenido para la web. Está escrito en lo que
 los más "geeks" les gusta llamar "texto plano", que es exactamente la clase de texto
-que utilizas para escribir y ver. El texto plano es simplemente el 
+que utilizas para escribir y ver. El texto plano es simplemente el
 alfabeto normal, con unos cuantos símbolos que son familiares, como los asteriscos (
 <code>*</code> ) o comillas simples ( <code>`</code> ).
 
@@ -25,7 +26,7 @@ encabezados u organizar listas de elementos.
 En cada lección, se le dará una pequeña introducción sobre un determinado concepto de Markdown.
 Después se le pedirá que complete algunos ejercicios con esos nuevos conocimientos adquiridos.
 
-<a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/1">¿Preparado/a? ¡Empecemos!</a>
+<a class="btn btn-lg btn-success" href="{{ site.baseurl}}/es/lesson/1">¿Preparado/a? ¡Empecemos!</a>
 
 [academics]: http://chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295
 [scientists]: http://blogs.plos.org/mfenner/2012/12/13/a-call-for-scholarly-markdown/

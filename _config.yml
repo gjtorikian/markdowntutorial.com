@@ -1,4 +1,5 @@
 name: Markdown Tutorial
+title: Markdown Tutorial
 url: "http://www.markdowntutorial.com"
 permalink: pretty
 exclude: [
@@ -17,9 +18,32 @@ exclude: [
   "bower.json",
   "config.ru"
 ]
-baseurl: https://www.markdowntutorial.com
-gems:
-  - jekyll-coffeescript
-sass:
-  sass_dir: _sass
-  style: compressed
+
+assets:
+  compress:
+    css: true
+    js: true
+
+collections_dir: lessons
+
+collections:
+  en:
+    output: true
+    permalink: lesson/:name/
+  es:
+    output: true
+    permalink: es/lesson/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "en"
+    values:
+      locale: "en"
+  -
+    scope:
+      path: ""
+      type: "es"
+    values:
+      locale: "es"

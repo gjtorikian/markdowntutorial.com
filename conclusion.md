@@ -2,6 +2,7 @@
 layout: default
 title: Congratulations!
 number: 8
+locale: en
 ---
 
 You've completed all the lessons!

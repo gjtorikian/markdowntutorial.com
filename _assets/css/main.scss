@@ -1,0 +1,47 @@
+body {
+  padding-bottom: 60px;
+}
+
+h1.title {
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+
+.nav-link.icon-github {
+  font-size: 20px;
+}
+
+/* Custom container */
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.container > hr {
+  margin: 60px 0;
+}
+
+.navbar .center-nav,
+.navbar .center-nav > li {
+  float: none;
+  display: inline-block;
+  *display: inline; /* ie7 fix */
+  *zoom: 1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align: center;
+}
+
+.navbar-inner {
+  border-radius: 0px;
+  padding-left: 0px;
+
+  .nav li a {
+    margin-top: 3px;
+  }
+}
+
+@import "ace";
+@import "lessons";
+@import "carbon";

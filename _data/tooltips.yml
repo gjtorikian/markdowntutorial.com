@@ -1,0 +1,56 @@
+lesson_1:
+  en:
+    href: /lesson/1
+    title: Italics and Bold
+  es:
+    href: /es/lesson/1
+    title: Cursivas y negrita
+lesson_2:
+  en:
+    href: /lesson/2
+    title: Headers
+  es:
+    href: /es/lesson/2
+    title: Encabezados
+lesson_3:
+  en:
+    href: /lesson/3
+    title: Links
+  es:
+    href: /es/lesson/3
+    title: Enlaces
+lesson_4:
+  en:
+    href: /lesson/4
+    title: Images
+  es:
+    href: /es/lesson/4
+    title: Imágenes
+lesson_5:
+  en:
+    href: /lesson/5
+    title: Blockquotes
+  es:
+    href: /es/lesson/5
+    title: Citas
+lesson_6:
+  en:
+    href: /lesson/6
+    title: Lists
+  es:
+    href: /es/lesson/6
+    title: Listas
+lesson_7:
+  en:
+    href: /lesson/7
+    title: Paragraphs
+  es:
+    href: /es/lesson/7
+    title: Párrafos
+conclusion:
+  en:
+    href: /conclusion
+    title: Conclusion
+  es:
+    href: /es/conclusion
+    title: ¡Felicidades!

@@ -12,3 +12,4 @@
 _site/
 Gemfile.lock
 gh-pages
+.asset-cache/

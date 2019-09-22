@@ -1,0 +1,197 @@
+---
+layout: default
+title: Lists
+number: 6
+---
+
+<div class="row">
+<p>This tutorial is all about creating lists in Markdown.</p>
+
+<p>There are two types of lists in the known universe: unordered and ordered.
+That's a fancy way of saying that there are lists with bullet points, and lists with
+numbers.</p>
+<p>To create an unordered list, you'll want to preface each item in the list with
+  an asterisk ( <code>*</code> ). Each list item also gets its own line. For example,
+  a grocery list in Markdown might look like this:</p>
+  <pre>
+* Milk
+* Eggs
+* Salmon
+* Butter
+</pre>
+<p>This Markdown list would render into the following bullet points:</p>
+<ul>
+  <li>Milk</li>
+  <li>Eggs</li>
+  <li>Salmon</li>
+  <li>Butter</li>
+</ul>
+<p>In the box below, turn the words separated by a comma into a list.</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>All right! That's how you write an unordered list. Now, let's talk about ordered
+  ones.</p>
+  <p>An ordered list is prefaced with numbers, instead of asterisks. Take a look at this recipe:</p>
+  <ol>
+    <li>Crack three eggs over a bowl</li>
+    <li>Pour a gallon of milk into the bowl</li>
+    <li>Rub the salmon vigorously with butter</li>
+    <li>Drop the salmon into the egg-milk bowl</li>
+  </ol>
+  <p>To write that in Markdown, you'd do this:</p>
+<pre>
+1. Crack three eggs over a bowl
+2. Pour a gallon of milk into the bowl
+3. Rub the salmon vigorously with butter
+4. Drop the salmon into the egg-milk bowl
+</pre>
+  <p>Easy, right? It's just like you'd expect a list to look.</p>
+  <p>In the box below, turn the rest of the recipe into an ordered list.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Fantastic work!</p>
+  <p>You can choose to add italics, bold, or links within lists, as you might expect.
+    In the box below, turn the latin names for the plants into italics.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Magnificent!</p>
+  <p>Occasionally, you might find the need to make a list with more depth, or, to
+  <em>nest</em> one list within another. Have no fear, because the Markdown syntax
+     is exactly the same. All you have to do is to remember to indent each asterisk
+     <em>one space more</em> than the preceding item.</p>
+  <p>For example, in the following list, we're going to add some sub-lists to each
+    "main" list item, describing the people in detail:</p>
+<pre>
+* Tintin
+ * A reporter
+ * Has poofy orange hair
+ * Friends with the world's most awesome dog
+* Haddock
+ * A sea captain
+ * Has a fantastic beard
+ * Loves whiskey
+   * Possibly also scotch?
+</pre>
+  <p>When rendered, this list turns into the following grouping:<p>
+<ul>
+  <li>Tintin<ul>
+    <li>A reporter</li>
+    <li>Has poofy orange hair</li>
+    <li>Friends with the world's most awesome dog</li>
+  </ul>
+  </li>
+  <li>Haddock<ul>
+    <li>A sea captain</li>
+    <li>Has a fantastic beard</li>
+    <li>Loves whiskey<ul>
+      <li>Possibly also scotch?</li>
+      </ul>
+      </li>
+    </ul>
+    </li>
+</ul>
+  <p>In the box below, turn the character's characteristics into sub-bullets.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Stupendous! While you could continue to indent and add sub-lists indefinitely,
+  it's usually a good idea to stop after three levels; otherwise, your text becomes
+  a mess.</p>
+  <p>There's one more trick to lists and indentation that we'll explore, and that
+  deals with the case of paragraphs. Suppose you want to create a bullet list that
+  requires some additional context (but not another list). For example, it might
+  look like this:</p>
+<ol>
+<li><p>Crack three eggs over a bowl.</p>
+<p>Now, you're going to want to crack the eggs in such a way that you don't make a mess.</p>
+<p>If you <em>do</em> make a mess, use a towel to clean it up!</p>
+</li>
+<li><p>Pour a gallon of milk into the bowl.</p>
+<p>Basically, take the same guidance as above: don't be messy, but if you are, clean it up!</p>
+</li>
+<li><p>Rub the salmon vigorously with butter.</p>
+<p>By "vigorous," we mean a strictly vertical motion. Julia Child once quipped:</p>
+<blockquote>
+<p>Up and down and all around, that's how butter on salmon goes.</p>
+</blockquote>
+</li>
+<li><p>Drop the salmon into the egg-milk bowl.</p>
+<p>Here are some techniques on salmon-dropping:</p>
+<ul>
+<li>Make sure no trout or children are present</li>
+<li>Use both hands</li>
+<li>Always have a towel nearby in case of messes</li>
+</ul>
+</li>
+</ol>
+  <p>To create this sort of text, your paragraph must start on a line all by itself
+    underneath the bullet point, and it must be
+    indented by at least one space. For example, the list above looks like this in
+  Markdown:</p>
+  <pre>
+1. Crack three eggs over a bowl.
+
+ Now, you're going to want to crack the eggs in such a way that you don't make a mess.
+
+ If you _do_ make a mess, use a towel to clean it up!
+
+2. Pour a gallon of milk into the bowl.
+
+ Basically, take the same guidance as above: don't be messy, but if you are, clean it up!
+
+3. Rub the salmon vigorously with butter.
+
+   By "vigorous," we mean a strictly vertical motion. Julia Child once quipped:
+   > Up and down and all around, that's how butter on salmon goes.
+4. Drop the salmon into the egg-milk bowl.
+
+   Here are some techniques on salmon-dropping:
+
+   * Make sure no trout or children are present
+   * Use both hands
+   * Always have a towel nearby in case of messes
+  </pre>
+
+  <p>Notice that the first two items have a single space. This looks a bit odd,
+    so you might want to indent properly to match the characters up (like items
+    three and four). In these paragraphs, you can include all sorts of other Markdown
+    elements, like blockquotes, or even other lists!</p>
+  <p>In the box below, convert the bullet points into their own paragraphs.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>You now know how to make lists in Markdown!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_7[page.locale].href }}">On to the next lesson!</a>
+</div>

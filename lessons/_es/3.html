@@ -1,0 +1,84 @@
+---
+layout: default
+title: Enlaces
+number: 3
+---
+
+<div class="row">
+<p>Ahora aprenderemos cómo crear enlaces a otros sitios web.</p>
+
+<p>Existen dos tipos diferentes de enlaces en Markdown, pero ambos funcionan de forma similar.
+  El primer tipo de enlace es el llamado <em>enlace en línea</em>. Para crear un enlace en línea,
+  hay que encerrar el texto del enlace entre corchetes ( <code>[ ]</code> ), y después encerrar el enlace entre
+  paréntesis ( <code>( )</code> ). Por ejemplo, para crear un enlace a www.github.com con un texto del enlace donde diga,
+  ¡Visita GitHub!, debería escribir esto en Markdown: <code>[¡Visita GitHub!](www.github.com)</code>.</p>
+
+<p>En el recuadro inferior, crea un enlace a www.google.com, con un texto que diga "Búscalo"."</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Escriba sus respuestas en el recuadro de la izquierda, y el resultado en Markdown parecerá en el recuadro de a derecha. Cuando su respuesta sea correcta, será llevado a la siguiente lección."></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Omitir</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>¡Buen trabajo!</p>
+  <p>También puede dar énfasis a los textos de los enlaces, si desea. en el recuadro inferior, ponga en negrita las palabras
+  "realmente, realmente", y enlace toda la frase a este enlace www.dailykitten.com.
+  Asegúrese que el texto en negrita está dentro del texto del enlace entre corchetes.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Omitir</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>¡Fantástico!</p>
+  <p>Aunque podría ser algo poco común, también puede crear enlaces dentro de encabezados.</p>
+  <p>Para el siguiente tutorial, convierta el texto en un encabezado de tipo cuatro y convierta la frase
+  "la BBC" en un enlace a www.bbc.com/news</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Omitir</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Esto es todo lo que hay que escribir sobre los enlaces en línea.</p>
+  <p>El otro tipo de enlace es el llamado un enlace <em>referencia</em>. Como el nombre implica,
+    el enlace es una referencia a otro lugar en el documento. Este es un ejemplo sobre ello:</p>
+  <pre>
+     Aquí hay [un enlace a otro lugar][otro lugar].
+     Aquí hay [otro enlace más][otro-enlace].
+     Y de nuevo regresamos al [primer enlace][otro lugar].
+
+     [otro lugar]: www.github.com
+     [otro-enlace]: www.google.com
+  </pre>
+  <p>Las "referencias" anteriores son los segundos pares de corchetes: <code>[otro lugar]</code> y
+    <code>[otro-enlace]</code>. Al final de un documento en Markdown, esos corchetes están definidos
+    de forma apropiada como enlaces a sitios externos. Una ventaja del tipo de enlace en referencia
+    es que múltiples enlaces al mismo sitio sólo necesitan ser actualizados una sola vez. Por ejemplo,
+    si decidimos hacer que todo el <code>[otro lugar]</code> enlace a otro sitio,
+    sólo tendremos que cambiar un solo enlace de la referencia.</p>
+  <p>Los enlaces de referencia no aparecen en el archivo final renderizado desde el formato Markdown. Están definidos
+    dándoles el mismo nombre de etiqueta encerrada entre corchetes, seguido de dos puntos y seguido del enlace.</p>
+  <p>En el recuadro inferior, empezaremos escribiendo algunos enlaces de referencia. ¡Necesitará
+    rellenarlos todos! Llame a la primera etiqueta de referencia "un lugar divertido", y enlácelo
+    a www.zombo.com; haga que el segundo enlace apunte a www.stumbleupon.com.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Omitir</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>¡Ya sabe cómo crear enlaces en Markdown!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_4[page.locale].href }}">¡Vamos a la siguiente lección!</a>
+</div>

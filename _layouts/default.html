@@ -25,11 +25,7 @@
       type="image/x-icon"
     />
 
-    <link
-      href="{{ site.baseurl }}/css/site.css"
-      rel="stylesheet"
-      media="screen"
-    />
+    {% css main %}
   </head>
 
   <body>
@@ -44,70 +40,105 @@
               data-original-title="Get the source code to this website"
             ></a>
           </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
         </ul>
         <ul id="progress-bar" class="nav navbar-nav navbar-right">
           <li>
             <a
               class="lesson icon-circle{% if page.number != 1 %}-blank{% endif %}"
-              href="{{ site.baseurl }}/lesson/1"
+              href="{{ site.data.tooltips.lesson_1[page.locale].href }}"
               data-toggle="tooltip"
-              data-original-title="Italics and Bold"
+              data-original-title="{{
+                site.data.tooltips.lesson_1[page.locale].title
+              }}"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle{% if page.number != 2 %}-blank{% endif %}"
-              href="{{ site.baseurl }}/lesson/2"
+              href="{{ site.data.tooltips.lesson_2[page.locale].href }}"
               data-toggle="tooltip"
-              data-original-title="Headers"
+              data-original-title="{{
+                site.data.tooltips.lesson_2[page.locale].title
+              }}"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle{% if page.number != 3 %}-blank{% endif %}"
-              href="{{ site.baseurl }}/lesson/3"
+              href="{{ site.data.tooltips.lesson_3[page.locale].href }}"
               data-toggle="tooltip"
-              data-original-title="Links"
+              data-original-title="{{
+                site.data.tooltips.lesson_3[page.locale].title
+              }}"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle{% if page.number != 4 %}-blank{% endif %}"
-              href="{{ site.baseurl }}/lesson/4"
+              href="{{ site.data.tooltips.lesson_4[page.locale].href }}"
               data-toggle="tooltip"
-              data-original-title="Images"
+              data-original-title="{{
+                site.data.tooltips.lesson_4[page.locale].title
+              }}"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle{% if page.number != 5 %}-blank{% endif %}"
-              href="{{ site.baseurl }}/lesson/5"
+              href="{{ site.data.tooltips.lesson_5[page.locale].href }}"
               data-toggle="tooltip"
-              data-original-title="Blockquotes"
+              data-original-title="{{
+                site.data.tooltips.lesson_5[page.locale].title
+              }}"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle{% if page.number != 6 %}-blank{% endif %}"
-              href="{{ site.baseurl }}/lesson/6"
+              href="{{ site.data.tooltips.lesson_6[page.locale].href }}"
               data-toggle="tooltip"
-              data-original-title="Lists"
+              data-original-title="{{
+                site.data.tooltips.lesson_6[page.locale].title
+              }}"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle{% if page.number != 7 %}-blank{% endif %}"
-              href="{{ site.baseurl }}/lesson/7"
+              href="{{ site.data.tooltips.lesson_7[page.locale].href }}"
               data-toggle="tooltip"
-              data-original-title="Paragraphs"
+              data-original-title="{{
+                site.data.tooltips.lesson_7[page.locale].title
+              }}"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle{% if page.number != 8 %}-blank{% endif %}"
-              href="{{ site.baseurl }}/conclusion"
+              href="{{ site.data.tooltips.conclusion[page.locale].href }}"
               data-toggle="tooltip"
-              data-original-title="Conclusion"
+              data-original-title="{{
+                site.data.tooltips.conclusion[page.locale].title
+              }}"
             ></a>
           </li>
         </ul>
@@ -151,11 +182,8 @@
       var environment = "production";
     </script>
 
-    <script src="{{ site.baseurl }}/js/ga.js"></script>
-    <script src="{{ site.baseurl }}/js/lesson_plans.js"></script>
-    <script src="{{ site.baseurl }}/js/lessons.js"></script>
-    <script src="{{ site.baseurl }}/js/marked.js"></script>
-    <script src="{{ site.baseurl }}/js/navbar.js"></script>
-    <script src="{{ site.baseurl }}/js/scrollto.js"></script>
+    {% js main %} {% if page.locale != 'en' %}
+    <script src="/{{ page.locale }}/lesson_plans.js"></script>
+    {% endif %}
   </body>
 </html>

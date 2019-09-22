@@ -48,7 +48,7 @@ task :publish do
   puts "Building site into gh-pages branch..."
   ENV['JEKYLL_ENV'] = 'production'
 
-  puts `bundle exec jekyll build`
+  puts `bundle exec jekyll build -d gh-pages`
 
   FileUtils.mv('gh-pages/404/index.html', 'gh-pages/404.html')
   File.open('gh-pages/.nojekyll', 'wb') { |f| f.puts(":dog: food.") }

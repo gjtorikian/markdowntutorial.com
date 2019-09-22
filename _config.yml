@@ -19,6 +19,8 @@ exclude: [
   "config.ru"
 ]
 
+repository: gjtorikian/markdowntutorial.com
+
 assets:
   compress:
     css: true

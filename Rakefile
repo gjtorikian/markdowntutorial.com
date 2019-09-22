@@ -41,14 +41,14 @@ task :publish do
     gh-pages/.gitignore
   ]
   FileList["gh-pages/{*,.*}"].exclude(*purge_exclude).each do |path|
-    sh "rm -rf #{path}"
+    puts sh "rm -rf #{path}"
   end
 
   # Copy site to gh-pages dir.
   puts "Building site into gh-pages branch..."
   ENV['JEKYLL_ENV'] = 'production'
 
-  puts `bundle exec jekyll build -d gh-pages`
+  puts sh "bundle exec jekyll build -d gh-pages"
 
   FileUtils.mv('gh-pages/404/index.html', 'gh-pages/404.html')
   File.open('gh-pages/.nojekyll', 'wb') { |f| f.puts(":dog: food.") }

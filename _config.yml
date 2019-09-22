@@ -1,5 +1,6 @@
 name: Markdown Tutorial
 title: Markdown Tutorial
+baseurl: https://www.markdowntutorial.com
 url: "http://www.markdowntutorial.com"
 permalink: pretty
 exclude: [

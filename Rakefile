@@ -41,12 +41,13 @@ task :publish do
     gh-pages/.gitignore
   ]
   FileList["gh-pages/{*,.*}"].exclude(*purge_exclude).each do |path|
-    puts sh "rm -rf #{path}"
+    sh "rm -rf #{path}"
   end
 
   # Copy site to gh-pages dir.
   puts "Building site into gh-pages branch..."
   ENV['JEKYLL_ENV'] = 'production'
+  ENV['JEKYLL_GITHUB_TOKEN'] = ENV['GITHUB_TOKEN']
 
   puts sh "bundle exec jekyll build -d gh-pages"
 

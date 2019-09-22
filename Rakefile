@@ -23,7 +23,7 @@ task :publish do
   puts "Checking for gh-pages dir..."
   unless File.exist?("./gh-pages")
     puts "Creating gh-pages dir..."
-    sh "git clone git@github.com:gjtorikian/markdowntutorial.com gh-pages"
+    sh "git clone --depth 1 git@github.com:gjtorikian/markdowntutorial.com gh-pages"
   end
 
   # Ensure latest gh-pages branch history.

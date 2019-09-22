@@ -47,12 +47,8 @@ task :publish do
   # Copy site to gh-pages dir.
   puts "Building site into gh-pages branch..."
   ENV['JEKYLL_ENV'] = 'production'
-  require "jekyll"
-  Jekyll::Commands::Build.process({
-    "source"       => File.expand_path("."),
-    "destination"  => File.expand_path("gh-pages"),
-    "sass"         => { "style" => "compressed" }
-  })
+
+  puts `bundle exec jekyll build`
 
   FileUtils.mv('gh-pages/404/index.html', 'gh-pages/404.html')
   File.open('gh-pages/.nojekyll', 'wb') { |f| f.puts(":dog: food.") }

@@ -26,7 +26,7 @@ encabezados u organizar listas de elementos.
 En cada lección, se le dará una pequeña introducción sobre un determinado concepto de Markdown.
 Después se le pedirá que complete algunos ejercicios con esos nuevos conocimientos adquiridos.
 
-<a class="btn btn-lg btn-success" href="{{ site.baseurl}}/es/lesson/1">¿Preparado/a? ¡Empecemos!</a>
+<a class="btn btn-lg btn-success" href="/es/lesson/1">¿Preparado/a? ¡Empecemos!</a>
 
 [academics]: http://chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295
 [scientists]: http://blogs.plos.org/mfenner/2012/12/13/a-call-for-scholarly-markdown/

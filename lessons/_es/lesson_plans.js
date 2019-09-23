@@ -15,7 +15,7 @@
       },
       2: {
         startingText: "\"Por supuesto\", susurró ella. Entonces, gritó: \"Todo lo que necesito es un poco de moxie!\"",
-        renderedAnswer: "<p>\"<em>Por supuesto</em>,\" susurró ella. Entonces, gritó: \"Todo lo que necesito es <strong>un poco de moxie</strong>!\"</p>"
+        renderedAnswer: "<p>\"<em>Por supuesto</em>\", susurró ella. Entonces, gritó: \"Todo lo que necesito es <strong>un poco de moxie</strong>!\"</p>"
       },
       3: {
         startingText: "Si está pensando, Esto es increible, probablemente está en lo correcto.",

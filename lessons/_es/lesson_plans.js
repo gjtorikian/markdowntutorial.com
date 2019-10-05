@@ -52,12 +52,13 @@
     },
     4: {
       0: {
-        startingText: "[](http://octodex.github.com/images/octdrey-catburn.jpg)",
-        renderedAnswer: "<p><img src=\"http://octodex.github.com/images/octdrey-catburn.jpg\" alt=\"Una representación de Octdrey Catburn\"></p>"
-      },
+        startingText: "[](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)",
+        renderedAnswer: "<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg\" alt=\"Un bonito tigre\"></p>"
+        },
       1: {
-        startingText: "[Primer padre][]\n\n[El segundo primer padre][Segundo padre]",
-        renderedAnswer: "<p><img src=\"http://octodex.github.com/images/founding-father.jpg\" alt=\"Primer padre\"></p>\n<p><img src=\"http://octodex.github.com/images/foundingfather_v2.png\" alt=\"El segundo primer padre\"></p>"
+        startingText: "[Gato negro][]\n\n[Gato naranja][Naranja]\n\n[Negro]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg",
+        renderedAnswer: "<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg\" alt=\"Gato negro\"></p>\n<p><img src=\"http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png\"
+        alt=\"Gato naranja\"></p>"
       }
     },
     5: {

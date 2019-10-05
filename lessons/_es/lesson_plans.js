@@ -102,13 +102,11 @@
         renderedAnswer: "<p>Aquí estoy<br>en el lagar de la sidra,<br>probando la pulpa melosa y pardusca<br>y chupando con una paja el jugo fermentado.</p>"
       },
       1: {
-        startingText: "1. Cascar tres huevos en un recipiente.\n\n >Ahora, va a cascar los huevos de forma que no sea un desastre.\n\n ¡Si _causa_ un desastre, utilice papel de cocina o un paño para limpiarlo!\n\n2. Agregar un litro de leche al recipiente.\n\n Básicamente, tome la misma recomendación que en el punto anterior: no ensucie todo, pero si lo hace ¡límpielo!"
+        startingText: "1. Cascar tres huevos en un recipiente.\n\n Ahora, va a cascar los huevos de forma que no sea un desastre.\n\n ¡Si _causa_ un desastre, utilice papel de cocina o un paño para limpiarlo!\n\n2. Agregar un litro de leche al recipiente.\n\n Básicamente, tome la misma recomendación que en el punto anterior: no ensucie todo, pero si lo hace ¡límpielo!",
+    
+    renderedAnswer: "<ol>\n<li><p>Cascar tres huevos en un recipiente.<br>Ahora, va a cascar los huevos de forma que no sea un desastre.<br>¡Si <em>causa</em> un desastre, utilice papel de cocina o un paño para limpiarlo!</p>\n</li>\n<li><p>Agregar un litro de leche al recipiente.<br>Básicamente, tome la misma recomendación que en el punto anterior: no ensucie todo, pero si lo hace ¡límpielo!</p>\n</li>\n</ol>"
       }
     }
   };
-
-  ({
-    renderedAnswer: "<ol>\n<li><p>Cascar tres huevos en un recipiente.<br>Ahora, va a cascar los huevos de forma que no sea un desastre.<br>¡Si <em>causa</em> un desastre, utilice papel de cocina o un paño para limpiarlo!</p>\n</li>\n<li><p>Agregar un litro de leche al recipiente.<br>Básicamente, tome la misma recomendación que en el punto anterior: no ensucie todo, pero si lo hace ¡límpielo!</p>\n</li>\n</ol>"
-  });
 
 }).call(this);

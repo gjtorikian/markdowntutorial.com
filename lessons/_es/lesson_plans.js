@@ -52,12 +52,13 @@
     },
     4: {
       0: {
-        startingText: "[](http://octodex.github.com/images/octdrey-catburn.jpg)",
-        renderedAnswer: "<p><img src=\"http://octodex.github.com/images/octdrey-catburn.jpg\" alt=\"Una representación de Octdrey Catburn\"></p>"
-      },
+        startingText: "[](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)",
+        renderedAnswer: "<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg\" alt=\"Un bonito tigre\"></p>"
+        },
       1: {
-        startingText: "[Primer padre][]\n\n[El segundo primer padre][Segundo padre]",
-        renderedAnswer: "<p><img src=\"http://octodex.github.com/images/founding-father.jpg\" alt=\"Primer padre\"></p>\n<p><img src=\"http://octodex.github.com/images/foundingfather_v2.png\" alt=\"El segundo primer padre\"></p>"
+        startingText: "[Gato negro][]\n\n[Gato naranja][Naranja]\n\n[Negro]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg",
+        renderedAnswer: "<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg\" alt=\"Gato negro\"></p>\n<p><img src=\"http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png\"
+        alt=\"Gato naranja\"></p>"
       }
     },
     5: {
@@ -66,8 +67,8 @@
         renderedAnswer: "<p>Leí esta interesante cita hace unos días:</p>\n<blockquote>\n<p>\"Sus ojos lo habían llamado y su alma había saltado a la llamada. ¡Vivir, errar, caer, triunfar, recrear la vida de la vida!\"</p>\n</blockquote>"
       },
       1: {
-        startingText: "\n>Allá  en  otros  tiempos  (y  bien  buenos  tiempos  que  eran),  había  una vez una vaquita (¡mu!) que iba por un caminito. Y esta vaquita que iba por un caminito se encontró un niñín muy guapín, al cual le llamaban el nene de la casa... Este era el cuento que le contaba su padre. Su padre le miraba a través de un cristal: tenía la cara peluda. El era el nene de la casa. La vaquita venía por el caminito donde vivía Betty Byrne: Betty Byrne vendía trenzas de azúcar al limón.",
-        renderedAnswer: "<blockquote>\n<p>Allá  en  otros  tiempos  (y  bien  buenos  tiempos  que  eran),  había  una vez una vaquita (¡mu!) que iba por un caminito. Y esta vaquita que iba por un caminito se encontró un niñín muy guapín, al cual le llamaban el nene de la casa... Este era el cuento que le contaba su padre. Su padre le miraba a través de un cristal: tenía la cara peluda. El era el nene de la casa. La vaquita venía por el caminito donde vivía Betty Byrne: Betty Byrne vendía trenzas de azúcar al limón.</p>\n</blockquote>"
+        startingText: "\n>Allá en otros tiempos (y bien buenos tiempos que eran), había una vez una vaquita (¡mu!) que iba por un caminito. Y esta vaquita que iba por un caminito se encontró un niñín muy guapín, al cual le llamaban el nene de la casa...\n\nEste era el cuento que le contaba su padre. Su padre le miraba a través de un cristal: tenía la cara peluda.\n\nEl era el nene de la casa. La vaquita venía por el caminito donde vivía Betty Byrne: Betty Byrne vendía trenzas de azúcar al limón.",
+        renderedAnswer: "<blockquote>\n<p>Allá en otros tiempos (y bien buenos tiempos que eran), había una vez una vaquita (¡mu!) que iba por un caminito. Y esta vaquita que iba por un caminito se encontró un niñín muy guapín, al cual le llamaban el nene de la casa...</p>Este era el cuento que le contaba su padre. Su padre le miraba a través de un cristal: tenía la cara peluda.</p>\n<p>El era el nene de la casa. La vaquita venía por el caminito donde vivía Betty Byrne: Betty Byrne vendía trenzas de azúcar al limón.</p>\n</blockquote>"
       },
       2: {
         startingText: "Se apartó bruscamente de ella, temeroso de que de la familiaridad pasase  a  las  burlas  y  deseando  desaparecer  antes  de  verle  ofrecer  su  mercancía a otra persona, a un turista inglés o a un estudiante de Trinity. La calle por donde caminaba, Grafton Street, prolongaba aquella sensación de desalentada pobreza. Al extremo de la calle había una placa dedicada a la memoria de Wolfe Tone. Le vino a la memoria el haber asistido con su padre a la colocación de ella. Y evocaba con amargura el oropel chillón  de  la  ceremonia.  Había  cuatro  delegados  franceses  subidos  en  una camioneta y uno de ellos, un joven rollizo y sonriente, sostenía un palo, al extremo del cual había un cartel con este letrero: VIVE L'IRLANDE!",
@@ -102,13 +103,11 @@
         renderedAnswer: "<p>Aquí estoy<br>en el lagar de la sidra,<br>probando la pulpa melosa y pardusca<br>y chupando con una paja el jugo fermentado.</p>"
       },
       1: {
-        startingText: "1. Cascar tres huevos en un recipiente.\n\n >Ahora, va a cascar los huevos de forma que no sea un desastre.\n\n ¡Si _causa_ un desastre, utilice papel de cocina o un paño para limpiarlo!\n\n2. Agregar un litro de leche al recipiente.\n\n Básicamente, tome la misma recomendación que en el punto anterior: no ensucie todo, pero si lo hace ¡límpielo!"
+        startingText: "1. Cascar tres huevos en un recipiente.\n\n Ahora, va a cascar los huevos de forma que no sea un desastre.\n\n ¡Si _causa_ un desastre, utilice papel de cocina o un paño para limpiarlo!\n\n2. Agregar un litro de leche al recipiente.\n\n Básicamente, tome la misma recomendación que en el punto anterior: no ensucie todo, pero si lo hace ¡límpielo!",
+    
+    renderedAnswer: "<ol>\n<li><p>Cascar tres huevos en un recipiente.<br>Ahora, va a cascar los huevos de forma que no sea un desastre.<br>¡Si <em>causa</em> un desastre, utilice papel de cocina o un paño para limpiarlo!</p>\n</li>\n<li><p>Agregar un litro de leche al recipiente.<br>Básicamente, tome la misma recomendación que en el punto anterior: no ensucie todo, pero si lo hace ¡límpielo!</p>\n</li>\n</ol>"
       }
     }
   };
-
-  ({
-    renderedAnswer: "<ol>\n<li><p>Cascar tres huevos en un recipiente.<br>Ahora, va a cascar los huevos de forma que no sea un desastre.<br>¡Si <em>causa</em> un desastre, utilice papel de cocina o un paño para limpiarlo!</p>\n</li>\n<li><p>Agregar un litro de leche al recipiente.<br>Básicamente, tome la misma recomendación que en el punto anterior: no ensucie todo, pero si lo hace ¡límpielo!</p>\n</li>\n</ol>"
-  });
 
 }).call(this);

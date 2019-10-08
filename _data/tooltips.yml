@@ -5,6 +5,9 @@ lesson_1:
   es:
     href: /es/lesson/1
     title: Cursivas y negrita
+  fr:
+    href: /fr/lesson/1
+    title: Italiques et Gras
 lesson_2:
   en:
     href: /lesson/2
@@ -12,6 +15,9 @@ lesson_2:
   es:
     href: /es/lesson/2
     title: Encabezados
+  fr:
+    href: /fr/lesson/2
+    title: Titres
 lesson_3:
   en:
     href: /lesson/3
@@ -19,6 +25,9 @@ lesson_3:
   es:
     href: /es/lesson/3
     title: Enlaces
+  fr:
+    href: /fr/lesson/3
+    title: Liens
 lesson_4:
   en:
     href: /lesson/4
@@ -26,6 +35,9 @@ lesson_4:
   es:
     href: /es/lesson/4
     title: Imágenes
+  fr:
+    href: /fr/lesson/4
+    title: Images
 lesson_5:
   en:
     href: /lesson/5
@@ -33,6 +45,9 @@ lesson_5:
   es:
     href: /es/lesson/5
     title: Citas
+  fr:
+    href: /fr/lesson/5
+    title: Citations
 lesson_6:
   en:
     href: /lesson/6
@@ -47,6 +62,9 @@ lesson_7:
   es:
     href: /es/lesson/7
     title: Párrafos
+  fr:
+    href: /fr/lesson/7
+    title: Paragraphes
 conclusion:
   en:
     href: /conclusion
@@ -54,3 +72,6 @@ conclusion:
   es:
     href: /es/conclusion
     title: ¡Felicidades!
+  fr:
+    href: /fr/conclusion
+    title: Conclusion

@@ -68,7 +68,7 @@
           "[](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)",
         renderedAnswer:
           '<p><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Un bonito tigre"></p>'
-      },
+        },
       1: {
         startingText:
           "[Gato negro][]\n\n[Gato naranja][Naranja]\n\n[Negro]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg",
@@ -84,10 +84,8 @@
           '<p>Leí esta interesante cita hace unos días:</p>\n<blockquote>\n<p>"Sus ojos lo habían llamado y su alma había saltado a la llamada. ¡Vivir, errar, caer, triunfar, recrear la vida de la vida!"</p>\n</blockquote>'
       },
       1: {
-        startingText:
-          "\n>Allá en otros tiempos (y bien buenos tiempos que eran), había una vez una vaquita (¡mu!) que iba por un caminito. Y esta vaquita que iba por un caminito se encontró un niñín muy guapín, al cual le llamaban el nene de la casa...\n\nEste era el cuento que le contaba su padre. Su padre le miraba a través de un cristal: tenía la cara peluda.\n\nEl era el nene de la casa. La vaquita venía por el caminito donde vivía Betty Byrne: Betty Byrne vendía trenzas de azúcar al limón.",
-        renderedAnswer:
-          "<blockquote>\n<p>Allá en otros tiempos (y bien buenos tiempos que eran), había una vez una vaquita (¡mu!) que iba por un caminito. Y esta vaquita que iba por un caminito se encontró un niñín muy guapín, al cual le llamaban el nene de la casa...</p>Este era el cuento que le contaba su padre. Su padre le miraba a través de un cristal: tenía la cara peluda.</p>\n<p>El era el nene de la casa. La vaquita venía por el caminito donde vivía Betty Byrne: Betty Byrne vendía trenzas de azúcar al limón.</p>\n</blockquote>"
+        startingText: "\n>Allá en otros tiempos (y bien buenos tiempos que eran), había una vez una vaquita (¡mu!) que iba por un caminito. Y esta vaquita que iba por un caminito se encontró un niñín muy guapín, al cual le llamaban el nene de la casa...\n\nEste era el cuento que le contaba su padre. Su padre le miraba a través de un cristal: tenía la cara peluda.\n\nEl era el nene de la casa. La vaquita venía por el caminito donde vivía Betty Byrne: Betty Byrne vendía trenzas de azúcar al limón.",
+        renderedAnswer: "<blockquote>\n<p>Allá en otros tiempos (y bien buenos tiempos que eran), había una vez una vaquita (¡mu!) que iba por un caminito. Y esta vaquita que iba por un caminito se encontró un niñín muy guapín, al cual le llamaban el nene de la casa...</p>\n<p>Este era el cuento que le contaba su padre. Su padre le miraba a través de un cristal: tenía la cara peluda.</p>\n<p>El era el nene de la casa. La vaquita venía por el caminito donde vivía Betty Byrne: Betty Byrne vendía trenzas de azúcar al limón.</p>\n</blockquote>"
       },
       2: {
         startingText:

@@ -1,0 +1,95 @@
+---
+layout: default
+title: Paragraphes
+number: 7
+---
+
+<div class="row">
+  <p>Le Markdown a plusieurs façons pour formater les paragraphes.</p>
+
+  <p>
+    Prenons quelques lignes de poésie à titre d'exemple. Supposons que
+    vous vouliez écrire un texte qui ressemble à ceci :
+  </p>
+  <p>
+    Est-ce que je me contredis ? <br />
+    Très bien alors je me contredis,<br />
+    (Je suis grand, j'en ai une multitudes.)
+  </p>
+  <p>
+    Maintenant, vous pourriez penser qu'en tapant simplement chaque couplet sur sa propre ligne.
+    suffira à résoudre le problème :
+  </p>
+  <pre>
+    Est-ce que je me contredis ?
+    Très bien, alors je me contredis moi-même,
+    (Je suis grand, j'en ai une multitudes.)
+</pre
+  >
+  <p>
+    Malheureusement, vous auriez tort ! Cette construiction en Markdown rendrait simplement comme une simple
+    ligne droite : Est-ce que je me contredis ? Très bien, alors je me contredis moi-même,
+    (Je suis grand, j'en ai une multitudes.).
+  </p>
+  <p>
+    Si vous insérez de force une nouvelle ligne, vous finissez par briser l'unité :
+  </p>
+  <pre>
+    Est-ce que je me contredis ?
+
+    Très bien, alors je me contredis moi-même,
+
+    (Je suis grand, j'en ai une multitudes.)
+</pre>
+  <p>
+    C'est ce qu'on appelle un <em>grosse coupure (hard break)</em> ; ce que notre poésie demande est un
+    <em> pause douce (soft break)</em>. Vous pouvez le faire en insérant deux espaces
+    <em>après</em> chaque nouvelle ligne. Ce n'est pas possible à voir, puisque les espaces sont
+    invisible, mais ça ressemblerait à ça :
+  </p>
+  <pre>
+    Est-ce que je me contredis ?..
+    Très bien, alors je me contredis moi-même,..
+    (Je suis grand, j'en ai une multitudes.)
+</pre>
+  <p>Chaque point ( <code>·</code> ) represente un espace du clavier.</p>
+
+  <p>
+    Essayons cette technique. Dans la case ci-dessous, insérez le nombre nécessaire
+    d'espaces pour que le poème soit rendu correctement :
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Tapez vos réponses dans la case de gauche, et le Markdown formaté apparaît dans la case de droite. Dès votre réponse est correcte, vous serez guidé à la prochaine leçon"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Passer</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Quel travail Fantastique !</p>
+    <p>
+      En plus de la mise en forme de la poésie, l'une des utilisations courantes de ces pauses douces
+      est dans le formatage des paragraphes dans les listes. Rappelons dans la leçon précédente que
+      nous avons inséré une nouvelle ligne pour plusieurs paragraphes dans une liste.
+    </p>
+    <p>
+      Dans l'encadré ci-dessous, au lieu d'utiliser des ruptures dures, serrez les sous-paragraphes.
+      avec des pauses douces :
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Et voila! Vous savez maintenant comment faire des ruptures douces en Markdown !</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.conclusion[page.locale].href }}">A la prochaine leçon !</a>
+</div>

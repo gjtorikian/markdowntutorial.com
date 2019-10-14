@@ -36,6 +36,9 @@ collections:
   es:
     output: true
     permalink: es/lesson/:name/
+  fr:
+    output: true
+    permalink: fr/lesson/:name/
 
 defaults:
   -
@@ -50,3 +53,9 @@ defaults:
       type: "es"
     values:
       locale: "es"
+  -
+    scope:
+      path: ""
+      type: "fr"
+    values:
+      locale: "fr"

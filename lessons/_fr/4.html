@@ -1,0 +1,53 @@
+---
+layout: default
+title: Images
+number: 4
+---
+
+<div class="row">
+<p>Si vous savez comment créer des liens dans Markdown, vous pouvez aussi créer des images. Le
+  la syntaxe est presque la même.</p>
+
+<p>Les images ont aussi deux styles, tout comme les liens, les deux image ont exactement le même rendu. La différence entre les liens et les images est que les images
+  sont précédés d'un point d'exclamation ( <code>!</code> ).</p>
+
+<p>Le premier style d'image s'appelle un lien <em>d'image dans la ligne (inline image link) </em>. Pour créer un fichier en ligne
+  entrez un point d'exclamation ( <code>!</code> ), enveloppez le texte alt entre parenthèses ( <code>[ ]</code> ), puis enveloppez le lien
+  entre parenthèses ( <code>( )</code>) ). (Le texte alternatif est une expression ou une phrase qui décrit l'attribut
+  pour les malvoyants).</p>
+
+<p>Par exemple, pour créer un lien image en ligne vers https://octodex.github.com/images/bannekat.png, avec un texte alt
+  qui dit, Benjamin Bannekat, que vous ecrirez ça en Markdown : <code> ![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)</code>.</p>
+
+<p>Dans la case ci-dessous, dirigez le lien vers une image, et remplissez les crochets de texte alt.
+   pour dire "Un joli tigre" :</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Tapez vos réponses dans la case de gauche, et le Markdown formaté apparaît dans la case de droite. Dès votre réponse est correcte, vous serez guidé à la prochaine leçon"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Passer</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Merveilleux !</p>
+  <p>Bien que vous n'ayez pas <em>besoin</em> d'ajouter du texte alt, cela rendra votre contenu plus accessible à votre public,
+    y compris les personnes ayant une déficience visuelle, qui utilisent des lecteurs d'écran ou qui n'ont pas de connexion Internet haute vitesse.</p>
+  <p>Pour une image de référence, vous suivrez le même modèle qu'un lien de référence.
+    Vous précéderez le markdown d'un point d'exclamation, puis fournissez deux crochets
+    pour le texte alt, puis deux autres pour la balise image, comme ceci : <code>[Le père fondateur][Pere]</code> Au bas de votre démarque
+    vous définirez une image pour la balise, comme ceci : <code>[Pere] : http://octodex.github.com/images/founding-father.jpg</code>.</p>
+  <p>Dans la boîte ci-dessous, nous avons commencé à placer quelques images de référence ; vous allez
+    doivent les compléter, tout comme la dernière leçon. Appeler la première étiquette de référence "Noir", et construisez lui un lien vers <code>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code> ; créez le
+    second lien image vers <code>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code>.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Ta da! Vous avez appris tout ce qu'il y a pour ajouter des images avec Markdown !</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_5[page.locale].href }}">A la prochaine leçon !</a>
+</div>

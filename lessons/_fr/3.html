@@ -1,0 +1,85 @@
+---
+layout: default
+title: Liens
+number: 3
+---
+
+<div class="row">
+<p>Nous allons maintenant apprendre comment créer des liens vers d'autres sites Web sur le Web.</p>
+
+<p>Il y a deux types de liens différents dans Markdown, mais les deux ont exactement un rendu identique. Le premier style de lien s'appelle un lien <em>in line (ou dans la ligne) </em>. Pour créer un fichier en ligne
+  vous encadrez le texte du lien entre crochets ( <code>[ ]</code> ), puis vous encadrez le lien
+  entre parenthèses ( <code>( )</code> ). Par exemple, pour créer un lien hypertexte vers www.github.com, avec un texte de lien
+  qui dit : "Visitez GitHub !", vous écrirez ça en Markdown : <code>[Visitez GitHub !](www.github.com)</code>.</p>
+
+<p>Dans l'encadré ci-dessous, faites un lien vers www.qwant.com, avec le texte du lien qui dit "Cherchez-le".</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Tapez vos réponses dans la case de gauche, et le Markdown formaté apparaît dans la case de droite. Dès votre réponse est correcte, vous serez guidé à la prochaine leçon"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Passer</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Bon Travail !</p>
+  <p>Vous pouvez ajouter de l'emphase aux textes des liens, si vous le souhaitez. Dans l'encadré ci-dessous, faites de la balise
+  phrase "vraiment, vraiment" en gras, et avoir l'ensemble de la phrase lien vers www.dailykitten.com.
+  Vous devez vous assurer que la formulation en gras se trouve entre les parenthèses du texte du lien.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Fantastique !</p>
+  <p>Bien que cela puisse rendre l'expérience difficile, vous pouvez aussi créer des liens à l'intérieur de
+  les titres.</p>
+  <p>Pour ce prochain tutoriel, faites du texte un titre de niveau quatre, et tournez la phrase
+  "la BBC" en un lien vers www.bbc.com/news :</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>C'est tout ce qu'il y a à écrire pour les liens en ligne.</p>
+  <p>L'autre type de lien s'appelle un lien <em>reference</em>. Comme son nom l'indique,
+    le lien est en fait une référence à un autre endroit dans les documents. Voici un exemple de ce que
+    nous voulons dire :</p>
+  <pre>
+    Voici [un lien vers autre chose][un autre endroit].
+    Voici [encore autre lien][un autre lien].
+    Et maintenant, revenons au [premier lien][un autre endroit].
+
+    [un autre endroit] : www.github.com
+    [autre lien] : www.google.com
+  </pre>
+  <p>Les "références" ci-dessus constituent le deuxième ensemble de crochets : <code>[autre endroit]</code> et
+    <code>[autre-lien]</code>. Au bas d'un document de démarque, ces parenthèses sont définies comme suit
+    en tant que liens appropriés vers des sites Web externes. Un avantage du style de lien de référence
+    est que plusieurs liens vers le même endroit n'ont besoin d'être mis à jour qu'une seule fois. Pour
+    exemple, si nous décidons de faire en sorte que tous les liens <code>[autre endroit]</code> aillent quelque part
+    sinon, nous n'avons qu'à changer le lien de référence unique.</p>
+  <p>Les liens de référence n'apparaissent pas dans le rendu Markdown. Vous les définissez en fournissant
+    le même nom de balise entre parenthèses, suivi d'un deux-points, suivi du lien.</p>
+  <p>Dans l'encadré ci-dessous, nous avons commencé à écrire quelques liens de référence. Vous voyez, ils
+    ont besoin d'être finit ! Appeler la première balise de référence "un endroit amusant", et faire
+    le lien vers www.zombo.com ; faire le second lien vers www.stumbleupon.com.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Vous savez maintenant comment faire des liens avec le Markodwn !</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_4[page.locale].href }}">A la prochaine leçon !</a>
+</div>

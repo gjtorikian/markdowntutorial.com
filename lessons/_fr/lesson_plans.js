@@ -7,17 +7,19 @@
     1: {
       0: {
         startingText: "Ecrire en Markdon n'est pas difficile !",
-        renderedAnswer: "<p>Ecrire en Markdon n'est <em>pas</em> difficile !</p>"
+        renderedAnswer:
+          "<p>Ecrire en Markdon n'est <em>pas</em> difficile !</p>"
       },
       1: {
         startingText: "Je veux compléter cette leçon !",
-        renderedAnswer: "<p>Je <strong>veux</strong> compléter cette leçon !</p>"
+        renderedAnswer:
+          "<p>Je <strong>veux</strong> compléter cette leçon !</p>"
       },
       2: {
         startingText:
-          'Bien sûr," chuchota-t-elle. Puis, elle cria : "Tout ce dont j'ai besoin, c'est d'un peu de moxie !"',
+          '"Bien sûr," chuchota-t-elle. Puis, elle cria : "Tout ce dont j\'ai besoin, c\'est d\'un peu de moxie !"',
         renderedAnswer:
-          '<p>"<em>Bien sûr</em>" chuchota-t-elle. Puis, elle cria : "Tout ce dont j'ai besoin, c'est d'<strong>un peu de moxie</strong> !"</p>'
+          '<p>"<em>Bien sûr,</em>" chuchota-t-elle. Puis, elle cria : "Tout ce dont j\'ai besoin, c\'est d\'<strong>un peu de moxie</strong> !"</p>'
       },
       3: {
         startingText:
@@ -59,7 +61,7 @@
         startingText:
           "Voulez-vous [voir quelque chose d'amusant][] ?\n\nEh bien, est-ce que j'ai [le site Web pour vous][un autre endroit amusant] !",
         renderedAnswer:
-          '<p>Voulez-vous <a href="http://www.zombo.com">voir quelque chose d'amusant</a>?</p>\n<p>Eh bien, est-ce que j'ai <a href="http://www.stumbleupon.com">le site Web pour vous</a>!</p>'
+          '<p>Voulez-vous <a href="http://www.zombo.com">voir quelque chose d\'amusant</a>?</p>\n<p>Eh bien, est-ce que j\'ai <a href="http://www.stumbleupon.com">le site Web pour vous</a>!</p>'
       }
     },
     4: {
@@ -79,16 +81,15 @@
     5: {
       0: {
         startingText:
-          'J'ai lu cette citation intéressante l'autre jour :\n\n"Ses yeux l'avaient appelé et son âme avait sauté à l'appel. Vivre, errer, tomber, triompher, recréer la vie à partir de la vie !"',
+          "J'ai lu cette citation intéressante l'autre jour :\n\n\"Ses yeux l'avaient appelé et son âme avait sauté à l'appel. Vivre, errer, tomber, triompher, recréer la vie à partir de la vie !\"",
         renderedAnswer:
-          '<p>J'ai lu cette citation intéressante l'autre jour :</p>\n<blockquote>\n<p>"Ses yeux l'avaient appelé et son âme avait sauté à l'appel. Vivre, errer, tomber, triompher, recréer la vie à partir de la vie !"</p>\n</blockquote>'
+          "<p>J'ai lu cette citation intéressante l'autre jour :</p>\n<blockquote>\n<p>\"Ses yeux l'avaient appelé et son âme avait sauté à l'appel. Vivre, errer, tomber, triompher, recréer la vie à partir de la vie !\"</p>\n</blockquote>"
       },
       1: {
         startingText:
           "\n>Il était une fois et une très bonne époque, il y avait une vache maussade qui descendait le long de la route et cette vache maussade qui descendait le long de la route a rencontré un petit garçon de nicens nommé baby tuckoo....\n\nSon père lui a raconté cette histoire : son père l'a regardé à travers un verre : il avait un visage poilu.\n\nIl était bébé Tuckoo. La vache maquée descendit la route où vivait Betty Byrne : elle vendait du citron plat.",
         renderedAnswer:
-          "<blockquote>\n<p>Il était une fois et une très bonne époque, il y avait une vache maussade qui descendait le long de la route et cette vache maussade qui descendait le long de la route a rencontré un petit garçon de nicens nommé baby tuckoo....</p>\n<p>Son père lui a raconté cette histoire : son père l'a regardé à travers un verre : il avait un visage poilu.</p>\n<p>Il était bébé Tuckoo. La vache maquée descendit la route où vivait Betty Byrne : elle vendait du
-          citron plat.</p>\n<blockquote>"
+          "<blockquote>\n<p>Il était une fois et une très bonne époque, il y avait une vache maussade qui descendait le long de la route et cette vache maussade qui descendait le long de la route a rencontré un petit garçon de nicens nommé baby tuckoo....</p>\n<p>Son père lui a raconté cette histoire : son père l'a regardé à travers un verre : il avait un visage poilu.</p>\n<p>Il était bébé Tuckoo. La vache maquée descendit la route où vivait Betty Byrne : elle vendait du citron plat.</p>\n<blockquote>"
       },
       2: {
         startingText:
@@ -118,8 +119,8 @@
       3: {
         startingText:
           "* Professeur Tournesol, Professeur, N'a pas de cheveux, Porte souvent du vert\n* Castafiore, Chanteuse d'opéra, A les cheveux blancs, Est peut-être mentalement malade",
-          "<ul>\n<li>Professeur Tournesol<ul>\n<li>Professeur</li>\n<li>N'a pas de cheveux</li>\n<li>Porte souvent du vert</li>\n</ul>\n</li>\n<li>Castafiore<ul>\n<li>chanteuse d'opéra</li>\n<li>A les cheveux blancs</li>\n<li>Est peut-être mentalement malade</li>\n</ul>\n</li>\n</ul>"
         renderedAnswer:
+          "<ul>\n<li>Professeur Tournesol<ul>\n<li>Professeur</li>\n<li>N'a pas de cheveux</li>\n<li>Porte souvent du vert</li>\n</ul>\n</li>\n<li>Castafiore<ul>\n<li>chanteuse d'opéra</li>\n<li>A les cheveux blancs</li>\n<li>Est peut-être mentalement malade</li>\n</ul>\n</li>\n</ul>"
       },
       4: {
         startingText:

@@ -19,7 +19,7 @@
         startingText:
           '"Bien sûr," chuchota-t-elle. Puis, elle cria : "Tout ce dont j\'ai besoin, c\'est d\'un peu de moxie !"',
         renderedAnswer:
-          '<p>"<em>Bien sûr,</em>" chuchota-t-elle. Puis, elle cria : "Tout ce dont j\'ai besoin, c\'est d\'<strong>un peu de moxie</strong> !"</p>'
+          '<p>"<em>Bien sûr</em>", chuchota-t-elle. Puis, elle cria : "Tout ce dont j\'ai besoin, c\'est d\'<strong>un peu de moxie</strong> !"</p>'
       },
       3: {
         startingText:
@@ -39,7 +39,7 @@
         startingText:
           "Le symbolisme colombien One Hundred Years of Solitude\n\nVoici quelques mots sur le livre _One Hundred Years of Solitude..._.",
         renderedAnswer:
-          "<h4>Le symbolisme colombien en <em>One Hundred Years of Solitude</em></h4>\n<p>Voici quelques mots sur le livre <em>One Hundred Years of Solitude...</em>.</p>"
+          "<h4>Le symbolisme colombien <em>One Hundred Years of Solitude</em></h4>\n<p>Voici quelques mots sur le livre <em>One Hundred Years of Solitude...</em>.</p>"
       }
     },
     3: {
@@ -50,7 +50,7 @@
       1: {
         startingText: "Tu vas vraiment, vraiment vouloir voir ça.",
         renderedAnswer:
-          '<p><a href="http://www.dailykitten.com">Usted Tu vas <strong>vraiment, vraiment</strong> vouloir voir ça.</a></p>'
+          '<p><a href="http://www.dailykitten.com">Tu vas <strong>vraiment, vraiment</strong> vouloir voir ça.</a></p>'
       },
       2: {
         startingText: "Les dernières nouvelles de la BBC",
@@ -61,7 +61,7 @@
         startingText:
           "Voulez-vous [voir quelque chose d'amusant][] ?\n\nEh bien, est-ce que j'ai [le site Web pour vous][un autre endroit amusant] !",
         renderedAnswer:
-          '<p>Voulez-vous <a href="http://www.zombo.com">voir quelque chose d\'amusant</a>?</p>\n<p>Eh bien, est-ce que j\'ai <a href="http://www.stumbleupon.com">le site Web pour vous</a>!</p>'
+          '<p>Voulez-vous <a href="http://www.zombo.com">voir quelque chose d\'amusant </a>?</p>\n<p>Eh bien, est-ce que j\'ai <a href="http://www.stumbleupon.com">le site Web pour vous </a>!</p>'
       }
     },
     4: {
@@ -73,7 +73,7 @@
       },
       1: {
         startingText:
-          "[Chat Noir][]\n\n[Chat Orange][Orange]\n\n[Noir]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg",
+          "[Chat noir][]\n\n[Chat Orange][Orange]\n\n[Noir]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg",
         renderedAnswer:
           '<p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg" alt="Chat noir"></p>\n<p><img src="http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png" alt="Chat Orange"></p>'
       }

@@ -100,7 +100,7 @@
     },
     6: {
       0: {
-        startingText: "Farine, fromage, tomates",
+        startingText: "Farine, Fromage, Tomates",
         renderedAnswer:
           "<ul>\n<li>Farine</li>\n<li>Fromage</li>\n<li>Tomates</li>\n</ul>"
       },
@@ -120,7 +120,7 @@
         startingText:
           "* Professeur Tournesol, Professeur, N'a pas de cheveux, Porte souvent du vert\n* Castafiore, Chanteuse d'opéra, A les cheveux blancs, Est peut-être mentalement malade",
         renderedAnswer:
-          "<ul>\n<li>Professeur Tournesol<ul>\n<li>Professeur</li>\n<li>N'a pas de cheveux</li>\n<li>Porte souvent du vert</li>\n</ul>\n</li>\n<li>Castafiore<ul>\n<li>chanteuse d'opéra</li>\n<li>A les cheveux blancs</li>\n<li>Est peut-être mentalement malade</li>\n</ul>\n</li>\n</ul>"
+          "<ul>\n<li>Professeur Tournesol<ul>\n<li>Professeur</li>\n<li>N'a pas de cheveux</li>\n<li>Porte souvent du vert</li>\n</ul>\n</li>\n<li>Castafiore<ul>\n<li>Chanteuse d'opéra</li>\n<li>A les cheveux blancs</li>\n<li>Est peut-être mentalement malade</li>\n</ul>\n</li>\n</ul>"
       },
       4: {
         startingText:

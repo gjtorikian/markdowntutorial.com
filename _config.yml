@@ -39,6 +39,9 @@ collections:
   fr:
     output: true
     permalink: fr/lesson/:name/
+  kr:
+    output: true
+    permalink: kr/lesson/:name/
 
 defaults:
   -
@@ -59,3 +62,10 @@ defaults:
       type: "fr"
     values:
       locale: "fr"
+
+    scope:
+      path: ""
+      type: "kr"
+    values:
+      locale: "kr"
+

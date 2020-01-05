@@ -1,0 +1,92 @@
+---
+layout: default
+title: 단락 (Paragraphs)
+number: 7
+---
+
+<div class="row">
+  <p>마크다운은 단락을 포맷하는 몇 가지 방법이 있습니다.</p>
+
+  <p>
+    몇 줄의 시로 예를 들어볼게요. 여러분이 이런 형태의 글을 쓰기 원한다고 해봅시다:
+  </p>
+  <p>
+    나는 나 자신과 모순되는가?<br />
+    그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,<br />
+    (나는 크다… 나는 다량의 것을 품고 있다.)
+  </p>
+  <p>
+    여러분은 각 구절마다 자신의 라인을 가지면 문제가 해결될거라 생각할지 모릅니다:
+  </p>
+  <pre>
+나는 나 자신과 모순되는가?
+그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,
+(나는 크다… 나는 다량의 것을 품고 있다.)
+</pre>
+  <p>
+    아쉽게도 그 생각은 틀렸습니다! 마크다운은 단순히 하나의 직선으로 렌더링합니다: 
+    나는 나 자신과 모순되는가? 그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,
+    (나는 크다… 나는 다량의 것을 품고 있다.)
+  </p>
+  <p>
+    만약 여러분이 개행을 강제로 넣으면, 결합이 깨지게 됩니다:
+  </p>
+  <pre>
+나는 나 자신과 모순되는가?
+
+그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,
+
+(나는 크다… 나는 다량의 것을 품고 있다.)
+</pre>
+  <p>
+    이것은 <em>문단 나눔(hard breaks)</em>로 불립니다; 우리의 시에서 요구하는 건 <em>줄 나눔(soft breaks)</em> 입니다. 
+    여러분은 각 줄의 <em>끝</em>에 2번의 공백을 넣음으로 줄 나눔을 할 수 있습니다.
+    공백은 눈에 보이지 않아 실제로 보기는 어렵지만, 이렇게 보여질 수 있습니다:
+  </p>
+  <pre>
+나는 나 자신과 모순되는가?··
+그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,··
+(나는 크다… 나는 다량의 것을 품고 있다.)
+</pre>
+  <p>각 점( <code>·</code> )은 키보드의 스페이스를 나타냅니다.</p>
+
+  <p>
+    이 기술을 실험해봅시다. 아래 입력창에서, 시가 올바르게 렌더링되도록 필요한 공백을 삽입해보세요:
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">건너뜀</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>환상적으로 해냈습니다!</p>
+    <p>
+      시를 포맷하는 것 외에도, 이러한 줄 나눔(soft breaks)의 일반적인 용도는 리스트 내에서 단락을 포맷하는 것입니다. 
+      이전 레슨에서 우리가 한 리스트 내에서 여러 단락을 만들기 위해 새 줄을 삽입했던 것을 기억해보세요.
+    </p>
+    <p>
+      아래 입력창에서, 단락 나눔(hard breaks) 대신에 줄 나눔(soft breaks)를 사용하여 하위 단락을 구성해보세요.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">건너뜀</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>훌륭합니다! 이제 여러분은 마크다운에서 줄 나눔(soft breaks)하는 방법을 알았습니다!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.conclusion[page.locale].href }}"
+    >다음 강의로!</a
+  >
+</div>

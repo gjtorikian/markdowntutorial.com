@@ -23,7 +23,7 @@ lesson_2:
     title: Titres
   kr:
     href: /kr/lesson/2
-    title: 헤더 (Hedaers)
+    title: 헤더 (Headers)
 lesson_3:
   en:
     href: /lesson/3
@@ -88,7 +88,7 @@ lesson_7:
     title: Paragraphes
   kr:
     href: /kr/lesson/7
-    title: 단락 (Paragraphes)
+    title: 단락 (Paragraphs)
 conclusion:
   en:
     href: /conclusion

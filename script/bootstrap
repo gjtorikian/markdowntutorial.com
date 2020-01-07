@@ -1,3 +1,4 @@
 #!/bin/bash
 
-bundle install --local --binstubs --path vendor/cache "$@"
+bundle config set path 'vendor/cache'
+bundle install --local

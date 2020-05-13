@@ -42,6 +42,9 @@ collections:
   kr:
     output: true
     permalink: kr/lesson/:name/
+  jp:
+    output: true
+    permalink: jp/lesson/:name/
 
 defaults:
   -
@@ -62,10 +65,17 @@ defaults:
       type: "fr"
     values:
       locale: "fr"
-
+  -
     scope:
       path: ""
       type: "kr"
     values:
       locale: "kr"
+  -
+    scope:
+      path: ""
+      type: "jp"
+    values:
+      locale: "jp"
+
 

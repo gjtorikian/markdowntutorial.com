@@ -11,6 +11,9 @@ lesson_1:
   kr:
     href: /kr/lesson/1
     title: 이탤릭체와 볼드체 (Italics and Bold)
+  jp:
+    href: /jp/lesson/1
+    title: イタリックと強調 (Italics and Bold)
 lesson_2:
   en:
     href: /lesson/2
@@ -24,6 +27,9 @@ lesson_2:
   kr:
     href: /kr/lesson/2
     title: 헤더 (Headers)
+  jp:
+    href: /jp/lesson/2
+    title: ヘッダー (Headers)
 lesson_3:
   en:
     href: /lesson/3
@@ -37,6 +43,9 @@ lesson_3:
   kr:
     href: /kr/lesson/3
     title: 링크 (Links)
+  jp:
+    href: /jp/lesson/3
+    title: リンク (Links)
 lesson_4:
   en:
     href: /lesson/4
@@ -50,6 +59,9 @@ lesson_4:
   kr:
     href: /kr/lesson/4
     title: 이미지 (Images)
+  jp:
+    href: /jp/lesson/4
+    title: 画像 (Images)
 lesson_5:
   en:
     href: /lesson/5
@@ -60,9 +72,9 @@ lesson_5:
   fr:
     href: /fr/lesson/5
     title: Citations
-  kr:
-    href: /kr/lesson/5
-    title: 인용문 (Blockquotes)
+  jp:
+    href: /jp/lesson/5
+    title: 引用 (Blockquotes)
 lesson_6:
   en:
     href: /lesson/6
@@ -76,6 +88,9 @@ lesson_6:
   kr:
     href: /kr/lesson/6
     title: 리스트 (Lists)
+  jp:
+    href: /jp/lesson/6
+    title: リスト (Lists)
 lesson_7:
   en:
     href: /lesson/7
@@ -89,6 +104,9 @@ lesson_7:
   kr:
     href: /kr/lesson/7
     title: 단락 (Paragraphs)
+  jp:
+    href: /jp/lesson/7
+    title: 行 (Paragraphs)
 conclusion:
   en:
     href: /conclusion
@@ -102,3 +120,6 @@ conclusion:
   kr:
     href: /kr/conclusion
     title: 마무리 (Conclusion)
+  jp:
+    href: /jp/conclusion
+    title: 結論

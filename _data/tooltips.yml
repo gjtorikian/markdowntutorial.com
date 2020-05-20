@@ -13,7 +13,7 @@ lesson_1:
     title: 이탤릭체와 볼드체 (Italics and Bold)
   jp:
     href: /jp/lesson/1
-    title: イタリックと強調 (Italics and Bold)
+    title: イタリックと太字 (Italics and Bold)
 lesson_2:
   en:
     href: /lesson/2
@@ -29,7 +29,7 @@ lesson_2:
     title: 헤더 (Headers)
   jp:
     href: /jp/lesson/2
-    title: ヘッダー (Headers)
+    title: 見出し (Headers)
 lesson_3:
   en:
     href: /lesson/3
@@ -106,7 +106,7 @@ lesson_7:
     title: 단락 (Paragraphs)
   jp:
     href: /jp/lesson/7
-    title: 行 (Paragraphs)
+    title: 段落 (Paragraphs)
 conclusion:
   en:
     href: /conclusion

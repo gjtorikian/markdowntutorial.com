@@ -1,0 +1,74 @@
+---
+layout: default
+title: Hyperlinks
+number: 3
+---
+
+<div class="row">
+<p>In dit hoofdstuk leer je hoe je links legt tussen websites. Links zijn een belangrijk deel van het World Wide Web.</p>
+
+<p>Er zijn twee soorten links in Markdown. Het resultaat is toch hetzelfde. De eerste is een <em>inline link</em>. De andere is een <em>referentie link</em>. We beginnen eerst met de inline link. Een link maak in twee delen. De tekst zet je tussen vierkante haken ( <code>[ ]</code> ) en de link (dus het www-adres) tussen ronde haken  ( <code>( )</code> ). Met dit voorbeeld maak je een link naar je favoriete website.<code> [De pracht en kracht van het programmeren](www.bjoc.nl)</code>. Het resultaat ziet er zo uit: [De pracht en kracht van het programmeren](www.bjoc.nl)
+
+
+<p>Maak in het veld hieronder een link naar Google. Met als tekst 'Zoek het maar uit'. <em>Let op!</em> Het adres van Google is <code>https://www.google.com</code></p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type in het veld aan de linkerkant het antwoord op de vraag. In het rechterveld zie je dan het resultaat. Heb je het goede antwoord dan kun je verder met de volgende opdracht."></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan!</p>
+  <p>Je kunt in een link nadruk leggen op tekst. You can add emphasis to link texts, if you like. In the box below, make the
+  phrase "really, really" bold, and have the entire sentence link to www.dailykitten.com.
+  You'll want to make sure that the bold phrasing occurs within the link text brackets.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan!</p>
+  <p>We gaan nu twee vaardigheden met elkaar combineren. Een koptekst waar ook een link in zit verwerkt.</p>
+  <p>In onderstaande veld maak je de volgende opdracht. Maak de tekst 'Het nieuwste nieuws van NOS' koptekst 4 en maak een link van het woord NOS naar <code>https://www.nos.nl</code></p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Dat was alles over inline links. We gaan nu verder met <em>referentielinks</em></p>
+  <p>De <em>referentie</em> link. Zoals de naam al doet ermoeden is dat een link naar een referentie. Je kunt in een Markdown document op een plek de link vastleggen (het referentiepunt) en deze op andere plekken gebruiken. Zie je het voordeel? Als de link gewijzigd moet worden hoeft dat maar op een plek. </p>
+  <pre>
+     Dit zijn links naar nieuwssites [link1][link2].
+     En dit zijn ook links naar nieuwssites [link1][link2].
+     En om het nog een keer te proberen, ook dit zijn links naar nieuwssites [link 1][link2].
+
+     [link1]: www.nu.nl
+     [link2]: www.google.com
+  </pre>
+  <p>
+    De "referenties" zijn <code> [link 1] </code> en
+     <code> [link 2] </code>. Onderaan een Markdown-document zijn deze haakjes terug te vinden. Bij de vierkante haken met daartussen de titel van de link staat een dubbele punt en daarna het linkadres. Maak onderstaande opdracht om dit hoofdstuk af te ronden.
+
+     Maak in het venster hieronder de referentielinks af. Noem de eerste referentielink 'een toffe plaats' en de tweede 'speciaal voor jou'. Zorg ervoor dat 'een toffe plaats' verwijst naar https://www.roermond.nl en de tweede naar https://www.limburg.nl.
+
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Jij legt echt iedere link nu met Markdown. Goed gedaan en ga door naar les 4!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_4[page.locale].href }}">Door naar de volgende les!</a>
+</div>

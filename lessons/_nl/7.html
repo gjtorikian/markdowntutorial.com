@@ -1,0 +1,92 @@
+---
+layout: default
+title: Paragrafen
+number: 7
+---
+
+<div class="row">
+  <p>Markdown heeft verschillende soorten om paragrafen te laten zien.</p>
+
+  <p>
+  Laten we eens kijken naar deze Haiku van de Japanse dichter Basho:
+  </p>
+  <p>
+    O, oude vijver<br />
+    een kikker springt van de kant<br />
+    geluid van water<br />
+  </p>
+  <p>
+    Je zou denken, iedere regel een nieuwe regel en het probleem is opgelost.
+  </p>
+  <pre>
+    O, oude vijver
+    een kikker springt van de kant
+    geluid van water
+</pre>
+  <p>
+    Helaas! Markdown zorgt er dan voor dat alles bij elkaar blijft... dit is het resultaat van bovenstaande Haiku:
+    O, oude vijver
+    een kikker springt van de kant
+    geluid van water
+
+  </p>
+  <p>
+    Je kunt een extra witregel toevoegen dan krijg je onderstaand resultaat.
+  </p>
+  <pre>
+    O, oude vijver
+    een kikker springt van de kant
+    geluid van water
+</pre
+  >
+  <p>
+    Dit noemen we ook wel een <em>harde enter</em> (dit komt uit de tijd van typemachines... heel oud!). Wat wij hier willen gebruiken heet een <em>zachte enter</em>. Dit kun je doen door aan het einde van de regel twee spaties toe te voegen. Doordat je spaties niet ziet vervangen we dit voor de uitleg door puntjes(<code>.</code>). Ieder puntje is een spatie.
+
+
+  </p>
+  <pre>
+    O, oude vijver..
+    een kikker springt van de kant..
+    geluid van water
+</pre
+  >
+
+  <p>
+    Maak de volgende opdracht. In het venster hieronder, zorg ervoor dat het gedicht met zachte enters (dus puntjes) er mooi uitziet.
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type in het veld aan de linkerkant het antwoord op de vraag. In het rechterveld zie je dan het resultaat. Heb je het goede antwoord dan kun je verder met de volgende opdracht."
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Goed gedaan!</p>
+    <p>
+      We gebruiken zachte enters voor het opmaken van een gedicht. Je kunt er nog meer mee. Weet je nog uit het vorige hoofdstuk dat we met lijsten aan de slag zijn geweest? In de laatste oefening maken we een lijst op, met daarin zachte enters!
+    </p>
+    <p>
+      Maak de volgende opdracht. In het veld hieronder, zorg ervoor dat de regels niet los zweven, maar samen een blokje tekst vormen. Na 1. zorg je ervoor dat de tekst aan een stuk doorloopt en pas bij 2. een nieuwe regel vormt.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Je kunt het! Jij weet nu het verschil tussen een harde en een zachte enter.</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.conclusion[page.locale].href }}"
+    >Door naar de volgende les!</a
+  >
+</div>

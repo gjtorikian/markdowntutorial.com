@@ -1,0 +1,178 @@
+---
+layout: default
+title: Lijsten
+number: 6
+---
+
+<div class="row">
+<p>In dit hoofdstuk gaan we aan de slag met lijsten!</p>
+
+<p>In ons universum zijn er twee types lijsten. Ongeordende lijsten en georderde lijsten. De eerste zijn puntenlijsten, de de tweede zijn lijsten met getallen.
+  There are two types of lists in the known universe: unordered and ordered.
+That's a fancy way of saying that there are lists with bullet points, and lists with
+numbers.</p>
+<p>Om een Ongeordende lijst te maken, gebruiken we een sterretje( <code>*</code> ). Elk lijst item krijgt een eigen regel. In onderstaand voorbeeld zie je een boodschappenlijstje.</p>
+  <pre>
+* Melk
+* Eieren
+* Jam
+* Boter
+</pre>
+<p>Dit geeft als resultaat:</p>
+<ul>
+  <li>Melk</li>
+  <li>Eieren</li>
+  <li>Jam</li>
+  <li>Boter</li>
+</ul>
+<p>Maak de volgende opdracht. In het veld hieronder zie je een boodschappenlijstje. Maak hiervan een ongeordende lijst. Gebruik hiervoor het sterretje( <code>*</code> ).</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type in het veld aan de linkerkant het antwoord op de vraag. In het rechterveld zie je dan het resultaat. Heb je het goede antwoord dan kun je verder met de volgende opdracht. "></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan! Dit is hoe je een ongeordende lijst maakt. We gaan nu kijken naar een georderde lijst.</p>
+  <p>Dit werkt makkelijk. Je gebruikt een nummer en een punt. Zoals in onderstaande bakvoorbeeld:</p>
+  <ol>
+    <li>Breek drie eieren</li>
+    <li>Giet een liter melk in een kom</li>
+    <li>Wrijf de zalm in met boter</li>
+    <li>Doop de zalm in de melk & eieren mix</li>
+  </ol>
+  <p>Om dit in Markdown te maken schrijf je het volgende:</p>
+<pre>
+1. Breek drie eieren
+2. Giet een liter melk in een kom
+3. Wrijf de zalm in met boter
+4. Doop de zal in de melk & eieren mix
+</pre>
+  <p>Makkelijk hè? Net zoals je had gedacht maak je door nummers en punten te gebruiken een georderde lijst in Markdown!</p>
+  <p>Maak de volgende opdracht. In het veld hieronder staan bakinstructies. Maak hiervan een <em>georderde</em> lijst.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan!</p>
+  <p>Je kunt natuurlijk ook de opmaakelementen vetgedrukt en schuingedrukt toepassen in een lijst. Maak de volgende opdracht. Zorg ervoor dat de Latijnse namen (tussen de haakjes) schuingedrukt worden.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan!</p>
+  <p>In Markdown is het eenvoudig om complexe lijsten te maken. Een lijst met meer diepgang, waarmee je informatie kunt combineren. Bijvoorbeeld een lijst met favoriete vakantielanden en een reisbenodigdhedenlijstje kun je eenvoudig combineren. Dit heet ook wel <em>nesten</em>. In onderstaand voorbeeld staan twee lijsten met een aantal 'tabs of sprongetjes':
+<pre>
+* Favoriete vakantielanden
+ * Nederland
+ * Duitsland
+ * Spanje
+* Ik ga op reis en neem mee
+ * Een toilettas
+ * Zonnebrand
+ * Tandenborstel
+   * En mondwater?
+</pre>
+  <p>Als je dit in Markdown schrijft krijg je het volgende resultaat:<p>
+<ul>
+  <li>Favoriete vakantielanden<ul>
+    <li>Nederlandr</li>
+    <li>Duitsland</li>
+    <li>Spanje</li>
+  </ul>
+  </li>
+  <li>Ik ga op reis en neem mee<ul>
+    <li>Een toilettas</li>
+    <li>Zonnebrand</li>
+    <li>Tandenborstel<ul>
+      <li>En mondwater?</li>
+      </ul>
+      </li>
+    </ul>
+    </li>
+</ul>
+  <p>Maak de volgende opdracht. Zorg ervoor dat de eigenschappen van deze twee personen op de juiste plek komen. Voor Calculus is dat 'een professor', 'geen haar' en 'draagt graag groen'. Voor Castafiore zijn dat 'een opera zanger' 'heeft wit haar' en is mogelijk een beetje in de war.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan! In theorie kun je veel ver doorgaan met het inspringen in een lijst. Neem als richtlijn dat je niet meer dan drie keer inspringt. Als je toch meer inspringt stopt de Aarde met ronddraaien.... nee grapje, dan wordt het een onoverzichtelijke janboel!</p>
+  <p>Er is nog een trucje voor lijsten en inspringen dat we zullen behandelen. Stel dat u een opsommingsteken wilt maken vereist wat extra context (maar geen andere lijst). Het kan bijvoorbeeld zijn er uitzien als dit</p>
+<ol>
+<li><p>Breek drie eieren</p>
+<p>Nu wil je de eieren zo breken dat je er geen rommeltje van maakt.</p>
+<p>Als je een <em>rommeltje</em> van maakt, gebruik dan een theedoek om het op te ruimen!</p>
+</li>
+<li><p>Giet een liter melk in een kom.</p>
+<p>Werk netjes en als je een rommeltje maakt, ruim dat direct op!</p>
+</li>
+<li><p>Wrijf de zalm in met boter</p>
+<p>En met "wrijven" bedoelen we uitsluitend verticaal. Zoals Julia Child eens zei:</p>
+<blockquote>
+<p>Up and down and all around, that's how butter on salmon goes.</p>
+</blockquote>
+</li>
+<li><p>Doop de zal in de melk & eieren mix.</p>
+<p>Hier zijn een aantal tips voor succesvol dopen van de vis:</p>
+<ul>
+<li>Zorg ervoor dat er geen andere vissen of kinderen in de buurt zijn</li>
+<li>Gebruik beide handen</li>
+<li>Zorg dat je altijd een theedoek in de buurt hebt!</li>
+</ul>
+</li>
+</ol>
+  <p>Om bovenstaande lijst te maken, moet je een alinea direct na het opsommingsteken gebruiken, en dat moet zo zijn ingesprongen met ten minste één spatie. De bovenstaande lijst ziet er  als volgt uit in Markdown:</p>
+  <pre>
+1. Breek drie eieren
+
+ Nu wil je de eieren zo breken dat je er geen rommeltje van maakt
+
+ ls je een _rommeltje_ van maakt, gebruik dan een theedoek om het op te ruimen!
+
+2. Giet een liter melk in een kom.
+
+ Werk netjes en als je een rommeltje maakt, ruim dat direct op!
+
+3. Wrijf de zalm in met boter
+
+   En met "wrijven" bedoelen we uitsluitend verticaal Zoals Julia Child eens zei:
+   > Up and down and all around, that's how butter on salmon goes.
+4. Doop de zal in de melk & eieren mix.
+
+   Hier zijn een aantal tips voor succesvol dopen van de vis:
+
+   * Zorg ervoor dat er geen andere vissen of kinderen in de buurt zijn
+   * Gebruik beide handen<
+   * Zorg dat je altijd een theedoek in de buurt hebt!
+  </pre>
+
+  <p>Zie  dat de eerste twee items één enkele spatie hebben. Dit ziet er een beetje vreemd uit, dus misschien wil je goed inspringen om de karakters op elkaar af te stemmen (zoals items drie en vier). In deze alinea's kun je allerlei andere Markdown gebruiken! Zoals blok citaten, andere lijsten en natuurlijk vetgedrukt  & schuingedrukt.</p>
+  <p>Maak de volgende opdracht. In het venster hieronder, zorg ervoor dat de beide punten een eigen paragraaf hebben.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Nu kun je lijsten maken in Markdown, goed gedaan!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_7[page.locale].href }}">Door naar de volgende les!</a>
+</div>

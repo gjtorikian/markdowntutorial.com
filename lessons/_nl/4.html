@@ -1,0 +1,43 @@
+---
+layout: default
+title: Afbeeldingen
+number: 4
+---
+
+<div class="row">
+<p>In een vorige les heb je geleerd hoe je een hyperlink maakt. In Markdown ziet de link naar een afbeelding ongeveer hetzelfde uit. </p>
+
+<p>Zoals met links zijn er ook twee manieren om een afbeelding weer te geven. Inline en via een referentie. We kijken eerst hoe een <em>inline afbeelding</em> weergegeven wordt. Een inline afbeelding herken je door het uitroepteken( <code>!</code> ) in de code. .</p>
+
+<p>Onze eerste afbeelding die we gaan gebruiken wordt een inline afbeelding. Hiervoor gebruiken we net zoals met links ronde(<code>( )</code>) en vierkante (<code>[ ]</code)haken.
+  Tussen de vierkante haken komt een <em>alternatieve weergave</em> te staan. Deze tekst kan voorgelezen worden voor iemand met een visuele beperking. Tussen de ronde haken komt de link te staan naar de afbeelding. Dit voorbeeld laat een plaatje zien. <code>![GitLab Cat](https://about.gitlab.com/images/press/logo/png/gitlab-icon-1-color-black-rgb.png)</code>. In het eerste deel staat een uitroepteken, daarna vierkante haken (met daartussen een beschrijving van de afbeelding) en daarna ronde haken (met de link naar dit plaatje https://about.gitlab.com/images/press/logo/png/gitlab-icon-1-color-black-rgb.png)
+
+
+<p>Maak onderstaande voorbeeld af. Zorg ervoor dat de alternatieve de afbeelding beschrijft als 'een knappe kat'. </p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type in het veld aan de linkerkant het antwoord op de vraag. In het rechterveld zie je dan het resultaat. Heb je het goede antwoord dan kun je verder met de volgende opdracht."></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan!</p>
+  <p>Het is niet verplicht om een alternatieve weergave in te vullen. Maar het zorgt ervoor dat je website ook <em>toegangelijk</em> wordt voor mensen met een visuele beperking en mensen met een langzame verbinding.</p>
+  We gaan nu aan de slag met <em>referentie afbeeldingen</em>. Hiermee kun je in een keer meerdere dezelfde afbeeldingen weergeven. De code voor een referentie afbeelding werkt als volgt. <code>![Een afbeelding komt hier][Afbeelding1]</code>. Het begint met een <code>!</code> en daarna met twee setjes vierkante <code>[ ] [ ]</code> haken. In de eerste staat de omschrijving (alternatieve weergave) en in de tweede de link die verderop in je Markdown code wordt ingevuld. Meestal staat dit helemaal onderaan de pagina. Daar staat dan <code>[Afbeelding1]:https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg</code> Zie je tussen <code>[Afbeelding1]</code> <em>:</em> een dubbele punt staan? Hiermee geef je aan wat er weergeven moet worden op de pagina. Dit zie je bij overal waar je <code>[Afbeelding1]</code> gebruikt.
+
+
+  <p>Maak in het onderstaande venster de volgende opdracht</p>
+  <p>Er staat twee voorbeelden. Maak ze beide af. Zorg ervoor dat je bij Black Cat deze afbeelding gebruikt <code>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code> en bij Orange cat deze afbeelding <code>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code></p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Goed gedaan! Jij kunt nu afbeeldingen laten zien met Markdown.</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_5[page.locale].href }}">Door naar de volgende les!</a>
+</div>

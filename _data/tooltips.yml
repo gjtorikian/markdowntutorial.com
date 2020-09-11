@@ -14,6 +14,9 @@ lesson_1:
   jp:
     href: /jp/lesson/1
     title: イタリックと太字 (Italics and Bold)
+  nl:
+    href: /nl/lesson/1
+    title: Schuin en vetgedrukt
 lesson_2:
   en:
     href: /lesson/2
@@ -30,6 +33,9 @@ lesson_2:
   jp:
     href: /jp/lesson/2
     title: 見出し (Headers)
+  nl:
+    href: /nl/lesson/2
+    title: Kopteksten
 lesson_3:
   en:
     href: /lesson/3
@@ -46,6 +52,9 @@ lesson_3:
   jp:
     href: /jp/lesson/3
     title: リンク (Links)
+  nl:
+    href: /nl/lesson/3
+    title: Hyperlinks
 lesson_4:
   en:
     href: /lesson/4
@@ -62,6 +71,9 @@ lesson_4:
   jp:
     href: /jp/lesson/4
     title: 画像 (Images)
+  nl:
+    href: /nl/lesson/4
+    title: Afbeeldingen
 lesson_5:
   en:
     href: /lesson/5
@@ -78,6 +90,9 @@ lesson_5:
   jp:
     href: /jp/lesson/5
     title: 引用 (Blockquotes)
+  nl:
+    href: /nl/lesson/5
+    title: Blokcitaten
 lesson_6:
   en:
     href: /lesson/6
@@ -94,6 +109,9 @@ lesson_6:
   jp:
     href: /jp/lesson/6
     title: リスト (Lists)
+  nl:
+    href: /nl/lesson/6
+    title: Lijsten
 lesson_7:
   en:
     href: /lesson/7
@@ -110,6 +128,9 @@ lesson_7:
   jp:
     href: /jp/lesson/7
     title: 段落 (Paragraphs)
+  nl:
+    href: /nl/lesson/7
+    title: Paragrafen
 conclusion:
   en:
     href: /conclusion
@@ -126,3 +147,6 @@ conclusion:
   jp:
     href: /jp/conclusion
     title: 結論
+  nl:
+    href: /nl/conclusion
+    title: Conclusies

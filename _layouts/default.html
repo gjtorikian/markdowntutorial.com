@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <!-- TODO: Don't hard code the conclusion as page 8 -->
     <title>
-      {{ site.name }}{% if page.number and page.number != 8 %} | Lesson
-      {{ page.number }}{% endif %}
+      {{ site.name }}{% if page.number and page.number != 8 %} | Lesson {{
+      page.number }}{% endif %}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
@@ -21,7 +21,7 @@
     />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-    {% css main %}
+    {% asset main.css %}
   </head>
 
   <body>
@@ -83,6 +83,16 @@
               data-toggle="tooltip"
               data-original-title="In Japanese"
               >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
             >
           </li>
         </ul>
@@ -182,7 +192,7 @@
     </div>
 
     <div class="container">
-      <div id="heroku-alert" class="alert alert-info" style="display:none">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
         Don't use this ugly Heroku app URL! Check out
         <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
         instead.
@@ -208,7 +218,7 @@
       var environment = "production";
     </script>
 
-    {% js main %} {% if page.locale != 'en' %}
+    {% asset main.js %} {% if page.locale != 'en' %}
     <script src="/{{ page.locale }}/lesson_plans.js"></script>
     {% endif %}
   </body>

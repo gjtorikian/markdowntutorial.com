@@ -1,7 +1,7 @@
 name: Markdown Tutorial
 title: Markdown Tutorial
-baseurl: https://www.markdowntutorial.com
-url: "http://www.markdowntutorial.com"
+baseurl: ""
+url: "https://www.markdowntutorial.com"
 permalink: pretty
 exclude: [
     # Folders
@@ -28,6 +28,7 @@ assets:
     js: true
   cdn:
     baseurl: false
+    url: null
 
 collections_dir: lessons
 

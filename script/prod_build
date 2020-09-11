@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+env JEKYLL_GITHUB_TOKEN=$GITHUB_TOKEN JEKYLL_ENV=production bundle exec jekyll build -d gh-pages

@@ -26,6 +26,8 @@ assets:
   compress:
     css: true
     js: true
+  cdn:
+    baseurl: false
 
 collections_dir: lessons
 

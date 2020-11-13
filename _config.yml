@@ -51,6 +51,9 @@ collections:
   nl:
     output: true
     permalink: nl/lesson/:name/
+  cn:
+    output: true
+    permalink: cn/lesson/:name/
 
 defaults:
   - scope:
@@ -83,3 +86,8 @@ defaults:
       type: "nl"
     values:
       locale: "nl"
+  - scope:
+      path: ""
+      type: "cn"
+    values:
+      locale: "cn"

@@ -17,6 +17,9 @@ lesson_1:
   nl:
     href: /nl/lesson/1
     title: Schuin en vetgedrukt
+  cn:
+    href: /cn/lesson/1
+    title: 斜体和加粗
 lesson_2:
   en:
     href: /lesson/2
@@ -36,6 +39,9 @@ lesson_2:
   nl:
     href: /nl/lesson/2
     title: Kopteksten
+  cn:
+    href: /cn/lesson/2
+    title: 标题
 lesson_3:
   en:
     href: /lesson/3
@@ -55,6 +61,9 @@ lesson_3:
   nl:
     href: /nl/lesson/3
     title: Hyperlinks
+  cn:
+    href: /cn/lesson/3
+    title: 超链接
 lesson_4:
   en:
     href: /lesson/4
@@ -74,6 +83,9 @@ lesson_4:
   nl:
     href: /nl/lesson/4
     title: Afbeeldingen
+  cn:
+    href: /cn/lesson/4
+    title: 图片
 lesson_5:
   en:
     href: /lesson/5
@@ -93,6 +105,9 @@ lesson_5:
   nl:
     href: /nl/lesson/5
     title: Blokcitaten
+  cn:
+    href: /cn/lesson/5
+    title: 引用块
 lesson_6:
   en:
     href: /lesson/6
@@ -112,6 +127,9 @@ lesson_6:
   nl:
     href: /nl/lesson/6
     title: Lijsten
+  cn:
+    href: /cn/lesson/6
+    title: 列表
 lesson_7:
   en:
     href: /lesson/7
@@ -131,6 +149,9 @@ lesson_7:
   nl:
     href: /nl/lesson/7
     title: Paragrafen
+  cn:
+    href: /cn/lesson/7
+    title: 段落
 conclusion:
   en:
     href: /conclusion
@@ -150,3 +171,6 @@ conclusion:
   nl:
     href: /nl/conclusion
     title: Conclusies
+  cn:
+    href: /cn/conclusion
+    title: 总结

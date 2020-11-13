@@ -1,0 +1,93 @@
+---
+layout: default
+title: 段落
+number: 7
+---
+
+<div class="row">
+  <p>Markdown 有多种不同的方法定义段落。</p>
+
+  <p>
+    让我们用几行诗歌作为示例。 假设你想要写想这样的一段文本：
+  </p>
+  <p>
+    我有自相矛盾么？<br />
+    很好，那我是在自相矛盾了，<br />
+    （我是庞大的，我承载着很多个自己。）
+  </p>
+  <p>
+    现在，你可能想：在每一行结尾输入一个回车不就可以了吗？就像这样：
+  </p>
+  <pre>
+我有自相矛盾么？
+很好，那我是在自相矛盾了，
+（我是庞大的，我承载着很多个自己。）
+</pre
+  >
+  <p>
+    不幸的是，你错了！如果你这样写，Markdown 会把它们当作同一行：
+    我有自相矛盾么？很好，那我是在自相矛盾了，
+    （我是庞大的，我承载着很多个自己。）
+  </p>
+  <p>
+    如果强行插入新行，你最终会破坏句子间的统一性：
+  </p>
+  <pre>
+我有自相矛盾么？
+
+很好，那我是在自相矛盾了，
+
+（我是庞大的，我承载着很多个自己。）
+</pre
+  >
+  <p>
+    这个是<em>段落换行</em>，诗歌需要的是<em>段落间换行</em>。你可以通过在每一行的结尾输入俩个空格来实现这一点。
+    空格是不可见的，输入的内容就像这样：
+  </p>
+  <pre>
+我有自相矛盾么？··
+很好，那我是在自相矛盾了，··
+（我是庞大的，我承载着很多个自己。）
+</pre
+  >
+  <p>每个点（ <code>·</code> ）都代表一个空格。</p>
+
+  <p>
+    让我们尝试一下这种方法。在下面的框中，通过插入必要的内容来使诗歌正确显示：
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">跳过</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>做的不错！</p>
+    <p>
+      除了格式化段落外，其中一个常见的用法是格式化列表中的段落。回想之前的课程，我们为列表中的多个段落插入了新行。
+    </p>
+    <p>
+      在下面的框中，不要使用段落换行，使用段落间换行来使内容紧凑：
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">跳过</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>你做了吗？你现在知道如何在 Markdown 中的段落间换行了！</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.conclusion[page.locale].href }}"
+    >前往下一个课程！</a
+  >
+</div>

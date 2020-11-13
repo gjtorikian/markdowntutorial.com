@@ -1,0 +1,41 @@
+---
+layout: default
+title: 图片
+number: 4
+---
+
+<div class="row">
+<p>如果你晓得怎样使用Markdown添加链接，那么你也可以添加图片了。添加图片的语法和添加链接的非常相似。</p>
+
+<p>添加图片也有两种方法，就像链接一样，并且渲染出来的结果是一样的。添加链接和图片的区别仅仅在于前面的感叹号 ( <code>!</code> )。</p>
+
+<p>第一种图片的格式叫做 <em>内联图片链接</em>。创建一个内联的图片链接，需要输入一个感叹号 ( <code>!</code> )将方括号 ( <code>[ ]</code> )中的描述性文本包裹起来，然后使用圆括号 ( <code>( )</code> )包裹链接地址。 （描述性文本是为视障者解释图片短语或者句子的语句。）</p>
+
+<p>例如，创建一个描述文本为"Benjamin Bannekat"的内联的链接地址为 https://octodex.github.com/images/bannekat.png 的图片，你应该这样写Markdown： <code>![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)</code>。</p>
+
+<p>在下面的文本框里面，将链接转换为图片，并且在方括号内填写描述文本"A pretty tiger"：</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="在左侧文本框中输入你的答案，对应的Markdown将会出现在后边的框中。当你的答案正确时，你将会被带到下一章节。"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">跳过</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>漂亮！</p>
+  <p>即使添加描述文本是 <em>非必须</em> 的，但是描述文本会让你的读者（包括视障读者、使用屏幕阅读器的读者或者网络环境不好的读者）更容易获取你的内容。 </p>
+  <p>对于全局图片来说，你应该使用同样的标签模式。你应该在标记前添加一个感叹号然后跟两个方括号。对于描述文本来说，应该添加两个或以上的图片标签，比如这样： <code>![The founding father][Father]</code> 在你Markdown页面的底部，定义一个图片标签，就像这样： <code>[Father]: http://octodex.github.com/images/founding-father.jpg</code>.</p>
+  <p>在文本框底部，我们已经放置了一些全局图像；你需要像课程里面说的那样完成它们。给第一个全局图片标签命名为 "Black"，然后把它链接到 <code>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code>；给第二个图片链接到<code>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code>。</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">跳过</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>噔噔！你已经学会了Markdown所有添加图片的方法啦！
+  </p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_5[page.locale].href }}">下一节课！</a>
+</div>

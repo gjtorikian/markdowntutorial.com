@@ -5,7 +5,7 @@ locale: cn
 
 Markdown 是一种用来书写网页内容的方法。它实际上在使用我们在日常生活中用来书写和发送信息的纯文本格式来书写。纯文本仅由常见的字母、文字和一些特殊符号来构成，例如星号（<code>\*</code>）和反引号（<code>`</code>）。
 
-与一些繁琐的文字处理软件不同，使用 Markdown 书写的内容非常易于在不同的电脑，手机，和人之间分享。这很快成为了 [academics][academics]，[scientists][scientists]，[writers][writers]等的书写规范。例如 [GitHub](https://www.github.com) 和 [reddit](http://www.reddit.com) 的网站也使用 Markdown 作为它们的评论系统。
+与一些繁琐的文字处理软件不同，使用 Markdown 书写的内容非常易于在不同的电脑，手机，和人之间分享。这很快成为了许多 [教育者][academics]，[科学家][scientists]，[作家][writers]等的书写规范。例如 [GitHub](https://www.github.com) 和 [reddit](http://www.reddit.com) 的网站也使用 Markdown 作为它们的评论系统。
 
 Markdown 中的语法十分简单，很容易学习。它并没有改变字体大小、颜色或类型。你需要控制的仅仅只是文字的显示类型，例如加粗文本，创建标题，和组织列表。
 

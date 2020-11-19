@@ -2,7 +2,7 @@
 layout: default
 title: Conclusion
 number: 8
-locale: cn
+locale: zh-cn
 ---
 
 你完成了所有的课程！

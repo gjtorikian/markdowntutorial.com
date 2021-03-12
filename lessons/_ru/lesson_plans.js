@@ -24,12 +24,12 @@
     },
     2: {
       0: {
-        startingText: "Header one\nHeader two\nHeader three\nHeader four\nHeader five\nHeader six",
-        renderedAnswer: "<h1>Header one</h1>\n<h2>Header two</h2>\n<h3>Header three</h3>\n<h4>Header four</h4>\n<h5>Header five</h5>\n<h6>Header six</h6>"
+        startingText: "Заголовок первого уровня\nЗаголовок второго уровня\nЗаголовок третьего уровня\nЗаголовок четвёртого уровня\nЗаголовок пятого уровня\nЗаголовок шестого уровня",
+        renderedAnswer: "<h1>Заголовок первого уровня</h1>\n<h2>Заголовок второго уровня</h2>\n<h3>Заголовок третьего уровня</h3>\n<h4>Заголовок четвёртого уровня</h4>\n<h5>Заголовок пятого уровня</h5>\n<h6>Заголовок шестого уровня</h6>"
       },
       1: {
-        startingText: "Colombian Symbolism in One Hundred Years of Solitude\n\nHere's some words about the book _One Hundred Years..._.",
-        renderedAnswer: "<h4>Colombian Symbolism in <em>One Hundred Years of Solitude</em></h4>\n<p>Here's some words about the book <em>One Hundred Years...</em>.</p>"
+        startingText: "Метафоры в кинге \"Сто лет одиночества\"\n\nВот цитата из книги \"_Сто лет одиночества_\" ...",
+        renderedAnswer: "<h4>Метафоры в кинге \"<em>Сто лет одиночества</em>\"</h4>\n<p>Вот цитата из книги \"<em>Сто лет одиночества</em>\" ...</p>"
       }
     },
     3: {

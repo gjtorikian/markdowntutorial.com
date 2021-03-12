@@ -3,7 +3,7 @@
 /bin
 /vendor/ruby
 /vendor/gems/
-/vendor/cache/ruby/
+/vendor/cache/
 
 .DS_Store
 /.rbenv-version

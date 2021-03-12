@@ -20,6 +20,9 @@ lesson_1:
   zh-cn:
     href: /zh-cn/lesson/1
     title: 斜体和加粗
+  ru:
+    href: /ru/lesson/1
+    title: Курсив и жирный шрифт
 lesson_2:
   en:
     href: /lesson/2
@@ -42,6 +45,9 @@ lesson_2:
   zh-cn:
     href: /zh-cn/lesson/2
     title: 标题
+  ru:
+    href: /ru/lesson/2
+    title: Заголовки
 lesson_3:
   en:
     href: /lesson/3
@@ -64,6 +70,9 @@ lesson_3:
   zh-cn:
     href: /zh-cn/lesson/3
     title: 超链接
+  ru:
+    href: /ru/lesson/3
+    title: Гиперссылки
 lesson_4:
   en:
     href: /lesson/4
@@ -86,6 +95,9 @@ lesson_4:
   zh-cn:
     href: /zh-cn/lesson/4
     title: 图片
+  ru:
+    href: /ru/lesson/4
+    title: Иллюстрации
 lesson_5:
   en:
     href: /lesson/5
@@ -108,6 +120,9 @@ lesson_5:
   zh-cn:
     href: /zh-cn/lesson/5
     title: 引用块
+  ru:
+    href: /ru/lesson/5
+    title: Цитаты
 lesson_6:
   en:
     href: /lesson/6
@@ -130,6 +145,9 @@ lesson_6:
   zh-cn:
     href: /zh-cn/lesson/6
     title: 列表
+  ru:
+    href: /ru/lesson/6
+    title: Списки
 lesson_7:
   en:
     href: /lesson/7
@@ -152,6 +170,9 @@ lesson_7:
   zh-cn:
     href: /zh-cn/lesson/7
     title: 段落
+  ru:
+    href: /ru/lesson/7
+    title: Параграфы
 conclusion:
   en:
     href: /conclusion
@@ -174,3 +195,6 @@ conclusion:
   zh-cn:
     href: /zh-cn/conclusion
     title: 总结
+  ru:
+    href: /ru/conclusion
+    title: Заключение

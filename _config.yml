@@ -54,6 +54,9 @@ collections:
   zh-cn:
     output: true
     permalink: zh-cn/lesson/:name/
+  ru:
+    output: true
+    permalink: ru/lesson/:name/
 
 defaults:
   - scope:
@@ -91,3 +94,8 @@ defaults:
       type: "zh-cn"
     values:
       locale: "zh-cn"
+  - scope:
+      path: ""
+      type: "ru"
+    values:
+      locale: "ru"

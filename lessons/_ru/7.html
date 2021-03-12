@@ -1,0 +1,101 @@
+---
+layout: default
+title: Paragraphs
+number: 7
+---
+
+<div class="row">
+  <p>Markdown has several ways of formatting paragraphs.</p>
+
+  <p>
+    Let's take a few lines of poetry as an example. Suppose you want to write
+    text that looks like this:
+  </p>
+  <p>
+    Do I contradict myself?<br />
+    Very well then I contradict myself,<br />
+    (I am large, I contain multitudes.)
+  </p>
+  <p>
+    Now, you might think that simply typing each verse onto its own line would
+    be enough to solve the problem:
+  </p>
+  <pre>
+Do I contradict myself?
+Very well then I contradict myself,
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>
+    Unfortunately, you'd be wrong! This Markdown would render simply as a single
+    straight line: Do I contradict myself? Very well then I contradict myself,
+    (I am large, I contain multitudes.).
+  </p>
+  <p>
+    If you forcefully insert a new line, you end up breaking the togetherness:
+  </p>
+  <pre>
+Do I contradict myself?
+
+Very well then I contradict myself,
+
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>
+    This is what's known as a <em>hard break</em>; what our poetry asks for is a
+    <em>soft break</em>. You can accomplish this by inserting two spaces
+    <em>after</em> each new line. This is not possible to see, since spaces are
+    invisible, but it'd look something like this:
+  </p>
+  <pre>
+Do I contradict myself?··
+Very well then I contradict myself,··
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>Each dot ( <code>·</code> ) represents a space on the keyboard.</p>
+
+  <p>
+    Let's try this technique out. In the box below, insert the necessary number
+    of spaces to make the poem render correctly:
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Fantastic work!</p>
+    <p>
+      Aside from formatting poetry, one of the common uses for these soft breaks
+      is in formatting paragraphs in lists. Recall in the previous lesson that
+      we inserted a new line for multiple paragraphs within a list.
+    </p>
+    <p>
+      In the box below, instead of using hard breaks, tighten the sub-paragraphs
+      with soft breaks:
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Et voila! You now know how to make soft breaks in Markdown!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.conclusion[page.locale].href }}"
+    >On to the next lesson!</a
+  >
+</div>

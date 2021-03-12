@@ -6,20 +6,20 @@
   root.lessons = {
     1: {
       0: {
-        startingText: "Writing in Markdown is not that hard!",
-        renderedAnswer: "<p>Writing in Markdown is <em>not</em> that hard!</p>"
+        startingText: "Писать на языке Markdown просто!",
+        renderedAnswer: "<p>Писать на языке Markdown <em>просто</em>!</p>"
       },
       1: {
-        startingText: "I will complete these lessons!",
-        renderedAnswer: "<p>I <strong>will</strong> complete these lessons!</p>"
+        startingText: "Я выучу язык Markdown!",
+        renderedAnswer: "<p>Я <strong>выучу</strong> язык Markdown!</p>"
       },
       2: {
-        startingText: "\"Of course,\" she whispered. Then, she shouted: \"All I need is a little moxie!\"",
-        renderedAnswer: "<p>\"<em>Of course</em>,\" she whispered. Then, she shouted: \"All I need is <strong>a little moxie</strong>!\"</p>"
+        startingText: "Курсив привлекает внимание читателя. Жирный шрифт выделяет важную информацию.",
+        renderedAnswer: "<p>Курсив <em>привлекает внимание читателя</em>. Жирный шрифт <strong>выделяет важную информацию</strong>.</p>"
       },
       3: {
-        startingText: "If you're thinking to yourself, This is unbelievable, you'd probably be right.",
-        renderedAnswer: "<p>If you're thinking to yourself, <strong><em>This is unbelievable</em></strong>, you'd probably be right.</p>"
+        startingText: "Если вы думаете \"Это невероятно\", вы скорее всего правы.",
+        renderedAnswer: "<p>Если вы думаете \"<strong><em>Это невероятно</em></strong>\", вы скорее всего правы.</p>"
       }
     },
     2: {

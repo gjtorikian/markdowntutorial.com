@@ -1,0 +1,86 @@
+---
+layout: default
+title: 段落（Paragraphs）
+number: 7
+---
+
+<div class="row">
+  <p>Markdown 有數種標記段落的方法。</p>
+
+  <p>作為範例，我們來看看幾行詩。假設你希望寫一段這樣的文字：
+  </p>
+  <p>
+    Do I contradict myself?<br />
+    Very well then I contradict myself,<br />
+    (I am large, I contain multitudes.)
+  </p>
+  <p>
+    你可能會想，這沒什麼難的，照每行的順序輸入就好：
+  </p>
+  <pre>
+Do I contradict myself?
+Very well then I contradict myself,
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>
+    遺憾的是，事情並非如此。對 Markdown 語法而言，會將其呈現為同一行：Do I contradict myself? Very well then I contradict myself,
+    (I am large, I contain multitudes.).
+  </p>
+  <p>
+    如果你硬是在他們之間插入空行，結果反而會將其分段，會變成：
+  </p>
+  <pre>
+Do I contradict myself?
+
+Very well then I contradict myself,
+
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>
+    這樣的結果其實就是<em>硬換行（Hard break）</em>，然而對我們的詩而言，想要的是<em>軟換行（Soft break）</em>。軟換行的標記方式，是在每行<em>行末</em>多輸入兩個空格字元。
+  </p>
+  <pre>
+Do I contradict myself?··
+Very well then I contradict myself,··
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>此處的點 ( <code>·</code> ) 是用來表示空格。</p>
+
+  <p>
+    那麼就來練習這個技巧吧。在下方的文字框，插入適當數量的空格，好讓詩詞能正確呈現：
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="在左邊的文字框中輸入答案，Markdown 的結果會呈現在右邊。答案正確時，下一步課程就會出現。"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">略過</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>做得好！</p>
+    <p>除了用來排版詩詞，還有一個常用到軟換行的場合，是對清單裡的段落進行排版。回憶上一堂課的內容，我們在清單裡以插入空行的方式，來將多個段落分段。</p>
+    <p>在下方的文字框，將硬換行替換為軟換行，以縮緊子段落：</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">略過</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>現在你知道如何在 Markdown 中插入軟換行了。</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.conclusion[page.locale].href }}"
+    >前往下堂課</a
+  >
+</div>

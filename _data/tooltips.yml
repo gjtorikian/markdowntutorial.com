@@ -20,6 +20,9 @@ lesson_1:
   zh-cn:
     href: /zh-cn/lesson/1
     title: 斜体和加粗
+  zh-tw:
+    href: /zh-tw/lesson/1
+    title: 斜體及粗體（Italics and Bold）    
 lesson_2:
   en:
     href: /lesson/2
@@ -42,6 +45,9 @@ lesson_2:
   zh-cn:
     href: /zh-cn/lesson/2
     title: 标题
+  zh-tw:
+    href: /zh-tw/lesson/2
+    title: 標題（Headers）    
 lesson_3:
   en:
     href: /lesson/3
@@ -64,6 +70,9 @@ lesson_3:
   zh-cn:
     href: /zh-cn/lesson/3
     title: 超链接
+  zh-tw:
+    href: /zh-tw/lesson/3
+    title: 超連結（Links）    
 lesson_4:
   en:
     href: /lesson/4
@@ -86,6 +95,9 @@ lesson_4:
   zh-cn:
     href: /zh-cn/lesson/4
     title: 图片
+  zh-tw:
+    href: /zh-tw/lesson/4
+    title: 圖片（Images）    
 lesson_5:
   en:
     href: /lesson/5
@@ -108,6 +120,9 @@ lesson_5:
   zh-cn:
     href: /zh-cn/lesson/5
     title: 引用块
+  zh-tw:
+    href: /zh-tw/lesson/5
+    title: 引用區塊（Blockquotes）    
 lesson_6:
   en:
     href: /lesson/6
@@ -130,6 +145,9 @@ lesson_6:
   zh-cn:
     href: /zh-cn/lesson/6
     title: 列表
+  zh-tw:
+    href: /zh-tw/lesson/6
+    title: 清單（Lists）
 lesson_7:
   en:
     href: /lesson/7
@@ -152,6 +170,9 @@ lesson_7:
   zh-cn:
     href: /zh-cn/lesson/7
     title: 段落
+  zh-tw:
+    href: /zh-tw/lesson/7
+    title: 段落（Paragraphs）    
 conclusion:
   en:
     href: /conclusion
@@ -174,3 +195,6 @@ conclusion:
   zh-cn:
     href: /zh-cn/conclusion
     title: 总结
+  zh-tw:
+    href: /zh-tw/conclusion
+    title: 總結    

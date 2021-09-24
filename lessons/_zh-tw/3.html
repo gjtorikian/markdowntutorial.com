@@ -1,0 +1,70 @@
+---
+layout: default
+title: 超連結（Links）
+number: 3
+---
+
+<div class="row">
+<p>我們將學習如何連結到其他網站。</p>
+
+<p>Markdown 裡有兩種連結，它們最終呈現的效果都相同。我們要介紹的第一種方式稱為 <em>行內連結</em>。建立行內連結的方式如下：將要顯示的文字輸入在方括號 ( <code>[ ]</code> )內，並將連結網址包在括號 ( <code>( )</code> )內。比方說，你想要建立一個前往 www.github.com 的超連結，並讓其顯示的文字為「前往 GitHub!」在 Markdown 中會寫為： <code>[前往 GitHub!](www.github.com)</code>。</p>
+
+<p>在下方的文字框，建立一個顯示為「Search for it.」並前往 www.google.com 的連結。</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="在左邊的文字框中輸入答案，Markdown 的結果會呈現在右邊。答案正確時，下一步課程就會出現。"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">略過</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>做得好！</p>
+  <p>你也可以讓連結文字以斜體、粗體顯示。在下方的文字框，將「really, really」改為粗體，並把整句連結至 www.dailykitten.com。
+  記得將粗體的標記包在連結文字中。</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">略過</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>非常棒！</p>
+  <p>雖然看起來有點怪，但其實你也可以在標題中放入連結。</p>
+  <p>將文字設為四號標題，並把「the BBC」連結至 www.bbc.com/news，以前往課程的下一步。</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">略過</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>That's all there is to writing inline links.</p>
+  <p>另一種形式的連結稱為 <em>參照連結</em>。如同字面意思，這種連結實際上會參照文件中其他地方的內容。看不懂沒關係，考慮下方這個例子：</p>
+  <pre>
+     Here's [a link to something else][another place].
+     Here's [yet another link][another-link].
+     And now back to [the first link][another place].
+
+     [another place]: www.github.com
+     [another-link]: www.google.com
+  </pre>
+  <p>例子中的「參照」是每行的第二組方括號：<code>[another place]</code> 及
+    <code>[another-link]</code>. 在 Markdown 文件的底部，這些方括號才被賦予確切網址的正式定義。這種參照連結的方式有個好處，就是多個指向相同地方的連結，可以使用標籤代稱，之後僅需統一對其賦予定義。比方說，我們決定將所有 <code>[another place]</code> 連結指向其他網站，不必一一修改，僅需改變參照本身的定義就好。</p>
+  <p>參照本身的定義內容，不會被彩現。它的格式為包著標籤的方括號，接著冒號，接著網址。</p>
+  <p>在下方的文字框，有一些寫到一半的參照連結，你的任務是將它們完成！將第一個參照標籤寫為「a fun place」，並讓它連結到 www.zombo.com；將第二個連結指向 www.stumbleupon.com。</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">略過</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>那麼現在你已經了解如何在 Markdown 連結到其他網站了。</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_4[page.locale].href }}">前往下堂課</a>
+</div>

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-bundle config set path 'vendor/cache'
-bundle install --local

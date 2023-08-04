@@ -59,7 +59,7 @@
         startingText:
           "¿Quiere ver [algo divertido][]?\n\nBien, tengo [el sitio web para usted][otro sitio divertido]!",
         renderedAnswer:
-          '<p>Quiere ver <a href="http://www.zombo.com">algo divertido</a>?</p>\n<p>Bien, tengo <a href="http://www.stumbleupon.com">el sitio web para usted</a>!</p>'
+          '<p>¿Quiere ver <a href="http://www.zombo.com">algo divertido</a>?</p>\n<p>Bien, tengo <a href="http://www.stumbleupon.com">el sitio web para usted</a>!</p>'
       }
     },
     4: {

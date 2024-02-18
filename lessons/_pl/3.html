@@ -1,0 +1,88 @@
+---
+layout: default
+title: Linki
+number: 3
+---
+
+<div class="row">
+<p>Teraz dowiemy się, jak podlinkowywać inne strony używając Markdownu.</p>
+
+<p>Są dwa różne typy linków w Mardownie ale każda z nich renderuje się w ten sam sposób.
+  Pierwszy sposób to <em>hotlink</em>. Aby stworzyć hotlink, otaczasz frazę w nawiasach kwadratowych
+  ( <code>[ ]</code> ), a następnie link w zwykłym nawiasie ( <code>( )</code> ). Na przykład aby 
+  podlinkować www.github.com jako tekst, który mówi: "Odwiedź GitHub!", należy napisać to w ten sposób: 
+  <code>[Odwiedź GitHub!](www.github.com)</code>.</p>
+
+<p>W okienku poniżej, podlinkuj www.google.com, jako tekst mówiący "Poszukaj tego."</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Pomiń</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Dobrze poszło!</p>
+  <p>Możesz dodać podkreślenie do linku, jeśli chcesz. W okienku poniżej, spraw, aby fraza
+  "bardzo, bardzo" była pogrubiona, jednocześnie podlinkuj całe zdanie do www.dailykitten.com.
+  Pamiętaj, że pogrubienie musi znaleźć się w linkujących nawiasach kwadratowych.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Fantastycznie!</p>
+  <p>Mimo tego, że może wydawać się to nieco dziwne, ale możesz podlinkować
+  także nagłówki</p>
+  <p>Teraz, spraw aby nagłówek był poziomu czwartego i frazę
+  "BBC" podlinkuj do www.bbc.com/news:</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>To wszystko o hotlinkach.</p>
+  <p>Inny typ linku to link <em>referencyjny</em>. Jak nazwa sugeruje,
+    link jest tak na prawdę odniesieniem do innego miejsca w dokumencie. Oto przykład, tego
+    o co chodzi:</p>
+  <pre>
+     Tu jest [link do][innego miejsca].
+     Tu jest [kolejny link do][inny-link].
+     A teraz wracając do [pierwszego linku][inne miejsce].
+
+     [inne miejsce]: www.github.com
+     [inny-link]: www.google.com
+  </pre>
+  <p>Powyższe "odniesienia" to drugi zestaw nawiasów: <code>[inne miejsce]</code> i
+    <code>[inny-link]</code>. Na dole dokumentu Markdown, te kwadratowe nawiasy definiują
+    odniesienie do innej strony. Zaleta stylu łącza referencyjnego
+    polega na tym, że wiele linków do tego samego miejsca wystarczy zaktualizować tylko raz.
+    Na przykład, jeśli zdecydujemy sprawić, aby wszytskie <code>[inne miejsce]</code> linki 
+    przenosiły gdzieś indziej, to wystarczy, że zmienimy tylko raz przypisanie linku, a 
+    wszytskie odwołania do niego będą działać z nowym linkiem</p>
+  <p>Linki referencyjne nie są widoczne w wyrenderowanym dokumencie Markdown. Definiujesz 
+    je poprzez podanie tej samej nazwy tagu ujętej w nawiasy, po której następuje 
+    dwukropek i link.</p>
+  <p>W okienku poniżej, zaczęliśmy pisać parę linków referencyjnych. Twoim zadaniem jest
+    je dokończyć! Nazwij pierwszy link "fajne miejsce", i podlinkuj go do www.zombo.com; 
+    drugi link powinien prowadzić do www.stumbleupon.com.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Teraz wiesz jak linkować w Markdownie!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_4[page.locale].href }}">Lecimy dalej!</a>
+</div>

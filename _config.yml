@@ -99,4 +99,9 @@ defaults:
       type: "zh-tw"
     values:
       locale: "zh-tw"
+  - scope:
+      path: ""
+      type: "pl"
+    values:
+      locale: "pl"
       

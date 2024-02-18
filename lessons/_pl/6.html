@@ -1,0 +1,196 @@
+---
+layout: default
+title: Listy
+number: 6
+---
+
+<div class="row">
+<p>Ten poradnik pokrywa wszytsko co trzeba wiedzieć o listach w Markdownie.</p>
+
+<p>Istnieją dwie wersje list: nieuporządkowana i uporządkowana.
+To dziwny sposób na powiedzenie że są listy z punktami i liczbami</p><p>Aby stworzyć 
+  nieuporządkowaną listę, należy poprzedzić tekst gwiazdką ( <code>*</code> ). Każdy
+  obiekt musi dostać swoją nową linię. Na przykład,
+  lista zakupów w Markdownie może wyglądać tak:</p>
+  <pre>
+* Mleko
+* Jajka
+* Łosoś
+* Masło
+</pre>
+<p>Ta lista kóncowo wyrenderuje się w:</p>
+<ul>
+  <li>Mleko</li>
+  <li>Jajka</li>
+  <li>Łosoś</li>
+  <li>Masło</li>
+</ul>
+<p>W okienku poniżej, przekrztałć słowa oddzielone przecinkiem w nieuporządkowaną
+  listę.</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Napisz odpowiedź w okienku po lewej, a sformatowany tekst w Markdownie pojawi się po prawej stronie. Jeśli odpowiedź będzie porawna, zostaniesz poprowadzony do kolejnej lekcji"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Pomiń</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Spoko! To właśnie tak tworzy się nieuporządkowane listy. Pogadajmy teraz o uporządkowanych.</p>
+  <p>Obiekty w uporządkowanej liście są poprzedzone liczbami, a nie gwiazdkami. Spójrz na ten przepis:</p>
+  <ol>
+    <li>Rozbij 3 jajka nad miską</li>
+    <li>Do miski wlej litr mleka</li>
+    <li>Łososia energicznie natrzyj masłem</li>
+    <li>Wrzuć łososia do miski z mlekiem</li>
+  </ol>
+  <p>Aby napisać to w Markdownie, należy zrobić to w ten sposób:</p>
+<pre>
+1. Rozbij 3 jajka nad miską
+2. Do miski wlej litr mleka
+3. Łososia energicznie natrzyj masłem
+4. Wrzuć łososia do miski z mlekiem
+</pre>
+  <p>Proste, nie? Tak raczej wyobrażamy sobie listy, gdy o nich myślimy.</p>
+  <p>W okienku poniżej, przekrztałć resztę przepisu w uprządkowaną listę</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Wspaniała robota!</p>
+  <p>Możesz zawsze dodać przechylenie, pogrubienie, lub linki w listach. Można było się spodziewać.
+    W okienku poniżej, zmień łacińskie nazwy roślin na kursywę.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Super!</p>
+  <p>Może zdarzyć, że będzie potrzeba
+  <em>zagnieżdżenia</em> jednej listy w drugiej. Nie ma co się obawiać, ponieważ składnia Markdownu jest
+    taka sama. Jedyne, co musisz zrobić, to pamiętać o wcięciu każdej gwiazdki
+      <em>o jedno miejsce więcej</em> niż poprzedni element.</p>
+  <p>Na przykład na poniższej liście dodamy do każdej listy podrzędnej
+     „główny” element listy, szczegółowo opisujący osoby:</p>
+<pre>
+* Zabarwienie
+ * Reporter
+ * Ma puszyste pomarańczowe włosy
+ * Przyjaciele z najwspanialszym psem na świecie
+* Plamiak
+ * Kapitan morski
+ * Ma fantastyczną brodę
+ * Uwielbia whisky
+    * Pewnie szkot?
+</pre>
+  <p>Po wyrenderowaniu lista ta zmienia się w następujące grupowanie:<p>
+<ul>
+  <li>Zabarwienie<ul>
+    <li>Reporter</li>
+    <li>Ma puszyste pomarańczowe włosy</li>
+    <li>Przyjaciele z najwspanialszym psem na świecie</li>
+  </ul>
+  </li>
+  <li>Plamiak<ul>
+    <li>Kapitan morski</li>
+    <li>Ma fantastyczną brodę</li>
+    <li>Uwielbia whisky<ul>
+      <li>Pewnie szkot?</li>
+      </ul>
+      </li>
+    </ul>
+    </li>
+</ul>
+  <p>W poniższym polu zamień cechy postaci na podpunkty.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Fantastycznie! Choć możesz kontynuować wcięcia i dodawać podlisty w nieskończoność, 
+    zazwyczaj dobrze jest zatrzymać się po trzech poziomach; w przeciwnym razie twój tekst 
+    staje się bałaganem.</p>
+  <p>Jest jeszcze jedno sztuczka z listami i wcięciami, którą zbadamy, a dotyczy ona 
+    przypadku akapitów. Załóżmy, że chcesz utworzyć listę wypunktowaną, która wymaga 
+    dodatkowego kontekstu (ale nie innego zestawienia). Na przykład może to wyglądać tak:</p>
+<ol>
+<li><p>Rozbij trzy jajka nad miską</p>
+<p>Teraz będziesz chciał rozbijać jajka w taki sposób, aby nie robić bałaganu.</p>
+<p>Jeśli zrobiłeś bałagan, użyj ręcznika, aby go posprzątać!</p>
+</li>
+<li><p>Wlej litr mleka do miseczki.</p>
+<p>W zasadzie, postępuj zgodnie z powyższymi wskazówkami: nie rób bałaganu, ale jeśli zrobisz, posprzątaj!</p>
+</li>
+<li><p>Wysmaruj łososia energicznie masłem.</p>
+<p>Przez "energicznie" rozumiemy surowy ruch pionowy. Julia Child kiedyś powiedziała:</p>
+<blockquote>
+<p>W górę i w dół i dookoła, tak właśnie idzie masło na łososia.</p>
+</blockquote>
+</li>
+<li><p>Upuść łososia do miski z jajkiem i mlekiem.</p>
+<p>Oto kilka technik upuszczania łososia:</p>
+<ul>
+<li>Sprawdź, czy nie ma pstrąga ani dzieci</li>
+<li>Użyj obu rąk</li>
+<li>Zawsze miej ręcznik pod ręką na wypadek bałaganu</li>
+</ul>
+</li>
+</ol>
+  <p>Aby utworzyć taki rodzaj tekstu, twój akapit musi zaczynać się 
+    od nowej linii poniżej punktu wypunktowania i musi być wcięty co 
+    najmniej o jeden znak spacji. Na przykład lista powyżej wygląda 
+    tak w Markdown:</p>
+  <pre>
+1. Rozbij trzy jajka nad miską
+
+ Teraz będziesz chciał rozbijać jajka w taki sposób, aby nie robić bałaganu.
+
+ Jeśli _zrobisz_ bałagan, użyj ręcznika, aby go posprzątać!
+
+2. Wlej litre mleka do miseczki.
+
+ W zasadzie, postępuj zgodnie z powyższymi wskazówkami: nie rób bałaganu, ale jeśli zrobisz, posprzątaj!
+
+3. Wysmaruj łososia energicznie masłem.
+
+   Przez "energicznie" rozumiemy surowy ruch pionowy. Julia Child kiedyś powiedziała:
+   > W górę i w dół i dookoła, tak właśnie idzie masło na łososia.
+4. Upuść łososia do miski z jajkiem i mlekiem.
+
+   Oto kilka technik upuszczania łososia:
+
+   * Sprawdź, czy nie ma pstrąga ani dzieci
+   * Użyj obu rąk
+   * Zawsze miej ręcznik pod ręką na wypadek bałaganu
+  </pre>
+
+  <p>Zauważ, że pierwsze dwa elementy mają pojedynczą 
+    spację. Wygląda to trochę dziwnie, więc możesz chcieć 
+    odpowiednio wcięć, aby dopasować znaki (jak elementy trzy 
+    i cztery). W tych akapitach możesz zawierać wszelkiego rodzaju 
+    inne elementy Markdown, takie jak cytaty blokowe, czy nawet 
+    inne listy!</p> <p>W poniższym polu zamień punkty wypunktowania na własne akapity.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Teraz wiesz, jak tworzyć listy w Markdown!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_7[page.locale].href }}">Lecimy dalej!</a>
+</div>

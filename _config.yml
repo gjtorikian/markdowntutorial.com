@@ -57,6 +57,9 @@ collections:
   zh-tw:
     output: true
     permalink: zh-tw/lesson/:name/
+  pl:
+    output: true
+    permalink: pl/lesson/:name/
 
 defaults:
   - scope:
@@ -99,4 +102,9 @@ defaults:
       type: "zh-tw"
     values:
       locale: "zh-tw"
+  - scope:
+      path: ""
+      type: "pl"
+    values:
+      locale: "pl"
       

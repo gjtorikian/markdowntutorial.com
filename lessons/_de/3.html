@@ -1,0 +1,88 @@
+---
+layout: default
+title: Links
+number: 3
+---
+
+<div class="row">
+<p>Wir werden nun lernen, wie man Links zu anderen Webseiten im World Wide Web erstellt.</p>
+
+<p>Es gibt zwei verschiedene Link-Stile in Markdown, die jedoch beide auf die gleiche Weise 
+  dargestellt werden. Der erste Link-Stil wird <em>Inline-Link</em> genannt. Um einen Inline-Link zu erstellen, 
+  wird der Linktext in eckige Klammern ( <code>[ ]</code> ) und dann der Link in Klammern ( <code>( )</code> ) eingeschlossen. 
+  Um zum Beispiel einen Hyperlink zu www.github.com zu erstellen, mit einem Linktext, der lautet: „Besuchen Sie GitHub!“, 
+  würden Sie folgendes in Markdown schreiben: <code>[Besuchen Sie GitHub!](www.github.com)</code>.</p>
+
+<p>Erstellen Sie in dem Feld unten einen Link zu www.google.com, mit einem Linktext, der lautet "Suche danach."</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Geben Sie Ihre Antworten in das linke Feld ein, und das Ergebniss erscheint im rechten Feld. Wenn Ihre Antwort richtig ist, werden Sie zur nächsten Lektion weitergeleitet"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Überspringe</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Gute Arbeit!</p>
+  <p>Sie können Linktexte hervorheben, wenn Sie möchten. Im untenstehenden Kasten machen Sie den Satz 
+    "wirklich, wirklich" fett und verlinken den gesamten Satz mit www.dailykitten.com. Achten Sie darauf, 
+    dass die fettgedruckte Formulierung innerhalb der Klammern des Linktextes steht.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Fantastisch!</p>
+  <p>Auch wenn es vielleicht etwas unpraktisch ist, können Sie auch innerhalb von Überschriften Links setzen.</p>
+  <p>Für das nächste Lernprogramm machen Sie den Text zu einer Überschrift vier 
+    und verwandeln den Satz „der BBC“ in einen Link zu www.bbc.com/news:</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Das ist alles, was es zum Schreiben von Inline-Links braucht.</p>
+  <p>Der andere Link-Stil wird als <em>Referenz</em>-Link bezeichnet. 
+     Wie der Name schon sagt, ist der Link eigentlich ein Verweis auf eine andere Stelle im Dokument.
+      Hier ist ein Beispiel dafür, was wir meinen:</p>
+  <pre>
+     Hier ist [ein Link zu einer Webseite][eine-webseite].
+     Hier ist [noch einen Link][ein-anderer-link]. 
+     Und jetzt zurück zu [dem ersten Link][eine-webseite].
+
+     [eine-webseite]: www.github.com
+     [ein-anderer-link]: www.google.com
+  </pre>
+
+  ```html
+  <p>Die "Referenzen" oben sind das zweite Set von Klammern: <code>[eine-webseite]</code> und
+    <code>[ein-anderer-Link]</code>. Am Ende eines Markdown-Dokuments werden diese Klammern
+    als richtige Links zu externen Webseiten definiert. Ein Vorteil des Referenzlink-Stils
+    ist, dass mehrere Links zum gleichen Ort nur einmal aktualisiert werden müssen. Zum
+    Beispiel, wenn wir beschließen, dass alle <code>[eine-webseite]</code> Links woanders
+    hinführen sollen, müssen wir nur den einzelnen Referenzlink ändern.</p>
+  <p>Referenzlinks erscheinen nicht im gerenderten Markdown. Du definierst sie, indem du denselben 
+    Tag-Namen in Klammern setzt, gefolgt von einem Doppelpunkt und dem Link.</p>
+  <p>Im unteren Feld haben wir angefangen, einige Referenzlinks zu schreiben. Du musst sie vervollständigen! 
+    Nenne den ersten Referenz-Tag "ein weiterer lustiger Ort" und verlinke ihn mit www.zombo.com; mache den zweiten Link zu 
+    www.stumbleupon.com.</p>
+
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Jetzt wissen Sie genau, wie man Links in Markdown erstellt!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_4[page.locale].href }}">Auf zur nächsten Lektion!</a>
+</div>

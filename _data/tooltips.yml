@@ -26,6 +26,9 @@ lesson_1:
   pl:
     href: /pl/lesson/1
     title: Kursywa i pogrubienie
+  de:
+    href: /de/lesson/1
+    title: Kursiv- und Fettdruck
 lesson_2:
   en:
     href: /lesson/2
@@ -54,6 +57,9 @@ lesson_2:
   pl: 
     href: /pl/lesson/2
     title: Nagłówki
+  de:
+    href: /de/lesson/2
+    title: Überschriften
 lesson_3:
   en:
     href: /lesson/3
@@ -82,6 +88,9 @@ lesson_3:
   pl:
     href: /pl/lesson/4
     title: Linki
+  de:
+    href: /de/lesson/3
+    title: Links
 lesson_4:
   en:
     href: /lesson/4
@@ -110,6 +119,9 @@ lesson_4:
   pl: 
     href: /pl/lesson/4
     title: Zdjęcia
+  de: 
+    href: /de/lesson/4
+    title: Bilder
 lesson_5:
   en:
     href: /lesson/5
@@ -138,6 +150,9 @@ lesson_5:
   pl:
     href: /pl/lesson/5
     title: Grawisy
+  de:
+    href: /de/lesson/5
+    title: Blockquotes
 lesson_6:
   en:
     href: /lesson/6
@@ -166,6 +181,9 @@ lesson_6:
   pl:
     href: /pl/lesson/6
     title: Listy
+  de:
+    href: /de/lesson/6
+    title: Listen
 lesson_7:
   en:
     href: /lesson/7
@@ -194,6 +212,9 @@ lesson_7:
   pl:
     href: /pl/lesson/7
     title: Akapity
+  de: 
+    href: /de/lesson/7
+    title: Paragraphen
 conclusion:
   en:
     href: /conclusion
@@ -222,3 +243,6 @@ conclusion:
   pl:
     href: /pl/podsumowanie
     title: Podsumowanie
+  de:
+    href: /de/conclusion
+    title: Fazit

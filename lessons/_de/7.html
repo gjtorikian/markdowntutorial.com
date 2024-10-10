@@ -1,0 +1,98 @@
+---
+layout: default
+title: Paragraphen
+number: 7
+---
+
+<div class="row">
+  <p>Markdown bietet mehrere Möglichkeiten zur Formatierung von Absätzen.</p>
+
+  <p>
+    Nehmen wir als Beispiel ein paar Gedichtzeilen. Angenommen, 
+    Sie wollen einen Text schreiben, der wie folgt aussieht:
+  </p>
+  <p>
+    Widerspreche ich mir selbst?<br />
+    Sehr wohl, dann widerspreche ich mir selbst,<br />
+    (Ich bin groß, ich enthalte viele.)
+  </p>
+  <p>
+    Nun könnte man meinen, dass die Eingabe jedes Verses in eine 
+    eigene Zeile ausreichen würde, um das Problem zu lösen:
+  </p>
+  <pre>
+Widerspreche ich mir selbst?
+Sehr wohl, dann widerspreche ich mir selbst,
+(Ich bin groß, ich enthalte viele.)
+</pre
+  >
+  <p>
+    Leider wäre das falsch! Dieses Markdown würde einfach als eine einzige gerade Linie dargestellt: 
+    Widerspreche ich mir selbst? Sehr wohl, dann widerspreche ich mir selbst, (Ich bin groß, ich enthalte viele.).
+  </p>
+  <p>
+    Wenn Sie zwangsweise eine neue Zeile einfügen, brechen Sie die Zusammengehörigkeit auf:
+  </p>
+  <pre>
+Widerspreche ich mir selbst?
+
+Sehr wohl, dann widerspreche ich mir selbst,
+
+(Ich bin groß, ich enthalte viele.)
+</pre
+  >
+  <p>
+    Dies ist ein so genannter <em>hard break</em>; in unserer Dichtung ist ein <em>soft break</em> 
+    erwünscht. Sie können dies erreichen, indem Sie <em>nach</em> jeder neuen Zeile zwei Leerzeichen einfügen. 
+    Das kann man nicht sehen, da Leerzeichen unsichtbar sind, aber es würde etwa so aussehen:
+  </p>
+  <pre>
+Widerspreche ich mir selbst?··
+Sehr wohl, dann widerspreche ich mir selbst,··
+(Ich bin groß, ich enthalte viele.)
+</pre
+  >
+  <p>Jeder Punkt ( <code>·</code> ) steht für ein Leerzeichen auf der Tastatur.</p>
+
+  <p>
+    Lassen Sie uns diese Methode ausprobieren. Fügen Sie in den unten stehenden Kasten die erforderliche Anzahl 
+    von Leerzeichen ein, damit das Gedicht korrekt wiedergegeben wird:
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Geben Sie Ihre Antworten in das linke Feld ein, und das Ergebniss erscheint im rechten Feld. Wenn Ihre Antwort richtig ist, werden Sie zur nächsten Lektion weitergeleitet"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Überspringen</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Fantastisch!</p>
+    <p>
+      Abgesehen von der Formatierung von Gedichten werden diese soft breaks häufig für die Formatierung von Absätzen 
+      in Listen verwendet. Erinnern Sie sich an die vorherige Lektion, in der wir eine neue Zeile für mehrere
+      Absätze in einer Liste eingefügt haben.
+    </p>
+    <p>
+      Im nachstehenden Kasten sollten Sie die Unterabsätze mit soft breaks statt mit hard breaks versehen:
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Et voila! Sie wissen jetzt, wie man in Markdown soft breaks macht!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.conclusion[page.locale].href }}"
+    >Auf zur nächsten Lektion!</a
+  >
+</div>

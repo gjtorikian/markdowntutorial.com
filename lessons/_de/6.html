@@ -1,0 +1,250 @@
+---
+layout: default
+title: Listen
+number: 6
+---
+
+<div class="row">
+  <p>In diesem Tutorial geht es um die Erstellung von Listen in Markdown.</p>
+
+  <p>
+    Es gibt zwei Arten von Listen im bekannten Universum: ungeordnete und geordnete. 
+    Das ist eine schicke Art zu sagen, dass es Listen mit Aufzählungspunkten und Listen mit Zahlen gibt.
+  </p>
+  <p>
+    Um eine ungeordnete Liste zu erstellen, müssen Sie jedem Eintrag in der Liste ein Sternchen ( <code>*</code> ) 
+    voranstellen und dann ein Leerzeichen folgen lassen. Jedes Element der Liste erhält außerdem eine eigene Zeile. 
+    Eine Lebensmittelliste in Markdown könnte zum Beispiel so aussehen:
+  </p>
+  <pre>
+* Milch
+* Eggs
+* Lachs
+* Butter
+</pre
+  >
+  <p>Diese Markdown-Liste würde in die folgenden Aufzählungspunkte umgewandelt:</p>
+  <ul>
+    <li>Milch</li>
+    <li>Eggs</li>
+    <li>Lachs</li>
+    <li>Butter</li>
+  </ul>
+  <p>Machen Sie aus den durch ein Komma getrennten Wörtern in dem unten stehenden Kasten eine Liste.</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Geben Sie Ihre Antworten in das linke Feld ein, und das Ergebniss erscheint im rechten Feld. Wenn Ihre Antwort richtig ist, werden Sie zur nächsten Lektion weitergeleitet"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Überspringen</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>
+      So geht's! So schreiben Sie eine ungeordnete Liste. Jetzt wollen wir über geordnete Listen sprechen.
+    </p>
+    <p>
+      Einer geordneten Liste werden Zahlen anstelle von Sternchen vorangestellt. 
+      Schauen Sie sich dieses Rezept an:
+    </p>
+    <ol>
+      <li>Drei Eier in eine Schüssel aufschlagen</li>
+      <li>Gießen Sie einen halben Liter Milch in die Schüssel</li>
+      <li>Den Lachs gründlich mit Butter einreiben</li>
+      <li>Den Lachs in die Eier-Milch-Schüssel geben</li>
+    </ol>
+    <p>Um das in Markdown zu schreiben, müssten Sie Folgendes tun:</p>
+    <pre>
+1. Drei Eier in eine Schüssel aufschlagen
+2. Gießen Sie einen halben Liter Milch in die Schüssel
+3. Den Lachs gründlich mit Butter einreiben
+4. Den Lachs in die Eier-Milch-Schüssel geben
+    </pre>
+    <p>Einfach, nicht wahr? Es sieht genau so aus, wie Sie es von einer Liste erwarten würden.</p>
+    <p>Verwandeln Sie den Rest des Rezepts in eine geordnete Liste in dem Feld unten.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Gute Arbeit!</p>
+    <p>
+      Sie können kursiv, fett oder Links innerhalb von Listen hinzufügen, wie Sie es erwarten würden. 
+      Machen Sie im Feld unten die lateinischen Namen der Pflanzen kursiv.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Herrlich!</p>
+    <p>
+      Gelegentlich werden Sie das Bedürfnis haben, eine Liste mit mehr <em>Tiefe</em> zu erstellen oder 
+      eine Liste in einer anderen zu <em>verschachteln</em>. Keine Angst, die Markdown-Syntax ist genau dieselbe. 
+      Sie müssen nur daran denken, jedes Sternchen um ein Leerzeichen mehr einzurücken als den vorhergehenden Eintrag.
+    </p>
+    <p>
+      In der folgenden Liste fügen wir beispielsweise jedem „Haupt“-Listenelement einige Unterlisten hinzu, 
+      in denen die Personen detailliert beschrieben werden:
+    </p>
+    <pre>
+* Tim
+ * Ein Reporter
+ * Hat orangefarbenes Haar
+ * Freunde mit dem tollsten Hund der Welt
+* Haddock
+ * Ein Schiffskapitän
+ * Hat einen fantastischen Bart
+ * Liebt Whiskey
+   * Möglicherweise auch Scotch?
+</pre
+    >
+    <p>Bei der Darstellung wird diese Liste zu folgender Gruppierung:</p>
+    <p></p>
+    <ul>
+      <li>
+        Tim
+        <ul>
+          <li>Ein Reporter</li>
+          <li>Hat orangefarbenes Haar</li>
+          <li>Freund mit dem tollsten Hund der Welt</li>
+        </ul>
+      </li>
+      <li>
+        Haddock
+        <ul>
+          <li>Ein Schiffskapitän</li>
+          <li>Hat einen fantastischen Bart</li>
+          <li>
+            Liebt whiskey
+            <ul>
+              <li>Möglicherweise auch Scotch?</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      Verwandeln Sie die Merkmale des Charakters in Unterpunkte in dem Feld unten.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>
+      Unglaublich! Sie können die Einrückung und das Hinzufügen von Unterlisten 
+      zwar unbegrenzt fortsetzen, aber in der Regel ist es eine gute Idee, nach
+      drei Ebenen aufzuhören, da Ihr Text sonst unübersichtlich wird.
+    </p>
+    <p>
+      Es gibt noch einen weiteren Trick für Listen und Einrückungen, den wir erforschen werden, 
+      und der den Fall von Absätzen betrifft. Nehmen wir an, Sie möchten eine Aufzählungsliste 
+      erstellen, die einen zusätzlichen Kontext erfordert (aber keine weitere Liste). Sie könnte 
+      zum Beispiel so aussehen:
+    </p>
+    <ol>
+      <li>
+        <p>Drei Eier in eine Schüssel aufschlagen.</p>
+        <p>
+          Nun müssen Sie die Eier so aufschlagen, dass keine Schweinerei entsteht.
+        </p>
+        <p>Wenn Sie <em>eine</em> Schweinerei machen, benutzen Sie ein Handtuch, um sie aufzuräumen!</p>
+      </li>
+      <li>
+        <p>Gießen Sie einen halben Liter Milch in die Schüssel.</p>
+        <p>
+          Grundsätzlich gilt derselbe Leitfaden wie oben: Sei nicht unordentlich, 
+          aber wenn du es bist, räume es auf!
+        </p>
+      </li>
+      <li>
+        <p>Den Lachs kräftig mit Butter einreiben.</p>
+        <p>
+          Mit „kräftig“ meinen wir eine streng vertikale Bewegung. Wie Julian einmal sagte:
+        </p>
+        <blockquote>
+          <p>Hoch und runter und rundherum, so geht Butter auf Lachs.</p>
+        </blockquote>
+      </li>
+      <li>
+        <p>Den Lachs in die Eier-Milch-Schüssel geben.</p>
+        <p>Hier einige Techniken zum Absetzen von Lachsen:</p>
+        <ul>
+          <li>Stellen Sie sicher, dass keine Kinder anwesend sind.</li>
+          <li>Beide Hände benutzen.</li>
+          <li>Halten Sie immer ein Handtuch bereit, falls Sie etwas verschmutzt haben.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+      Um diese Art von Text zu erstellen, muss Ihr Absatz in einer eigenen Zeile 
+      unterhalb des Aufzählungspunkts beginnen und um mindestens ein Leerzeichen 
+      eingerückt sein. Die obige Liste sieht in Markdown zum Beispiel so aus:
+    </p>
+    <pre>
+1. Drei Eier in eine Schüssel aufschlagen.
+
+ Nun müssen Sie die Eier so aufschlagen, dass keine Schweinerei entsteht.
+
+ Wenn du eine Schweinerei machst, benutze ein Handtuch, um sie aufzuräumen!
+
+2. Gießen Sie einen halben Liter Milch in die Schüssel.
+
+ Grundsätzlich gilt derselbe Leitfaden wie oben: Seien Sie nicht unordentlich, aber wenn Sie es sind, räumen sie auf!
+
+3. Den Lachs kräftig mit Butter einreiben.
+
+   Mit „kräftig“ meinen wir eine streng vertikale Bewegung. Wie Julian einmal sagte:
+   > Hoch und runter und rundherum, so geht Butter auf Lachs.
+
+4. Den Lachs in die Eier-Milch-Schüssel geben.
+
+   Hier einige Techniken zum Absetzen von Lachsen:
+
+   * Stellen Sie sicher, dass keine Kinder anwesend sind.
+   * Beide Hände benutzen.
+   * Halten Sie immer ein Handtuch bereit, falls Sie etwas verschmutz haben.
+  </pre
+    >
+
+    <p>
+      Beachten Sie, dass die ersten beiden Einträge ein einzelnes Leerzeichen haben. 
+      Das sieht etwas seltsam aus, daher sollten Sie die Zeichen entsprechend einrücken 
+      (wie bei den Punkten drei und vier). In diese Absätze können Sie alle möglichen 
+      anderen Markdown-Elemente einfügen, z. B. Blockzitate oder sogar andere Listen!
+    </p>
+    <p>
+      Wandeln Sie die Aufzählungspunkte im folgenden Kasten in eigene Absätze um.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Sie wissen jetzt, wie man Listen in Markdown erstellt!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.lesson_7[page.locale].href }}"
+    >Auf zur nächsten Lektion!</a
+  >
+</div>

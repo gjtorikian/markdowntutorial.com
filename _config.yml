@@ -60,6 +60,9 @@ collections:
   pl:
     output: true
     permalink: pl/lesson/:name/
+  de:
+    output: true
+    permalink: de/lesson/:name/
 
 defaults:
   - scope:
@@ -107,4 +110,9 @@ defaults:
       type: "pl"
     values:
       locale: "pl"
+  - scope:
+      path: ""
+      type: "de"
+    values:
+      locale: "de"
       

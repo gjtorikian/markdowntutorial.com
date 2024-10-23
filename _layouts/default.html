@@ -21,7 +21,7 @@
     />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-    <link href="/assets/css/main.css" rel="stylesheet" />
+    {% asset main.css %}
   </head>
 
   <body>
@@ -255,9 +255,7 @@
       var environment = "production";
     </script>
 
-    <script src="/assets/js/main.js"></script>
-
-    {% if page.locale != 'en' %}
+    {% asset main.js %} {% if page.locale != 'en' %}
     <script src="/{{ page.locale }}/lesson_plans.js"></script>
     {% endif %}
   </body>

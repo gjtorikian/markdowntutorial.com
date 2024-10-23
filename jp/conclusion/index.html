@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="イタリックと太字 (Italics and Bold)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="見出し (Headers)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="リンク (Links)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="画像 (Images)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="引用 (Blockquotes)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="リスト (Lists)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="段落 (Paragraphs)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/jp/conclusion"
+              data-toggle="tooltip"
+              data-original-title="結論"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Conclusion</h1>
+      </div>
+
+      <p>全てのレッスンが完了しました！</p>
+
+<p>信じられないことですが、これらはマークダウンでできることの_ほんの少し_でしかありません。
+表や定義リスト、注釈などをサポートする「拡張書式」がたくさんありますが、ここでは基礎を学んでもらう為、標準のものだけを載せています。</p>
+
+<p>もっとマークダウン書式について興味がある人は、これらのマークダウンアプリやチュートリアルを見てみましょう。</p>
+
+<ul>
+  <li>
+    <p><a href="https://daringfireball.net/projects/markdown/">https://daringfireball.net/projects/markdown/</a></p>
+  </li>
+  <li>
+    <p><a href="https://spec.commonmark.org/dingus/">https://spec.commonmark.org/dingus/</a></p>
+  </li>
+  <li>
+    <p><a href="https://johnmacfarlane.net/babelmark2/faq.html">https://johnmacfarlane.net/babelmark2/faq.html</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.markdownguide.org">https://www.markdownguide.org</a></p>
+  </li>
+  <li>
+    <p><a href="https://dave.autonoma.ca/blog/2019/05/22/typesetting-markdown-part-1/">https://dave.autonoma.ca/blog/2019/05/22/typesetting-markdown-part-1/</a></p>
+  </li>
+  <li>
+    <p><a href="http://idratherbewriting.com/2013/06/04/exploring-markdown-in-collaborative-authoring-to-publishing-workflows/">http://idratherbewriting.com/2013/06/04/exploring-markdown-in-collaborative-authoring-to-publishing-workflows/</a></p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/Markdown#Example">https://en.wikipedia.org/wiki/Markdown#Example</a></p>
+  </li>
+  <li>
+    <p><a href="https://docs.gitlab.com/ee/user/markdown.html">https://docs.gitlab.com/ee/user/markdown.html</a></p>
+  </li>
+  <li>
+    <p><a href="https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax</a></p>
+  </li>
+</ul>
+
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/jp/lesson_plans.js"></script>
+    
+  </body>
+</html>

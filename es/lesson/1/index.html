@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 1
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/es/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Cursivas y negrita"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Encabezados"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Enlaces"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Imágenes"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Citas"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listas"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Párrafos"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/conclusion"
+              data-toggle="tooltip"
+              data-original-title="¡Felicidades!"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Cursivas y negrita</h1>
+      </div>
+
+      <div class="row">
+
+  <p>Empezaremos aprendiendo dos elementos básicos a la hora de dar formato a un texto: <em>cursivas</em>
+  y <strong>negritas</strong>. ¡En estas lecciones, verá partes <code>con formato en texto rojo</code>;
+  este texto está escrito en Markdown! El Markdown no tiene un aspecto diferente
+  al texto normal, pero de esta manera destacamos en este tutorial el texto, para que sea sencillo de ver.</p>
+
+  <p>Para poner una palabra o palabras en <em>cursiva</em> en Markdown, debe poner al inicio y al final
+  de las palabra un guión bajo (<code>_</code> ). Por ejemplo, <code>_esta_</code> palabra se convertiría en <em>cursiva</em>.</p>
+
+  <p>Para esta siguiente lección, convierta la palabra "no" en cursiva.</p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Escriba sus respuestas en el recuadro de la izquierda, y el resultado en Markdown parecerá en el recuadro de a derecha. Cuando su respuesta sea correcta, será llevado a la siguiente lección."></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Omitir</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>¡Asombroso! Buen trabajo.</p>
+  <p>De manera similar, para poner una palabra o palabras en <strong>negrita</strong> en Markdown, debe poner al inicio y al final
+  de las palabra dos asteriscos ( <code>**</code> ). Esto <code>**realmente**</code> dará enfasis a sus puntos de vista.</p>
+  <p>En el recuadro inferior, convierta la palabra "Completaré" en negrita.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Omitir</button>
+</div>
+
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>¡Buen trabajo!</p>
+  <p>Por supuesto, puede utilizar <code>_tanto las cursivas como negritas_</code> en la misma línea.
+    También puede abarcar <code>**múltiples palabras**</code>.</p>
+  <p>En el recuadro inferior, haga que las palabras "Por supuesto" estén en cursiva y las palabras "un poco de moxie" en negrita.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Omitir</button>
+</div>
+
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr>
+    <p>¡Fantástico!</p>
+    <p>Para el ejercicio final en esta lección, vamos a poner algunas palabras en <em>negrita
+    <strong>y</strong> cursiva</em>.</p>
+    <p>En general, no importa en qué orden ponga los asteriscos o los guiones bajos.
+      En el recuadro inferior, haga que las palabras "Esto es increible" estén tanto en negrita como cursiva.
+      Coloque los asteriscos <code>**_en la parte exterior_**</code>, simplemente para hacerlo más legible.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Omitir</button>
+</div>
+
+
+<div class="toBeRevealed">
+  <hr>
+  <p>¡Ahora ya sabe cómo poner palabras en negrita y cursiva!</p>
+  <a class="btn btn-lg btn-success" href="/es/lesson/2">¡Vamos a la siguiente lección!</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/es/lesson_plans.js"></script>
+    
+  </body>
+</html>

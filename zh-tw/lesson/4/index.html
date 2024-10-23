@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 4
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="斜體及粗體（Italics and Bold）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="標題（Headers）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="超連結（Links）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/zh-tw/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="圖片（Images）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="引用區塊（Blockquotes）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="清單（Lists）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="段落（Paragraphs）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/conclusion"
+              data-toggle="tooltip"
+              data-original-title="總結"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">圖片（Images）</h1>
+      </div>
+
+      <div class="row">
+<p>如果你知道如何在 Markdown 中建立連結，那你也會插入圖片，因為兩者的語法十分相似。</p>
+
+<p>同連結一樣，插入圖片也有兩種類型的寫法，且最終呈現的成果亦相同。圖片及連結在語法上的差別，在於插入圖片時，須以驚嘆號 ( <code>!</code> ) 開頭。</p>
+
+<p>第一種方式稱為 <em>行內圖片連結</em>，要建立行內的圖片連結，首先要打驚嘆號 ( <code>!</code> )，將替代文字（為視障者描述圖片的一段文字）輸入在方括號 ( <code>[ ]</code> ) 裡，最後再將圖片的連結包在一對括號 ( <code>( )</code> ) 中。</p>
+
+<p>舉例而言，要插入一張位於 https://octodex.github.com/images/bannekat.png 的圖片，其替代文字為 Benjamin Bannekat，在 Markdown 中的寫法為：<code>![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)</code></p>
+
+<p>作為練習，請在下方的文字框內，將這段連結改以圖片呈現，並在方括號填入一段替代文字「A pretty tiger」。</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="在左邊的文字框中輸入答案，Markdown 的結果會呈現在右邊。答案正確時，下一步課程就會出現。"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">略過</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>太棒了！</p>
+  <p>儘管替代文字並非 <em>必填</em>，但有了它會讓文件更容易被閱讀，包含視障者、使用螢幕閱讀器的讀者、或網路連線狀況不佳的人們。</p>
+  <p>接著我們要介紹的插入圖片的方式，就如同參照連結一般。你會以驚嘆號開頭，並以一對方括號包住替代文字，接著兩對表示圖片標籤的方括號，寫法如下：
+     <code>![The founding father][Father]</code> 在 Markdown 文件的底部，才定義了每個標籤指向的位址，像是： <code>[Father]: http://octodex.github.com/images/founding-father.jpg</code></p>
+  <p>在下方的文字框，有些寫到一半的圖片連結，你的任務是以參照連結的方式將它們完成，就像上一堂課做的那樣。
+    將首個參照標籤設為「Black」並讓它連結到 <code>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code>；讓第二幅圖片連結到
+    <code>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code></p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">略過</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>這樣你就學會了如何以 Markdown 語法插入圖片。</p>
+  <a class="btn btn-lg btn-success" href="/zh-tw/lesson/5">前往下堂課</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/zh-tw/lesson_plans.js"></script>
+    
+  </body>
+</html>

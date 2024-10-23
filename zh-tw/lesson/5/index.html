@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 5
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="斜體及粗體（Italics and Bold）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="標題（Headers）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="超連結（Links）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="圖片（Images）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/zh-tw/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="引用區塊（Blockquotes）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="清單（Lists）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="段落（Paragraphs）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/conclusion"
+              data-toggle="tooltip"
+              data-original-title="總結"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">引用區塊（Blockquotes）</h1>
+      </div>
+
+      <div class="row">
+<p>有時你需要將讀者的目光聚焦至一段引文，或是自雜誌文章上擷取某一段話，此時 Markdown 提供的 <em>引用區塊</em> 功能就十分方便。引用區塊的作用，是特別凸顯一段句子或段落，以吸引讀者的注意。例如：</p>
+  <blockquote><p>
+  "The sin of doing nothing is the
+  deadliest of all the seven sins. It has been said that for evil men to accomplish
+  their purpose it is only necessary that good men should do nothing."
+</p></blockquote>
+
+<p>插入引用區塊的方式，是在行首加入一個「大於」符號 (<code>></code>)。例如：
+<pre>
+> "In a few moments he was barefoot, his stockings folded in his pockets and his
+  canvas shoes dangling by their knotted laces over his shoulders and, picking a
+  pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
+  the slope of the breakwater."
+</pre>
+</p>
+
+<p>在下方的文字框，將這段書本的引言改為引用區塊</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="在左邊的文字框中輸入答案，Markdown 的結果會呈現在右邊。答案正確時，下一步課程就會出現。"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">略過</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>很棒喔！</p>
+  <p>你也可以在引文的行首插入一個大於符號 (>)，這在引文有多個篇幅時特別有用。例如：</p>
+  <pre>
+> His words seemed to have struck some deep chord in his own nature. Had he spoken
+of himself, of himself as he was or wished to be? Stephen watched his face for some
+moments in silence. A cold sadness was there. He had spoken of himself, of his own
+loneliness which he feared.
+>
+> —Of whom are you speaking? Stephen asked at length.
+>
+> Cranly did not answer.</pre>
+  <p>注意到空行的行首也需要有大於符號 (>)，這樣才能使整段引用文字被正確辨識為同一區塊。</p>
+
+  <p>在下方的文字框，在每行行首插入一個大於符號 (>)，將內容變成引用區塊。</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">略過</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>做得太好了！</p>
+  <p>引用區塊當中可以包含其他 Markdown 元素，例如斜體字、圖片、連結。</p>
+  <p>在下方的文字框，將整段文字變成引用區塊，再將文末的法文標記為斜體字（不包含驚嘆號）。</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">略過</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>噠啦！那麼你已經學會如何在 Markdown 中插入引用區塊了！</p>
+  <a class="btn btn-lg btn-success" href="/zh-tw/lesson/6">前往下堂課</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/zh-tw/lesson_plans.js"></script>
+    
+  </body>
+</html>

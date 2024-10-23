@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 6
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/fr/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Italiques et Gras"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/fr/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Titres"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/fr/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Liens"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/fr/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Images"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/fr/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Citations"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/fr/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listes"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/fr/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Paragraphes"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/fr/conclusion"
+              data-toggle="tooltip"
+              data-original-title="Conclusion"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Listes</h1>
+      </div>
+
+      <div class="row">
+<p>Ce tutoriel concerne la création de listes en Markdown.</p>
+
+<p>Il existe deux types de listes dans l'univers connu : non ordonnées et ordonnées.
+C'est une façon fantaisiste de dire qu'il y a des listes avec des puces, et des listes avec
+chiffres.</p>
+<p>Pour créer une liste non ordonnée, vous voudrez préfacer chaque élément de la liste avec
+  un astérisque ( <code>*</code>). Chaque élément de la liste a également sa propre ligne. Par exemple,
+  une liste d'épicerie en Markdown pourrait ressembler à ça :</p>
+  <pre>
+* Lait
+* Oeufs
+* Saumon
+* Beurre
+</pre>
+<p>Cette liste en Markdown se traduirait par les puces suivantes :</p>
+<ul>
+  <li>Lait</li>
+  <li>Oeufs</li>
+  <li>Saumon</li>
+  <li>Beurre</li>
+</ul>
+<p>Dans l'encadré ci-dessous, transformez les mots séparés par une virgule en une liste.</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Tapez vos réponses dans la case de gauche, et le Markdown formaté apparaît dans la case de droite. Dès votre réponse est correcte, vous serez guidé à la prochaine leçon"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Passer</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Très bien ! C'est comme ça qu'on fait une liste non ordonnée. Maintenant, parlons de l'ordre
+  ceux-là.</p>
+  <p>Une liste ordonnée est précédée de chiffres au lieu d'astérisques. Jetez un coup d'oeil à cette recette :</p>
+  <ol>
+    <li>Casser trois œufs dans un bol</li>
+    <li>Verser un litre de lait dans le bol</li>
+    <li>Mélanger vigoureusement le saumon avec du beurre</li>
+    <li>Déposer le saumon dans le bol de lait avec les œufs</li>
+  </ol>
+  <p>Pour écrire ça en Markdown, vous noterez ça :</p>
+<pre>
+1. Casser trois œufs dans un bol
+2. Verser un litre de lait dans le bol
+3. Mélanger vigoureusement le saumon avec du beurre
+4. Déposer le saumon dans le bol de lait avec les œufs
+</pre>
+  <p>Facile, n'est-ce pas ? C'est comme si on s'attendait à ce qu'une liste à lire.</p>
+  <p>Dans la boîte ci-dessous, transformez le reste de la recette en une liste ordonnée.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Quel travail fantastique !</p>
+  <p>Vous pouvez choisir d'ajouter des italiques, des caractères gras ou des liens dans les listes, comme vous pouvez vous y attendre.
+    Dans l'encadré ci-dessous, transformez les noms latins des plantes en italiques.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Magnigique !</p>
+  <p>À l'occasion, vous aurez peut-être besoin de faire une liste plus détaillée ou d'<em>imbriquer</em> une liste dans une autre. N'ayez crainte, car la syntaxe Markdown
+     est exactement la même. Tout ce que vous avez à faire est de ne pas oublier d'indenter chaque astérisque
+     <em>d'un espace de plus </em> que l'élément précédent.</p>
+  <p>Par exemple, dans la liste suivante, nous allons ajouter quelques sous-listes à chacune des
+    "principals" élément de la liste, décrivant les gens en détail :</p>
+<pre>
+* Tintin
+ * Un reporter
+ * A des cheveux oranges touffus
+ * Amis avec le chien le plus génial du monde
+* Haddock
+ * Un capitaine de navire
+ * A une barbe fantastique
+ * Adore le Whisky
+   * Peut-être aussi le scotch ?
+</pre>
+  <p>Lors de son rendu, cette liste devient le groupe suivant :<p>
+<ul>
+  <li>Tintin<ul>
+    <li>Un reporter</li>
+    <li>A des chevehxy oranges touffus</li>
+    <li>Amis avec le chien le plus génial du monde</li>
+  </ul>
+  </li>
+  <li>Haddock<ul>
+    <li>Un capitaine de navire</li>
+    <li>A une barbe fantastique</li>
+    <li>Adore le whisky<ul>
+      <li>Peut être aussi le scotch ?</li>
+      </ul>
+      </li>
+    </ul>
+    </li>
+</ul>
+  <p>Dans la case ci-dessous, transformez les caractéristiques du personnage en sous-éléments.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Stupéfiant ! Alors que vous pouvez continuer à indenter et ajouter des sous-listes indéfiniment,
+  c'est généralement une bonne idée de s'arrêter après trois niveaux ; sinon, votre texte sera
+  en désordre.</p>
+  <p>Il y a une autre astuce pour les listes et les indentations que nous allons explorer, et qui concerne le cas des paragraphes. Supposons que vous vouliez créer une liste à puces qui
+  nécessite un contexte supplémentaire (mais pas une autre liste). Par exemple, il pourrait
+  ressembler à ça :</p>
+<ol>
+<li><p>Casser trois œufs dans un bol.</p>
+<p>Maintenant, vous allez devoir casser les oeufs de telle sorte que vous ne fassiez pas de gâchis.</p>
+<p>Si vous <em>faites</em> du désordre, utilisez une serviette pour le nettoyer !</p>
+</li>
+<li><p>Verser un gallon de lait dans le bol.</p>
+<p>En gros, suivez les mêmes conseils que ci-dessus : ne soyez pas désordonné, mais si vous l'êtes, nettoyez-le !</p>
+</li>
+<li><p>Frotter vigoureusement le saumon avec du beurre.</p>
+<p>Par "vigoureux", on entend un mouvement strictement vertical. L'enfant de Julia s'est un jour moquée d'elle :</p>
+<blockquote>
+<p>De haut en bas et tout autour, c'est comme ça que le beurre va sur le saumon.</p>
+</blockquote>
+</li>
+<li><p>Mélanger le saumon dans le bol avec les oeufs et le lait.</p>
+<p>Voici quelques techniques sur le mélange du saumon</p>
+<ul>
+<li>S'assurer qu'il n'y a pas de truites ou d'enfants</li>
+<li>utilisez vos deux mains</li>
+<li>Ayez toujours une serviette à proximité en cas de dégâts</li>
+</ul>
+</li>
+</ol>
+  <p>Pour créer ce type de texte, votre paragraphe doit commencer sur une ligne toute seule.
+  sous le point de la puce, et ça doit être
+  dentelée d'au moins un espace. Par exemple, la liste ci-dessus ressemble à ceci en
+  Markdown :</p>
+  <pre>
+    1. Casser trois œufs dans un bol.
+
+     Maintenant, vous allez devoir casser les oeufs de telle sorte que vous ne fassiez pas de gâchis.
+
+     Si vous faites du désordre, utilisez une serviette pour le nettoyer !
+
+    2. Verser un gallon de lait dans le bol.
+
+     En gros, suivez les mêmes conseils que ci-dessus : ne soyez pas désordonné, mais si vous l'êtes, nettoyez-le !
+
+    3. Frotter vigoureusement le saumon avec du beurre.
+
+       Par "vigoureux", on entend un mouvement strictement vertical. L'enfant de Julia s'est un jour moquée d'elle :
+       > De haut en bas et tout autour, c'est comme ça que le beurre va sur le saumon.
+    4. Mélanger le saumon dans le bol avec les oeufs et le lait.
+
+       Voici quelques techniques sur le mélange du saumon :
+
+       * Assurez-vous qu'il n'y a pas de truites ou d'enfants
+       * Utilisez vos deux mains
+       * Ayez toujours une serviette à proximité en cas de désordre
+  </pre>
+
+  <p>Notez que les deux premiers éléments ont un seul espace. Ça a l'air un peu bizarre,
+    donc vous pourriez vouloir indenter correctement pour faire correspondre les caractères vers le haut (comme les éléments
+    trois et quatre). Dans ces paragraphes, vous pouvez inclure toutes sortes d'autres Markdown.
+    comme des citations, ou même d'autres listes !</p>
+  <p>Dans l'encadré ci-dessous, convertissez les puces en leurs propres paragraphes.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Passer</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Vous savez maintenant comment faire des listes en Markdown !</p>
+  <a class="btn btn-lg btn-success" href="/fr/lesson/7">A la prochaine leçon !</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/fr/lesson_plans.js"></script>
+    
+  </body>
+</html>

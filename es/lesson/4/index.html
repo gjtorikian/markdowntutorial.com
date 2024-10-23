@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 4
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Cursivas y negrita"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Encabezados"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Enlaces"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/es/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Imágenes"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Citas"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listas"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Párrafos"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/conclusion"
+              data-toggle="tooltip"
+              data-original-title="¡Felicidades!"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Imágenes</h1>
+      </div>
+
+      <div class="row">
+<p>Si ya sabe cómo crear enlaces en Markdown, también puede incluir imágenes. La
+  sintaxis es muy similar.</p>
+
+<p>Las imágenes también tienen dos estilos, igual que los enlaces y ambos funcionan de manera similar.
+  La diferencia entre los enlaces y las imágenes es que en el código de las imágenes
+  están precedidas por un símbolo de exclamación ( <code>!</code> ).</p>
+
+<p>El primer estilo de imagen es llamado, un <em>enlace en línea a una imagen</em>. Para crear un enlace
+  en línea a una imagen, escriba primero un símbolo de exclamación ( <code>!</code> ), encierre el texto entre corchetes ( <code>[ ]</code> ), y después encierre el enlace
+  entre paréntesis ( <code>( )</code> ). (El texto entre corchetes es una palabra o frase que sirve para describir la
+  imagen para personas ciegas.)</p>
+
+<p>Por ejemplo, para crear un enlace en línea a una imagen a https://octodex.github.com/images/bannekat.png, con un texto
+  que diga, Benjamin Bannekat, debería escribir esto en Markdown: <code>![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)</code>.</p>
+
+<p>En el recuadro inferior, convierta el enlace en una imagen y rellene el texto entre corchetes
+   para que diga "Un bonito tigre":</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Escriba sus respuestas en el recuadro de la izquierda, y el resultado en Markdown parecerá en el recuadro de a derecha. Cuando su respuesta sea correcta, será llevado a la siguiente lección"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Omitir</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>¡Muy bien!</p>
+  <p>Aunque no es <em>necesario</em> añadir el texto entre corchetes para que funcione de igual manera, hará que el contenido creado sea accesible para su audiencia, incluyendo personas que son ciegas, utilizan lectores de pantalla, o no tienen conexiones rápidas de internet. </p>
+  <p>Para las imágenes incluidas como referencia, seguiremos el mismo patrón que para los enlaces de referencia.
+    Deberá preceder el código de Markdown con un símbolo de exclamación,
+    después dos corchetes para el texto y dos corchetes más para la
+    etiqueta de la imagen. Al final de su página de Markdown, definirá
+    la imagen correspondiente para esa etiqueta, de esta manera:
+    <code>![El padre fundador][Padre]</code> Al final de su página de
+    Markdown, definirá una imagen para la etiqueta, de esta manera:
+    <code>[Padre]:
+    http://octodex.github.com/images/founding-father.jpg</code>.</p>
+  <p>En el recuadro inferior, hemos colocado algunas imágenes en
+  referencia; necesitará completarlas, como en la lección anterior.
+  Llame a la etiqueta de la primera referencia "Negro", y enlácela a
+  <code>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code>;
+  haga que la segunda imagen apunte a
+  <code>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code>.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Omitir</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>¡Tachán! Ha aprendido todo lo que hay que aprender sobre cómo añadir imágenes en Markdown!</p>
+  <a class="btn btn-lg btn-success" href="/es/lesson/5">¡Vamos a la siguiente lección!</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/es/lesson_plans.js"></script>
+    
+  </body>
+</html>

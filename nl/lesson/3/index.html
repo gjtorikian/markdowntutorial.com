@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 3
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Schuin en vetgedrukt"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Kopteksten"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/nl/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Hyperlinks"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Afbeeldingen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Blokcitaten"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Lijsten"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Paragrafen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/conclusion"
+              data-toggle="tooltip"
+              data-original-title="Conclusies"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Hyperlinks</h1>
+      </div>
+
+      <div class="row">
+<p>In dit hoofdstuk leer je hoe je links legt tussen websites. Links zijn een belangrijk deel van het World Wide Web.</p>
+
+<p>Er zijn twee soorten links in Markdown. Het resultaat is toch hetzelfde. De eerste is een <em>inline link</em>. De andere is een <em>referentie link</em>. We beginnen eerst met de inline link. Een link maak in twee delen. De tekst zet je tussen vierkante haken ( <code>[ ]</code> ) en de link (dus het www-adres) tussen ronde haken  ( <code>( )</code> ). Met dit voorbeeld maak je een link naar je favoriete website.<code> [De pracht en kracht van het programmeren](www.bjoc.nl)</code>. Het resultaat ziet er zo uit: [De pracht en kracht van het programmeren](www.bjoc.nl)
+
+
+<p>Maak in het veld hieronder een link naar Google. Met als tekst 'Zoek het maar uit'. <em>Let op!</em> Het adres van Google is <code>https://www.google.com</code></p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type in het veld aan de linkerkant het antwoord op de vraag. In het rechterveld zie je dan het resultaat. Heb je het goede antwoord dan kun je verder met de volgende opdracht."></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan!</p>
+  <p>Je kunt in een link nadruk leggen op tekst. You can add emphasis to link texts, if you like. In the box below, make the
+  phrase "really, really" bold, and have the entire sentence link to www.dailykitten.com.
+  You'll want to make sure that the bold phrasing occurs within the link text brackets.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Goed gedaan!</p>
+  <p>We gaan nu twee vaardigheden met elkaar combineren. Een koptekst waar ook een link in zit verwerkt.</p>
+  <p>In onderstaande veld maak je de volgende opdracht. Maak de tekst 'Het nieuwste nieuws van NOS' koptekst 4 en maak een link van het woord NOS naar <code>https://www.nos.nl</code></p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Dat was alles over inline links. We gaan nu verder met <em>referentielinks</em></p>
+  <p>De <em>referentie</em> link. Zoals de naam al doet ermoeden is dat een link naar een referentie. Je kunt in een Markdown document op een plek de link vastleggen (het referentiepunt) en deze op andere plekken gebruiken. Zie je het voordeel? Als de link gewijzigd moet worden hoeft dat maar op een plek. </p>
+  <pre>
+     Dit zijn links naar nieuwssites [link1][link2].
+     En dit zijn ook links naar nieuwssites [link1][link2].
+     En om het nog een keer te proberen, ook dit zijn links naar nieuwssites [link 1][link2].
+
+     [link1]: www.nu.nl
+     [link2]: www.google.com
+  </pre>
+  <p>
+    De "referenties" zijn <code> [link 1] </code> en
+     <code> [link 2] </code>. Onderaan een Markdown-document zijn deze haakjes terug te vinden. Bij de vierkante haken met daartussen de titel van de link staat een dubbele punt en daarna het linkadres. Maak onderstaande opdracht om dit hoofdstuk af te ronden.
+
+     Maak in het venster hieronder de referentielinks af. Noem de eerste referentielink 'een toffe plaats' en de tweede 'speciaal voor jou'. Zorg ervoor dat 'een toffe plaats' verwijst naar https://www.roermond.nl en de tweede naar https://www.limburg.nl.
+
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Jij legt echt iedere link nu met Markdown. Goed gedaan en ga door naar les 4!</p>
+  <a class="btn btn-lg btn-success" href="/nl/lesson/4">Door naar de volgende les!</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/nl/lesson_plans.js"></script>
+    
+  </body>
+</html>

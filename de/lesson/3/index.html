@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 3
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Kursiv- und Fettdruck"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Überschriften"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/de/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Links"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Bilder"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Blockquotes"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Paragraphen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/conclusion"
+              data-toggle="tooltip"
+              data-original-title="Fazit"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Links</h1>
+      </div>
+
+      <div class="row">
+<p>Wir werden nun lernen, wie man Links zu anderen Webseiten im World Wide Web erstellt.</p>
+
+<p>Es gibt zwei verschiedene Link-Stile in Markdown, die jedoch beide auf die gleiche Weise 
+  dargestellt werden. Der erste Link-Stil wird <em>Inline-Link</em> genannt. Um einen Inline-Link zu erstellen, 
+  wird der Linktext in eckige Klammern ( <code>[ ]</code> ) und dann der Link in Klammern ( <code>( )</code> ) eingeschlossen. 
+  Um zum Beispiel einen Hyperlink zu www.github.com zu erstellen, mit einem Linktext, der lautet: „Besuchen Sie GitHub!“, 
+  würden Sie folgendes in Markdown schreiben: <code>[Besuchen Sie GitHub!](www.github.com)</code>.</p>
+
+<p>Erstellen Sie in dem Feld unten einen Link zu www.google.com, mit einem Linktext, der lautet "Suche danach."</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Geben Sie Ihre Antworten in das linke Feld ein, und das Ergebniss erscheint im rechten Feld. Wenn Ihre Antwort richtig ist, werden Sie zur nächsten Lektion weitergeleitet"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Überspringe</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Gute Arbeit!</p>
+  <p>Sie können Linktexte hervorheben, wenn Sie möchten. Im untenstehenden Kasten machen Sie den Satz 
+    "wirklich, wirklich" fett und verlinken den gesamten Satz mit www.dailykitten.com. Achten Sie darauf, 
+    dass die fettgedruckte Formulierung innerhalb der Klammern des Linktextes steht.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Fantastisch!</p>
+  <p>Auch wenn es vielleicht etwas unpraktisch ist, können Sie auch innerhalb von Überschriften Links setzen.</p>
+  <p>Für das nächste Lernprogramm machen Sie den Text zu einer Überschrift vier 
+    und verwandeln den Satz „der BBC“ in einen Link zu www.bbc.com/news:</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Das ist alles, was es zum Schreiben von Inline-Links braucht.</p>
+  <p>Der andere Link-Stil wird als <em>Referenz</em>-Link bezeichnet. 
+     Wie der Name schon sagt, ist der Link eigentlich ein Verweis auf eine andere Stelle im Dokument.
+      Hier ist ein Beispiel dafür, was wir meinen:</p>
+  <pre>
+     Hier ist [ein Link zu einer Webseite][eine-webseite].
+     Hier ist [noch einen Link][ein-anderer-link]. 
+     Und jetzt zurück zu [dem ersten Link][eine-webseite].
+
+     [eine-webseite]: www.github.com
+     [ein-anderer-link]: www.google.com
+  </pre>
+
+  ```html
+  <p>Die "Referenzen" oben sind das zweite Set von Klammern: <code>[eine-webseite]</code> und
+    <code>[ein-anderer-Link]</code>. Am Ende eines Markdown-Dokuments werden diese Klammern
+    als richtige Links zu externen Webseiten definiert. Ein Vorteil des Referenzlink-Stils
+    ist, dass mehrere Links zum gleichen Ort nur einmal aktualisiert werden müssen. Zum
+    Beispiel, wenn wir beschließen, dass alle <code>[eine-webseite]</code> Links woanders
+    hinführen sollen, müssen wir nur den einzelnen Referenzlink ändern.</p>
+  <p>Referenzlinks erscheinen nicht im gerenderten Markdown. Du definierst sie, indem du denselben 
+    Tag-Namen in Klammern setzt, gefolgt von einem Doppelpunkt und dem Link.</p>
+  <p>Im unteren Feld haben wir angefangen, einige Referenzlinks zu schreiben. Du musst sie vervollständigen! 
+    Nenne den ersten Referenz-Tag "ein weiterer lustiger Ort" und verlinke ihn mit www.zombo.com; mache den zweiten Link zu 
+    www.stumbleupon.com.</p>
+
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Jetzt wissen Sie genau, wie man Links in Markdown erstellt!</p>
+  <a class="btn btn-lg btn-success" href="/de/lesson/4">Auf zur nächsten Lektion!</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/de/lesson_plans.js"></script>
+    
+  </body>
+</html>

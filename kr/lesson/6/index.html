@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 6
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="이탤릭체와 볼드체 (Italics and Bold)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="헤더 (Headers)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="링크 (Links)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="이미지 (Images)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="인용문 (Blockquotes)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/kr/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="리스트 (Lists)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="단락 (Paragraphs)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/conclusion"
+              data-toggle="tooltip"
+              data-original-title="마무리 (Conclusion)"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">리스트 (Lists)</h1>
+      </div>
+
+      <div class="row">
+<p>이번 튜토리얼은 마크다운에서 리스트 생성하는 방법에 대한 것입니다.</p>
+
+<p>리스트 타입은 보통 2가지가 존재합니다. 순서가 매겨지지 않은 것(unordered)과 순서가 매겨진 것(ordered)입니다.  
+  별표(*)로 된 리스트와 숫자로 된 리스트가 존재한다고 말씀드리는게 더 적절한거 같네요.</p>
+<p>순서가 매겨지지 않은 리스트를 생성하기 위해 여러분은 리스트의 각 항목에 별표( <code>*</code> )를 앞에 붙여주면 됩니다.
+  또한 각 항목은 자신의 라인을 가지고 있어야 합니다. 예를 들어, 마크다운으로 작성된 식료품 리스트는 다음처럼 작성할 수 있습니다:</p>
+  <pre>
+* 우유
+* 계란
+* 연어
+* 버터
+</pre>
+<p>이 마크다운 리스트는 다음과 같은 글머리 기호로 표시됩니다:</p>
+<ul>
+  <li>우유</li>
+  <li>계란</li>
+  <li>연어</li>
+  <li>버터</li>
+</ul>
+<p>아래 입력창에서, 쉼표 기준으로 각 단어를 순서가 매겨지지 않은 리스트로 바꿔보세요.</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">건너뜀</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>맞습니다! 이것이 순서가 매겨지지 않은 리스트를 작성하는 방법입니다. 이제 순서가 매겨진 리스트에 대해 말해보죠.</p>
+  <p>순서가 매겨진 리스트는 별표(*)대신에 숫자를 붙이면 됩니다. 아래에 요리법을 보세요:</p>
+  <ol>
+    <li>보울 위에 계란 세 개를 깨뜨린다</li>
+    <li>우유 3.7L를 보울에 붓는다</li>
+    <li>버터를 힘차게 연어를 문지른다</li>
+    <li>연어를 우유,계란을 쏟은 보울에 넣는다</li>
+  </ol>
+  <p>여러분은 마크 다운을 사용하여 이렇게 작성하면 됩니다:</p>
+<pre>
+1. 보울 위에 계란 세 개를 깨뜨린다
+2. 우유 3.7L를 보울에 붓는다
+3. 버터를 힘차게 연어에 문지른다
+4. 연어를 우유,계란을 쏟은 보울에 넣는다
+</pre>
+  <p>쉽죠? 여러분이 원했던 리스트 형태가 나옵니다.</p>
+  <p>아래 입력창에서, 요리법의 남은 순서를 순서가 매겨진 리스트로 바꿔보세요.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">건너뜀</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>환상적으로 해냈습니다!</p>
+  <p>예상했다시피, 여러분은 리스트 안에 이탤릭체, 볼드체, 링크를 추가할 수 있습니다.
+    아래 입력창에서, 식물의 라틴어 이름을 이탤릭체로 바꿔보세요.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">건너뜀</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>훌륭합니다!</p>
+  <p>때로는 좀 더 깊이 있는 리스트를 만들거나, 리스트에 다른 리스트를 <em>겹쳐서</em>  만들 수도 있습니다. 
+    겁먹지 마세요. 마크다운 구문은 거기서 거깁니다. 
+    여러분이 해야할 것은 앞의 항목보다 <em>공백 한 칸</em> 을 별표(*) 앞에 더 들여놓으면 됩니다.
+  <p>예를 들어, 하기 리스트에서 우리는 각 항목에 몇 개의 하위 항목을 추가할 것입니다. 인물에 대해 상세히 묘사해보자면:</p>
+<pre>
+* 틴틴
+ * 기자
+ * 얼간이 같은 주황색 머리
+ * 세상에서 제일 멋진 개와 친구들
+* 햅덕
+ * 선장
+ * 멋진 턱수염
+ * 위스키 좋아함
+   * 아마 스카치도?
+</pre>
+  <p>렌더링 되면, 이 리스트는 다음과 같은 형태로 바뀝니다.<p>
+<ul>
+  <li>틴틴<ul>
+    <li>기자</li>
+    <li>얼간이 같은 주황색 머리</li>
+    <li>세상에서 제일 멋진 개와 친구들</li>
+  </ul>
+  </li>
+  <li>햅덕<ul>
+    <li>선장</li>
+    <li>멋진 턱수염</li>
+    <li>위스키 좋아함<ul>
+      <li>아마 스카치도?</li>
+      </ul>
+      </li>
+    </ul>
+    </li>
+</ul>
+  <p>아래 입력창에서, 인물의 특징을 하위 목록으로 만들어보세요.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">건너뜀</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>엄청나네요! 여러분이 무한적으로 하위 리스트를 추가할 수 있지만, 대개는 3단계까지만 사용하는 것이 좋습니다. 
+    그렇지 않으면, 여러분의 텍스트는 엉망진창이 될 것입니다.</p>
+  <p>우리가 탐구할 리스트 들여쓰기가 하나 더 있습니다. 그것은 단락을 다루는 방법입니다.
+    여러분이 어떤 내용들이 추가될 순서가 매겨지지 않은 리스트를 생성한다고 가정해봅시다.
+    예를 들면 이렇게요:</p>
+<ol>
+<li><p>보울에 계란 3개를 깨뜨린다.</p>
+<p>여러분은 흘리지 않고 계란을 깨뜨리고 싶을거에요.</p>
+<p>만약 여러분이 좀 <em>흘렸으면</em>, 휴지를 사용해 닦아주세요!</p>
+</li>
+<li><p>우유 3.7L를 보울에 붓는다.</p>
+<p>기본적으로 위와 같은 가이드를 갖습니다: 흘리지 마세요. 흘렸으면 깨끗히 닦아주세요!</p>
+</연어를 떨어뜨릴 때 li>
+<li><p>버터를 힘차게 연어에 문지른다.</p>
+<p> "힘차게"란 말은 수직 운동을 의미합니다. 제 아이 줄리아가 한 때 그리 말했어요.</p>
+<blockquote>
+<p>위 아래로 이리저리 버터를 연어에 문질러주세요.</p>
+</blockquote>
+</li>
+<li><p>연어를 우유,계란을 쏟은 보울에 넣는다.</p>
+<p>여기에 연어를 잘 떨어뜨리는 몇가지 기술이 있습니다:</p>
+<ul>
+<li>주변에 송어나 어린아이가 있는지 확인하세요.</li>
+<li>양손을 사용하세요.</li>
+<li>떨어뜨릴 상황을 대비하여 주변에 휴지를 놔두세요.</li>
+</ul>
+</li>
+</ol>
+  <p>
+    위와 같은 종류의 텍스트를 만들려면, 여러분의 단락은 별표(*)밑에서 시작해야 합니다. 
+    그리고 적어도 하나의 공간을 들여쓰기 해야합니다. 예를 들어, 위 리스트는 마크다운으로 이렇게 표현할 수 있습니다:</p>
+  <pre>
+1. 보울에 계란 3개를 깨뜨린다.
+
+ 여러분은 흘리지 않고 계란을 깨뜨리고 싶을거에요.
+
+ 만약 여러분이 좀 흘렸으면, 휴지를 사용해 닦아주세요!
+
+2. 우유 3.7L를 보울에 붓는다.
+
+ 기본적으로 위와 같은 가이드를 갖습니다: 흘리지 마세요. 흘렸으면 깨끗히 닦아주세요!
+
+3. 버터를 힘차게 연어에 문지른다.
+
+  "힘차게"란 말은 수직 운동을 의미합니다. 제 아이 줄리아가 한 때 그리 말했어요.
+   > 위 아래로 이리저리 버터를 연어에 문질러주세요.
+4. 연어를 우유,계란을 쏟은 보울에 넣는다.
+
+  여기에 연어를 잘 떨어뜨리는 몇가지 기술이 있습니다:
+
+   * 주변에 송어나 어린아이가 있는지 확인하세요.
+   * 양손을 사용하세요.
+   * 떨어뜨릴 상황을 대비하여 주변에 휴지를 놔두세요.
+  </pre>
+
+  <p>1번 항목의 하위 두 항목이 하나의 빈 공간(one space)을 가졌다는 것에 주목해주세요.
+    이것은 약간 이상해보일 수도 있으니, 여러분은 글자에 맞게 적절히 들여쓰기 하시면 됩니다.(3번,4번 항목처럼요)
+    이 단락에서 여러분은 인용문, 다른 리스트 등 모든 종류의 마크다운 요소를 포함시킬 수 있습니다! </p>
+  <p>아래 입력창에서 별표(*)부분을 한 단락으로 구성되도록 만들어보세요.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">건너뜀</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>여러분은 이제 마크다운으로 리스트 만드는 방법을 알았습니다!</p>
+  <a class="btn btn-lg btn-success" href="/kr/lesson/7">다음 강의로!</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/kr/lesson_plans.js"></script>
+    
+  </body>
+</html>

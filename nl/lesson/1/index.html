@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 1
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/nl/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Schuin en vetgedrukt"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Kopteksten"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Hyperlinks"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Afbeeldingen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Blokcitaten"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Lijsten"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Paragrafen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/nl/conclusion"
+              data-toggle="tooltip"
+              data-original-title="Conclusies"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Schuin en vetgedrukt</h1>
+      </div>
+
+      <div class="row">
+  <p>
+    We beginnen met twee opmaakelementen. <em>Schuin</em>gedrukt en
+    <strong>vet</strong>gedrukt. In deze lessenserie zie je soms
+    <code>tekst in het rood</code>. Doordat Markdowncode er niet anders uitziet
+    dan 'gewone' tekst zie je het verschil niet. Doordat wij de Markdowncode
+    rood maken zie je direct welke tekst zorgt voor de opmaak.
+  </p>
+
+  <p>
+    Om iets <em>schuingedrukt</em> te maken in Markdown dan gebruik je daarvoor
+    het platliggende streepje (<code>_</code> ). Voorbeeld,
+    <code>_dit_</code> woord wordt <em>schuingedrukt</em>.
+  </p>
+
+  <p>De eerste oefening, maak het woord "niet" schuingedrukt.</p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type in het veld aan de linkerkant het antwoord op de vraag. In het rechterveld zie je dan het resultaat. Heb je het goede antwoord dan kun je verder met de volgende opdracht. "
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Goed gedaan! Dat was inderdaad het goede antwoord.</p>
+    <p>
+      Zoals met schuingedrukt kun je ook tekst
+      <strong>vetgedrukt</strong> maken. Hiervoor heb je twee sterretjes(
+      <code>**</code> ) nodig. Door iets <code>**vetgedrukt**</code> te maken
+      kun je eenvoudig de aandacht richten op een woord of zin.
+    </p>
+    <p>Oefening twee: maak het woord "maak" vetgedrukt.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Goed gedaan! Dat was inderdaad het goede antwoord.</p>
+    <p>
+      Natuurlijk kun je de code voor schuingedrukt en vetgedrukt door elkaar
+      gebruiken. Weet je nog welke code wat doet? Het sterretje
+      <code>*</code> zorgt voor vetgedrukt en het laagliggende
+      <code>_</code>streepje zorgt voor schuingedrukt Je kunt natuurlijk ook
+      meerdere woorden achter elkaar opmaken.
+    </p>
+    <p>
+      Opdracht drie is, maak "Natuurlijk" schuingedrukt en het woord 'cola'
+      vetgedrukt.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Fantastisch!</p>
+    <p>
+      Dit is de laatste oefening in dit hoofdstuk. We gaan onze superpowers nu
+      combineren
+      <em>Vetgedrukt <strong>en</strong> schuingedrukt</em> doorelkaar
+      gebruiken.
+    </p>
+    <p>
+      Het maakt niet uit waar je de sterretjes of laagliggende streepjes
+      plaatst. In onderstaande voorbeeld maak het tweede gedeelte van de zin
+      vetgedrukt en schuingedrukt. Maak "dan heb je waarschijnlijk ongelijk"
+      zowel vetgedrukt als schuingedrukt. Begin met het sterretje aan de
+      <code>**_buitenkant_**</code> en daarna het liggende streepje. Dit heet
+      met een moeilijk woord ook wel genest.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>
+    Je hebt twee nieuwe superpowers! Vetgedrukt en schuingedrukt in Markdown heb
+    je nu onder de knie.
+  </p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/nl/lesson/2"
+    >Door naar de volgende les!</a
+  >
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/nl/lesson_plans.js"></script>
+    
+  </body>
+</html>

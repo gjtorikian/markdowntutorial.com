@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 7
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Kursywa i pogrubienie"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Nagłówki"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Linki"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Zdjęcia"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Grawisy"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listy"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/pl/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Akapity"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/podsumowanie"
+              data-toggle="tooltip"
+              data-original-title="Podsumowanie"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Akapity</h1>
+      </div>
+
+      <div class="row">
+  <p>Markdown posiada parę sposobów formatowania akapitów.</p>
+
+  <p>
+    Weźmy parę linijek poezji jako przykład. Zadkładam, że chcesz,
+    aby taki tekst wyglądał tak:
+  </p>
+  <p>
+    Czy ja zaprzeczam sobie?<br />
+    Niech będzie, że sobie zaprzeczam,<br />
+    (Jestem wielki, posiadam mnóstwa.)
+  </p>
+  <p>
+    Teraz możesz myśleć, że proste pisanie każdego wersu do swojej własnej,
+    nowej linijki jest wystarczające, aby rozwiązać problem:
+  </p>
+  <pre>
+Czy ja zaprzeczam sobie?
+Niech będzie, że sobie zaprzeczam,
+(Jestem pojemny, są we mnie miliony.)
+</pre
+  >
+  <p>
+    Niestety, byłaby to błędna odpowiedź! Taki Markdown wyrenderowałby się 
+    raczej w pojedynczą, długą linijkę: Czy ja zaprzeczam sobie? Niech będzie, że sobie zaprzeczam,
+    (Jestem pojemny, są we mnie miliony.).
+  </p>
+  <p>
+    If you forcefully insert a new line, you end up breaking the togetherness:
+  </p>
+  <pre>
+Czy ja zaprzeczam sobie?
+    
+Niech będzie, że sobie zaprzeczam,
+
+(Jestem pojemny, są we mnie miliony.)
+</pre
+  >
+  <p>
+    To jest coś, co znane jest jako <em>ciężka przerwa</em>; natomiast nasza poezja 
+    prosi się o <em>miękką przerwę</em>. Możesz tego dokonać dodając dwie spacje 
+    <em>po</em> każdej nowej linii. Nie jest to możliwe do zobaczenia, gdyż spacje 
+    z natury są niewidzialne ale wyglądałoby to mniej więcej tak:
+  </p>
+  <pre>
+Czy ja zaprzeczam sobie?··
+Niech będzie, że sobie zaprzeczam,··
+(Jestem pojemny, są we mnie miliony.)
+</pre
+  >
+  <p>Każda kropka ( <code>·</code> ) reprezentuje spację.</p>
+
+  <p>
+    Wypróbujmy to. W okienku poniżej, dodaj odpowiednią ilość
+    spacji, aby poezja wyrenderowała się w oczekiwany sposób:
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Pomiń</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Fachowa robota!</p>
+    <p>
+      Odchodząc na chwilę od formatowania poezji, jednym z częstych użyć miękkich przerw 
+      jest formatowanie akapitów w listach. Zwróć uwagę, że w poprzedniej lekcji dodawaliśmy
+      nową linię dla wielokrotnych akapitów w listach
+    </p>
+    <p>
+      W okienku poniżej, zamiast ciężkich przerw, sciaśnij tekst pozbywając się enterów, a
+      dodając miękkie przerwy.:
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>No i gotowe! Teraz wiesz jak używać miękkich przerw w Markdownie!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/pl/podsumowanie"
+    >Lecimy dalej!</a
+  >
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/pl/lesson_plans.js"></script>
+    
+  </body>
+</html>

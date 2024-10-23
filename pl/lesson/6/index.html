@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 6
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Kursywa i pogrubienie"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Nagłówki"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Linki"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Zdjęcia"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Grawisy"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/pl/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listy"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Akapity"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/pl/podsumowanie"
+              data-toggle="tooltip"
+              data-original-title="Podsumowanie"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Listy</h1>
+      </div>
+
+      <div class="row">
+<p>Ten poradnik pokrywa wszytsko co trzeba wiedzieć o listach w Markdownie.</p>
+
+<p>Istnieją dwie wersje list: nieuporządkowana i uporządkowana.
+To dziwny sposób na powiedzenie że są listy z punktami i liczbami</p><p>Aby stworzyć 
+  nieuporządkowaną listę, należy poprzedzić tekst gwiazdką ( <code>*</code> ). Każdy
+  obiekt musi dostać swoją nową linię. Na przykład,
+  lista zakupów w Markdownie może wyglądać tak:</p>
+  <pre>
+* Mleko
+* Jajka
+* Łosoś
+* Masło
+</pre>
+<p>Ta lista kóncowo wyrenderuje się w:</p>
+<ul>
+  <li>Mleko</li>
+  <li>Jajka</li>
+  <li>Łosoś</li>
+  <li>Masło</li>
+</ul>
+<p>W okienku poniżej, przekrztałć słowa oddzielone przecinkiem w nieuporządkowaną
+  listę.</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Napisz odpowiedź w okienku po lewej, a sformatowany tekst w Markdownie pojawi się po prawej stronie. Jeśli odpowiedź będzie porawna, zostaniesz poprowadzony do kolejnej lekcji"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Pomiń</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Spoko! To właśnie tak tworzy się nieuporządkowane listy. Pogadajmy teraz o uporządkowanych.</p>
+  <p>Obiekty w uporządkowanej liście są poprzedzone liczbami, a nie gwiazdkami. Spójrz na ten przepis:</p>
+  <ol>
+    <li>Rozbij 3 jajka nad miską</li>
+    <li>Do miski wlej litr mleka</li>
+    <li>Łososia energicznie natrzyj masłem</li>
+    <li>Wrzuć łososia do miski z mlekiem</li>
+  </ol>
+  <p>Aby napisać to w Markdownie, należy zrobić to w ten sposób:</p>
+<pre>
+1. Rozbij 3 jajka nad miską
+2. Do miski wlej litr mleka
+3. Łososia energicznie natrzyj masłem
+4. Wrzuć łososia do miski z mlekiem
+</pre>
+  <p>Proste, nie? Tak raczej wyobrażamy sobie listy, gdy o nich myślimy.</p>
+  <p>W okienku poniżej, przekrztałć resztę przepisu w uprządkowaną listę</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Wspaniała robota!</p>
+  <p>Możesz zawsze dodać przechylenie, pogrubienie, lub linki w listach. Można było się spodziewać.
+    W okienku poniżej, zmień łacińskie nazwy roślin na kursywę.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Super!</p>
+  <p>Może zdarzyć, że będzie potrzeba
+  <em>zagnieżdżenia</em> jednej listy w drugiej. Nie ma co się obawiać, ponieważ składnia Markdownu jest
+    taka sama. Jedyne, co musisz zrobić, to pamiętać o wcięciu każdej gwiazdki
+      <em>o jedno miejsce więcej</em> niż poprzedni element.</p>
+  <p>Na przykład na poniższej liście dodamy do każdej listy podrzędnej
+     „główny” element listy, szczegółowo opisujący osoby:</p>
+<pre>
+* Zabarwienie
+ * Reporter
+ * Ma puszyste pomarańczowe włosy
+ * Przyjaciele z najwspanialszym psem na świecie
+* Plamiak
+ * Kapitan morski
+ * Ma fantastyczną brodę
+ * Uwielbia whisky
+    * Pewnie szkot?
+</pre>
+  <p>Po wyrenderowaniu lista ta zmienia się w następujące grupowanie:<p>
+<ul>
+  <li>Zabarwienie<ul>
+    <li>Reporter</li>
+    <li>Ma puszyste pomarańczowe włosy</li>
+    <li>Przyjaciele z najwspanialszym psem na świecie</li>
+  </ul>
+  </li>
+  <li>Plamiak<ul>
+    <li>Kapitan morski</li>
+    <li>Ma fantastyczną brodę</li>
+    <li>Uwielbia whisky<ul>
+      <li>Pewnie szkot?</li>
+      </ul>
+      </li>
+    </ul>
+    </li>
+</ul>
+  <p>W poniższym polu zamień cechy postaci na podpunkty.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Fantastycznie! Choć możesz kontynuować wcięcia i dodawać podlisty w nieskończoność, 
+    zazwyczaj dobrze jest zatrzymać się po trzech poziomach; w przeciwnym razie twój tekst 
+    staje się bałaganem.</p>
+  <p>Jest jeszcze jedno sztuczka z listami i wcięciami, którą zbadamy, a dotyczy ona 
+    przypadku akapitów. Załóżmy, że chcesz utworzyć listę wypunktowaną, która wymaga 
+    dodatkowego kontekstu (ale nie innego zestawienia). Na przykład może to wyglądać tak:</p>
+<ol>
+<li><p>Rozbij trzy jajka nad miską</p>
+<p>Teraz będziesz chciał rozbijać jajka w taki sposób, aby nie robić bałaganu.</p>
+<p>Jeśli zrobiłeś bałagan, użyj ręcznika, aby go posprzątać!</p>
+</li>
+<li><p>Wlej litr mleka do miseczki.</p>
+<p>W zasadzie, postępuj zgodnie z powyższymi wskazówkami: nie rób bałaganu, ale jeśli zrobisz, posprzątaj!</p>
+</li>
+<li><p>Wysmaruj łososia energicznie masłem.</p>
+<p>Przez "energicznie" rozumiemy surowy ruch pionowy. Julia Child kiedyś powiedziała:</p>
+<blockquote>
+<p>W górę i w dół i dookoła, tak właśnie idzie masło na łososia.</p>
+</blockquote>
+</li>
+<li><p>Upuść łososia do miski z jajkiem i mlekiem.</p>
+<p>Oto kilka technik upuszczania łososia:</p>
+<ul>
+<li>Sprawdź, czy nie ma pstrąga ani dzieci</li>
+<li>Użyj obu rąk</li>
+<li>Zawsze miej ręcznik pod ręką na wypadek bałaganu</li>
+</ul>
+</li>
+</ol>
+  <p>Aby utworzyć taki rodzaj tekstu, twój akapit musi zaczynać się 
+    od nowej linii poniżej punktu wypunktowania i musi być wcięty co 
+    najmniej o jeden znak spacji. Na przykład lista powyżej wygląda 
+    tak w Markdown:</p>
+  <pre>
+1. Rozbij trzy jajka nad miską
+
+ Teraz będziesz chciał rozbijać jajka w taki sposób, aby nie robić bałaganu.
+
+ Jeśli _zrobisz_ bałagan, użyj ręcznika, aby go posprzątać!
+
+2. Wlej litre mleka do miseczki.
+
+ W zasadzie, postępuj zgodnie z powyższymi wskazówkami: nie rób bałaganu, ale jeśli zrobisz, posprzątaj!
+
+3. Wysmaruj łososia energicznie masłem.
+
+   Przez "energicznie" rozumiemy surowy ruch pionowy. Julia Child kiedyś powiedziała:
+   > W górę i w dół i dookoła, tak właśnie idzie masło na łososia.
+4. Upuść łososia do miski z jajkiem i mlekiem.
+
+   Oto kilka technik upuszczania łososia:
+
+   * Sprawdź, czy nie ma pstrąga ani dzieci
+   * Użyj obu rąk
+   * Zawsze miej ręcznik pod ręką na wypadek bałaganu
+  </pre>
+
+  <p>Zauważ, że pierwsze dwa elementy mają pojedynczą 
+    spację. Wygląda to trochę dziwnie, więc możesz chcieć 
+    odpowiednio wcięć, aby dopasować znaki (jak elementy trzy 
+    i cztery). W tych akapitach możesz zawierać wszelkiego rodzaju 
+    inne elementy Markdown, takie jak cytaty blokowe, czy nawet 
+    inne listy!</p> <p>W poniższym polu zamień punkty wypunktowania na własne akapity.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pomiń</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Teraz wiesz, jak tworzyć listy w Markdown!</p>
+  <a class="btn btn-lg btn-success" href="/pl/lesson/7">Lecimy dalej!</a>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/pl/lesson_plans.js"></script>
+    
+  </body>
+</html>

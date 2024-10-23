@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 7
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="イタリックと太字 (Italics and Bold)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="見出し (Headers)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="リンク (Links)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="画像 (Images)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="引用 (Blockquotes)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="リスト (Lists)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/jp/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="段落 (Paragraphs)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/conclusion"
+              data-toggle="tooltip"
+              data-original-title="結論"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">段落（Paragraphs）</h1>
+      </div>
+
+      <div class="row">
+  <p>段落を作るにはいくつか方法があります。</p>
+
+  <p>
+    詩を例として使いましょう。
+    次のような文章を書くと想定してください。
+  </p>
+  <p>
+    私は自分自身に矛盾しているだろうか？<br />
+    それもいいでしょう、私は自分自身に矛盾している。<br />
+    （私は大きく、様々な自分があるのだ）
+  </p>
+  <p>
+    次のようにそれぞれの詩を独立した行で書けばいいように思うかもしれません
+  </p>
+  <pre>
+私は自分自身に矛盾しているだろうか？
+それもいいでしょう、私は自分自身に矛盾している。
+（私は大きく、様々な自分があるのだ）
+</pre
+  >
+  <p>
+    残念なことに、これは違います！これでは次のようにすべて一行に表示されてしまいます。:　
+    私は自分自身に矛盾しているだろうか？それもいいでしょう、私は自分自身に矛盾している。
+    （私は大きく、様々な自分があるのだ）
+  </p>
+  <p>
+    新しい行を入れてしまうと、文の一体感がなくなってしまいます。
+  </p>
+  <pre>
+私は自分自身に矛盾しているだろうか？
+
+それもいいでしょう、私は自分自身に矛盾している。
+
+（私は大きく、様々な自分があるのだ）
+</pre
+  >
+  <p>
+    このようなやり方は<em>ハードブレーク</em>と呼ばれますが、今回の詩でやりたいのは
+    <em>ソフトブレーク</em>と呼ばれるものです。各行の<em>最後</em>に半角スペースを2つ入れます。
+    スペースは見ることができませんが、おおよそ次のようなイメージです。
+  </p>
+  <pre>
+私は自分自身に矛盾しているだろうか？··
+それもいいでしょう、私は自分自身に矛盾している。··
+（私は大きく、様々な自分があるのだ）
+</pre
+  >
+  <p>ドット（　<code>·</code>　）が半角スペースを表しています。</p>
+
+  <p>
+    実際にやってみましょう。この問題では、詩が正しく表示されるように各行に半角スペースを追加してください。
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">スキップ</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>素晴らしい出来です！</p>
+    <p>
+      このソフトブレークは詩を整形する以外にも、リスト内の段落を整形するのにも使われます。
+      前のレッスンではそれぞれの段落を表示するために空行を入れていました。
+    </p>
+    <p>
+      この問題では、ハードブレークをソフトブレークに置き換え、
+      各項目の説明をより密着させるようにしてください。
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">スキップ</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>できましたか？これでソフトブレークの使い方はマスターしましたね！</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/jp/conclusion"
+    >さぁ、次のレッスンにいきましょう！</a
+  >
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/jp/lesson_plans.js"></script>
+    
+  </body>
+</html>

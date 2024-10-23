@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 6
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Kursiv- und Fettdruck"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Überschriften"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Links"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Bilder"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Blockquotes"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/de/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Paragraphen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/conclusion"
+              data-toggle="tooltip"
+              data-original-title="Fazit"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Listen</h1>
+      </div>
+
+      <div class="row">
+  <p>In diesem Tutorial geht es um die Erstellung von Listen in Markdown.</p>
+
+  <p>
+    Es gibt zwei Arten von Listen im bekannten Universum: ungeordnete und geordnete. 
+    Das ist eine schicke Art zu sagen, dass es Listen mit Aufzählungspunkten und Listen mit Zahlen gibt.
+  </p>
+  <p>
+    Um eine ungeordnete Liste zu erstellen, müssen Sie jedem Eintrag in der Liste ein Sternchen ( <code>*</code> ) 
+    voranstellen und dann ein Leerzeichen folgen lassen. Jedes Element der Liste erhält außerdem eine eigene Zeile. 
+    Eine Lebensmittelliste in Markdown könnte zum Beispiel so aussehen:
+  </p>
+  <pre>
+* Milch
+* Eggs
+* Lachs
+* Butter
+</pre
+  >
+  <p>Diese Markdown-Liste würde in die folgenden Aufzählungspunkte umgewandelt:</p>
+  <ul>
+    <li>Milch</li>
+    <li>Eggs</li>
+    <li>Lachs</li>
+    <li>Butter</li>
+  </ul>
+  <p>Machen Sie aus den durch ein Komma getrennten Wörtern in dem unten stehenden Kasten eine Liste.</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Geben Sie Ihre Antworten in das linke Feld ein, und das Ergebniss erscheint im rechten Feld. Wenn Ihre Antwort richtig ist, werden Sie zur nächsten Lektion weitergeleitet"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Überspringen</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>
+      So geht's! So schreiben Sie eine ungeordnete Liste. Jetzt wollen wir über geordnete Listen sprechen.
+    </p>
+    <p>
+      Einer geordneten Liste werden Zahlen anstelle von Sternchen vorangestellt. 
+      Schauen Sie sich dieses Rezept an:
+    </p>
+    <ol>
+      <li>Drei Eier in eine Schüssel aufschlagen</li>
+      <li>Gießen Sie einen halben Liter Milch in die Schüssel</li>
+      <li>Den Lachs gründlich mit Butter einreiben</li>
+      <li>Den Lachs in die Eier-Milch-Schüssel geben</li>
+    </ol>
+    <p>Um das in Markdown zu schreiben, müssten Sie Folgendes tun:</p>
+    <pre>
+1. Drei Eier in eine Schüssel aufschlagen
+2. Gießen Sie einen halben Liter Milch in die Schüssel
+3. Den Lachs gründlich mit Butter einreiben
+4. Den Lachs in die Eier-Milch-Schüssel geben
+    </pre>
+    <p>Einfach, nicht wahr? Es sieht genau so aus, wie Sie es von einer Liste erwarten würden.</p>
+    <p>Verwandeln Sie den Rest des Rezepts in eine geordnete Liste in dem Feld unten.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Gute Arbeit!</p>
+    <p>
+      Sie können kursiv, fett oder Links innerhalb von Listen hinzufügen, wie Sie es erwarten würden. 
+      Machen Sie im Feld unten die lateinischen Namen der Pflanzen kursiv.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Herrlich!</p>
+    <p>
+      Gelegentlich werden Sie das Bedürfnis haben, eine Liste mit mehr <em>Tiefe</em> zu erstellen oder 
+      eine Liste in einer anderen zu <em>verschachteln</em>. Keine Angst, die Markdown-Syntax ist genau dieselbe. 
+      Sie müssen nur daran denken, jedes Sternchen um ein Leerzeichen mehr einzurücken als den vorhergehenden Eintrag.
+    </p>
+    <p>
+      In der folgenden Liste fügen wir beispielsweise jedem „Haupt“-Listenelement einige Unterlisten hinzu, 
+      in denen die Personen detailliert beschrieben werden:
+    </p>
+    <pre>
+* Tim
+ * Ein Reporter
+ * Hat orangefarbenes Haar
+ * Freunde mit dem tollsten Hund der Welt
+* Haddock
+ * Ein Schiffskapitän
+ * Hat einen fantastischen Bart
+ * Liebt Whiskey
+   * Möglicherweise auch Scotch?
+</pre
+    >
+    <p>Bei der Darstellung wird diese Liste zu folgender Gruppierung:</p>
+    <p></p>
+    <ul>
+      <li>
+        Tim
+        <ul>
+          <li>Ein Reporter</li>
+          <li>Hat orangefarbenes Haar</li>
+          <li>Freund mit dem tollsten Hund der Welt</li>
+        </ul>
+      </li>
+      <li>
+        Haddock
+        <ul>
+          <li>Ein Schiffskapitän</li>
+          <li>Hat einen fantastischen Bart</li>
+          <li>
+            Liebt whiskey
+            <ul>
+              <li>Möglicherweise auch Scotch?</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      Verwandeln Sie die Merkmale des Charakters in Unterpunkte in dem Feld unten.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>
+      Unglaublich! Sie können die Einrückung und das Hinzufügen von Unterlisten 
+      zwar unbegrenzt fortsetzen, aber in der Regel ist es eine gute Idee, nach
+      drei Ebenen aufzuhören, da Ihr Text sonst unübersichtlich wird.
+    </p>
+    <p>
+      Es gibt noch einen weiteren Trick für Listen und Einrückungen, den wir erforschen werden, 
+      und der den Fall von Absätzen betrifft. Nehmen wir an, Sie möchten eine Aufzählungsliste 
+      erstellen, die einen zusätzlichen Kontext erfordert (aber keine weitere Liste). Sie könnte 
+      zum Beispiel so aussehen:
+    </p>
+    <ol>
+      <li>
+        <p>Drei Eier in eine Schüssel aufschlagen.</p>
+        <p>
+          Nun müssen Sie die Eier so aufschlagen, dass keine Schweinerei entsteht.
+        </p>
+        <p>Wenn Sie <em>eine</em> Schweinerei machen, benutzen Sie ein Handtuch, um sie aufzuräumen!</p>
+      </li>
+      <li>
+        <p>Gießen Sie einen halben Liter Milch in die Schüssel.</p>
+        <p>
+          Grundsätzlich gilt derselbe Leitfaden wie oben: Sei nicht unordentlich, 
+          aber wenn du es bist, räume es auf!
+        </p>
+      </li>
+      <li>
+        <p>Den Lachs kräftig mit Butter einreiben.</p>
+        <p>
+          Mit „kräftig“ meinen wir eine streng vertikale Bewegung. Wie Julian einmal sagte:
+        </p>
+        <blockquote>
+          <p>Hoch und runter und rundherum, so geht Butter auf Lachs.</p>
+        </blockquote>
+      </li>
+      <li>
+        <p>Den Lachs in die Eier-Milch-Schüssel geben.</p>
+        <p>Hier einige Techniken zum Absetzen von Lachsen:</p>
+        <ul>
+          <li>Stellen Sie sicher, dass keine Kinder anwesend sind.</li>
+          <li>Beide Hände benutzen.</li>
+          <li>Halten Sie immer ein Handtuch bereit, falls Sie etwas verschmutzt haben.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+      Um diese Art von Text zu erstellen, muss Ihr Absatz in einer eigenen Zeile 
+      unterhalb des Aufzählungspunkts beginnen und um mindestens ein Leerzeichen 
+      eingerückt sein. Die obige Liste sieht in Markdown zum Beispiel so aus:
+    </p>
+    <pre>
+1. Drei Eier in eine Schüssel aufschlagen.
+
+ Nun müssen Sie die Eier so aufschlagen, dass keine Schweinerei entsteht.
+
+ Wenn du eine Schweinerei machst, benutze ein Handtuch, um sie aufzuräumen!
+
+2. Gießen Sie einen halben Liter Milch in die Schüssel.
+
+ Grundsätzlich gilt derselbe Leitfaden wie oben: Seien Sie nicht unordentlich, aber wenn Sie es sind, räumen sie auf!
+
+3. Den Lachs kräftig mit Butter einreiben.
+
+   Mit „kräftig“ meinen wir eine streng vertikale Bewegung. Wie Julian einmal sagte:
+   > Hoch und runter und rundherum, so geht Butter auf Lachs.
+
+4. Den Lachs in die Eier-Milch-Schüssel geben.
+
+   Hier einige Techniken zum Absetzen von Lachsen:
+
+   * Stellen Sie sicher, dass keine Kinder anwesend sind.
+   * Beide Hände benutzen.
+   * Halten Sie immer ein Handtuch bereit, falls Sie etwas verschmutz haben.
+  </pre
+    >
+
+    <p>
+      Beachten Sie, dass die ersten beiden Einträge ein einzelnes Leerzeichen haben. 
+      Das sieht etwas seltsam aus, daher sollten Sie die Zeichen entsprechend einrücken 
+      (wie bei den Punkten drei und vier). In diese Absätze können Sie alle möglichen 
+      anderen Markdown-Elemente einfügen, z. B. Blockzitate oder sogar andere Listen!
+    </p>
+    <p>
+      Wandeln Sie die Aufzählungspunkte im folgenden Kasten in eigene Absätze um.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Sie wissen jetzt, wie man Listen in Markdown erstellt!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/de/lesson/7"
+    >Auf zur nächsten Lektion!</a
+  >
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/de/lesson_plans.js"></script>
+    
+  </body>
+</html>

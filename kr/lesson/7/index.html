@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 7
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="이탤릭체와 볼드체 (Italics and Bold)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="헤더 (Headers)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="링크 (Links)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="이미지 (Images)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="인용문 (Blockquotes)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="리스트 (Lists)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/kr/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="단락 (Paragraphs)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/conclusion"
+              data-toggle="tooltip"
+              data-original-title="마무리 (Conclusion)"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">단락 (Paragraphs)</h1>
+      </div>
+
+      <div class="row">
+  <p>마크다운은 단락을 포맷하는 몇 가지 방법이 있습니다.</p>
+
+  <p>
+    몇 줄의 시로 예를 들어볼게요. 여러분이 이런 형태의 글을 쓰기 원한다고 해봅시다:
+  </p>
+  <p>
+    나는 나 자신과 모순되는가?<br />
+    그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,<br />
+    (나는 크다… 나는 다량의 것을 품고 있다.)
+  </p>
+  <p>
+    여러분은 각 구절마다 자신의 라인을 가지면 문제가 해결될거라 생각할지 모릅니다:
+  </p>
+  <pre>
+나는 나 자신과 모순되는가?
+그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,
+(나는 크다… 나는 다량의 것을 품고 있다.)
+</pre>
+  <p>
+    아쉽게도 그 생각은 틀렸습니다! 마크다운은 단순히 하나의 직선으로 렌더링합니다: 
+    나는 나 자신과 모순되는가? 그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,
+    (나는 크다… 나는 다량의 것을 품고 있다.)
+  </p>
+  <p>
+    만약 여러분이 개행을 강제로 넣으면, 결합이 깨지게 됩니다:
+  </p>
+  <pre>
+나는 나 자신과 모순되는가?
+
+그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,
+
+(나는 크다… 나는 다량의 것을 품고 있다.)
+</pre>
+  <p>
+    이것은 <em>문단 나눔(hard breaks)</em>로 불립니다; 우리의 시에서 요구하는 건 <em>줄 나눔(soft breaks)</em> 입니다. 
+    여러분은 각 줄의 <em>끝</em>에 2번의 공백을 넣음으로 줄 나눔을 할 수 있습니다.
+    공백은 눈에 보이지 않아 실제로 보기는 어렵지만, 이렇게 보여질 수 있습니다:
+  </p>
+  <pre>
+나는 나 자신과 모순되는가?··
+그렇다면 아주 잘되었다… 나는 나 자신과 모순이다,··
+(나는 크다… 나는 다량의 것을 품고 있다.)
+</pre>
+  <p>각 점( <code>·</code> )은 키보드의 스페이스를 나타냅니다.</p>
+
+  <p>
+    이 기술을 실험해봅시다. 아래 입력창에서, 시가 올바르게 렌더링되도록 필요한 공백을 삽입해보세요:
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">건너뜀</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>환상적으로 해냈습니다!</p>
+    <p>
+      시를 포맷하는 것 외에도, 이러한 줄 나눔(soft breaks)의 일반적인 용도는 리스트 내에서 단락을 포맷하는 것입니다. 
+      이전 레슨에서 우리가 한 리스트 내에서 여러 단락을 만들기 위해 새 줄을 삽입했던 것을 기억해보세요.
+    </p>
+    <p>
+      아래 입력창에서, 단락 나눔(hard breaks) 대신에 줄 나눔(soft breaks)를 사용하여 하위 단락을 구성해보세요.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">건너뜀</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>훌륭합니다! 이제 여러분은 마크다운에서 줄 나눔(soft breaks)하는 방법을 알았습니다!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/kr/conclusion"
+    >다음 강의로!</a
+  >
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/kr/lesson_plans.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 7
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Cursivas y negrita"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Encabezados"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Enlaces"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Imágenes"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Citas"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listas"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/es/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Párrafos"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/es/conclusion"
+              data-toggle="tooltip"
+              data-original-title="¡Felicidades!"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Párrafos</h1>
+      </div>
+
+      <div class="row">
+  <p>Markdown tiene varias formas de dar formato a los párrafos.</p>
+
+  <p>
+    Tomemos algunas líneas de una poesía como ejemplo. Supongamos que queremos
+    escribir texto que tenga la siguiente apariencia:
+  </p>
+  <p>
+    ¿Qué me contradigo?<br />
+    Sí, me contradigo. Y ¿qué?,<br />
+    (Yo soy inmenso y contengo multitudes.)
+  </p>
+  <p>
+    Ahora, podría pensar que simplemente escribiendo cada verso en su propia
+    línea sería suficiente para resolver el problema:
+  </p>
+  <pre>
+¿Qué me contradigo?
+Sí, me contradigo. Y ¿qué?,
+(Yo soy inmenso y contengo multitudes.)
+</pre>
+  <p>
+    ¡Desafortunadamente, estaría equivocado! Este texto en Markdown una vez
+    renderizado simplemente se mostraría todo en una única línea: ¿Qué me
+    contradigo? Sí, me contradigo. Y ¿qué?,(Yo soy inmenso y contengo
+    multitudes.).
+  </p>
+  <p>
+    Si fuerza a insertar una nueva línea, al final esto rompería el conjunto:
+  </p>
+  <pre>
+¿Qué me contradigo?
+
+Sí, me contradigo. Y ¿qué?,
+
+(Yo soy inmenso y contengo multitudes.)
+</pre>
+  <p>
+    Esto es lo que es conocido como <em>ruptura dura</em>; lo que nuestra poesía
+    necesita es una <em>ruptura blanda</em>. Puede conseguir esto insertando dos
+    espacios <em>después</em> de cada nueva línea. Esto no es posible de
+    mostrar, ya que los espacios son invisibles, pero tendría este aspecto:
+  </p>
+  <pre>
+¿Qué me contradigo?··
+Sí, me contradigo. Y ¿qué?,..
+(Yo soy inmenso y contengo multitudes.)
+</pre>
+  <p>Cada punto ( <code>·</code> ) representa un espacio del teclado.</p>
+
+  <p>
+    Probemos esta técnica. En el recuadro inferior, inserte el número necesario
+    de espacios para hacer que el poema se renderice de manera correcta:
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Escriba sus respuestas en el recuadro de la izquierda, y el resultado en Markdown parecerá en el recuadro de a derecha. Cuando su respuesta sea correcta, será llevado a la siguiente lección."
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Omitir</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>¡Gran trabajo!</p>
+    <p>
+      Además de dar formato a las poesías, uno de los usos más comunes de estas
+      rupturas débiles es a la hora de dar formato en listas de
+      párrafos. Recordemos en la lección anterior que insertamos una nueva línea
+      para múltiples párrafos dentro de una lista.
+    </p>
+    <p>
+      En el recuadro inferior, en vez de utilizar rupturas duras, separe los sub
+      párrafos con rupturas débiles:
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Omitir</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>¡Et voila! ¡Ya sabe cómo realizar rupturas débiles en Markdown!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/es/conclusion"
+    >¡Vamos a la siguiente lección!</a
+  >
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous"></script> 
+    <script src="/es/lesson_plans.js"></script>
+    
+  </body>
+</html>

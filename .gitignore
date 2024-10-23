@@ -7,7 +7,6 @@
 
 .DS_Store
 /.rbenv-version
-/.ruby-version
 .sass-cache
 _site/
 Gemfile.lock

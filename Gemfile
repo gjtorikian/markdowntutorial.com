@@ -8,3 +8,5 @@ gem "jekyll-assets", group: :jekyll_plugins
 gem "sprockets", "~> 3.7"
 
 gem 'rake'
+
+gem "ffi", "1.15"

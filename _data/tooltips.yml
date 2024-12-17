@@ -29,6 +29,9 @@ lesson_1:
   de:
     href: /de/lesson/1
     title: Kursiv- und Fettdruck
+  vi-vn:
+    href: /vi-vn/lesson/1
+    title: In Nghiêng và In Đậm    
 lesson_2:
   en:
     href: /lesson/2
@@ -60,6 +63,9 @@ lesson_2:
   de:
     href: /de/lesson/2
     title: Überschriften
+  vi-vn:
+    href: /vi-vn/lesson/2
+    title: Tiêu Đề
 lesson_3:
   en:
     href: /lesson/3
@@ -91,6 +97,9 @@ lesson_3:
   de:
     href: /de/lesson/3
     title: Links
+  vi-vn:
+    href: /vi-vn/lesson/3
+    title: Liên kết (Links)    
 lesson_4:
   en:
     href: /lesson/4
@@ -122,6 +131,9 @@ lesson_4:
   de: 
     href: /de/lesson/4
     title: Bilder
+  vi-vn:
+    href: /vi-vn/lesson/4
+    title: Hình Ảnh     
 lesson_5:
   en:
     href: /lesson/5
@@ -153,6 +165,9 @@ lesson_5:
   de:
     href: /de/lesson/5
     title: Blockquotes
+ vi-vn:
+    href: /vi-vn/lesson/5
+    title: Đoạn trích dẫn     
 lesson_6:
   en:
     href: /lesson/6
@@ -184,6 +199,9 @@ lesson_6:
   de:
     href: /de/lesson/6
     title: Listen
+  vi-vn:
+    href: /vi-vn/lesson/6
+    title: Danh sách   
 lesson_7:
   en:
     href: /lesson/7
@@ -215,6 +233,9 @@ lesson_7:
   de: 
     href: /de/lesson/7
     title: Paragraphen
+  vi-vn:
+    href: /vi-vn/lesson/7
+    title: Đoạn văn      
 conclusion:
   en:
     href: /conclusion
@@ -246,3 +267,6 @@ conclusion:
   de:
     href: /de/conclusion
     title: Fazit
+  vi-vn:
+    href: /vi-vn/conclusion
+    title: Phần Kết Luận    

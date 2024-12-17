@@ -3,31 +3,17 @@ layout: default
 locale: vi-vn
 ---
 
-Markdown is a way to write content for the web. It's written in what
-people like to call "plaintext", which is exactly the sort of text
-you're used to writing and seeing. Plaintext is just the regular
-alphabet, with a few familiar symbols, like asterisks (
-<code>*</code> ) and backticks ( <code>`</code> ).
+Markdown là một phương thức soạn thảo nội dung cho trang mạng (web), được viết dưới dạng "văn bản thuần" (plaintext) - một định dạng văn bản phổ biến mà mọi người thường sử dụng và đọc hàng ngày, bao gồm các chữ cái tiêu chuẩn, kèm theo một số ký hiệu đơn giản và quen thuộc, chẳng hạn như dấu hoa thị hay dấu sao (<code>*</code> ) và dấu "backtick" giống với dấu huyền ( <code>`</code> ).
 
-Unlike cumbersome word processing applications, text written in
-Markdown can be easily shared between computers, mobile phones, and
-people. It's quickly becoming the writing standard for
-[academics][academics], [scientists][scientists], [writers][writers],
-and many more.  Websites like [GitHub](https://www.github.com) and
-[reddit](http://www.reddit.com) use Markdown to style their comments.
+Trái ngược với các ứng dụng soạn thảo văn bản cồng kềnh, văn bản được viết bằng Markdown có thể dễ dàng chia sẻ giữa các máy tính, điện thoại di động và mọi người. Ưu điểm này giúp Markdown đang nhanh chóng trở thành tiêu chuẩn viết cho các [giới học thuật][academics], [nhà khoa học][scientists], [nhà văn][writers] và trong nhiều lĩnh vực khác. Thậm chí, các trang mạng như [GitHub](https://www.github.com) và [reddit](http://www.reddit.com) cũng sử dụng Markdown để định dạng phần bình luận của người dùng.
 
-Formatting text in Markdown has a very gentle learning curve. It doesn't do anything
-fancy like change the font size, color, or type. All you have control over is
-the display of the text—stuff like making things bold, creating
-headers, and organizing lists.
+Việc định dạng văn bản trong Markdown rất dễ học. Markdown không thực hiện các thao tác phức tạp như thay đổi kích thước, màu sắc hay kiểu chữ. Tất cả những gì bạn có thể kiểm soát là cách hiển thị văn bản — chẳng hạn như in đậm, tạo tiêu đề và sắp xếp danh sách.
 
-If you have ten minutes, you can learn Markdown!
+Chỉ với mười phút, bạn đã có thể học Markdown!
 
-In each lesson, you'll be given an introduction to a single Markdown
-concept. Then, you'll be asked to complete several exercises with that
-new knowledge.
+Trong mỗi bài học, bạn sẽ được giới thiệu về một khái niệm cụ thể trong Markdown. Và sau đó, bạn sẽ được yêu cầu hoàn thành một số bài tập với kiến thức mới này.
 
-<a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_1[page.locale].href }}">Ready? Let's get started!</a>
+<a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_1[page.locale].href }}">Sẵn sàng? Hãy bắt đầu nào!</a>
 
 [academics]: http://chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295
 [scientists]: http://blogs.plos.org/mfenner/2012/12/13/a-call-for-scholarly-markdown/

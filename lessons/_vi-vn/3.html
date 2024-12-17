@@ -1,0 +1,121 @@
+---
+layout: default
+title: Liên Kết
+number: 3
+---
+
+<div class="row">
+	<p>
+		Bây giờ chúng ta sẽ học cách tạo liên kết đến các trang web khác trên World
+		Wide Web.
+	</p>
+	<p>
+		Có hai loại liên kết khác nhau trong Markdown, nhưng cả hai đều được hiển
+		thị theo cùng một cách. Kiểu liên kết đầu tiên được gọi là
+		<em>liên kết nội tuyến</em> (inline link). Để tạo một liên kết nội tuyến,
+		bạn bọc văn bản liên kết trong ngoặc vuông ( <code>[ ]</code> ), sau đó bọc
+		liên kết trong ngoặc đơn ( <code>( )</code> ). Ví dụ, để tạo một siêu liên
+		kết đến www.github.com, với văn bản liên kết "Truy Cập trang GitHub!", bạn
+		sẽ viết như sau trong Markdown:
+		<code>[Truy Cập trang GitHub!](www.github.com)</code>.
+	</p>
+	<p>
+		Trong ô dưới đây, hãy tạo một liên kết đến www.google.com, với văn bản liên
+		kết "Tìm kiếm."
+	</p>
+	<div class="col-md-5 scratchpad"></div>
+	<span
+		class="help-tooltip icon-question"
+		data-toggle="tooltip"
+		data-original-title="Nhập câu trả lời của bạn vào ô bên trái, và Markdown tương ứng sẽ hiển thị ở ô bên phải. Khi câu trả lời của bạn chính xác, bạn sẽ được chuyển sang bài học tiếp theo"
+	></span>
+	<div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Bỏ qua</button>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>Làm tốt lắm!</p>
+		<p>
+			Bạn có thể thêm điểm nhấn vào văn bản liên kết nếu muốn. Trong ô dưới đây,
+			hãy in đậm cụm từ "thực sự, thực sự", và liên kết toàn bộ câu đến
+			www.dailykitten.com. Bạn sẽ muốn đảm bảo rằng phần in đậm nằm trong ngoặc
+			vuông của văn bản liên kết.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>Tuyệt vời!</p>
+		<p>
+			Mặc dù có nguy cơ tạo ra trải nghiệm hơi khó chịu, nhưng bạn vẫn có thể
+			tạo liên kết trong các tiêu đề.
+		</p>
+		<p>
+			Trong bài hướng dẫn tiếp theo, hãy đặt văn bản làm tiêu đề cấp bốn, và
+			biến cụm từ "BBC" thành một liên kết đến www.bbc.com/news:
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>
+			Đó là tất cả những gì bạn cần biết để viết các liên kết nội tuyến (inline
+			link).
+		</p>
+		<p>
+			Kiểu liên kết thứ hai được gọi là liên kết <em>tham chiếu</em> (reference
+			link). Như tên gọi, liên kết thực chất là một tham chiếu đến một nơi khác
+			trong tài liệu. Dưới đây là một ví dụ:
+		</p>
+		<pre>
+     Đây là [một liên kết đến thứ gì đó khác][nơi khác].
+     Đây là [một liên kết khác][liên-kết-khác].
+     Và bây giờ quay lại [liên kết đầu tiên][nơi khác].
+     [nơi khác]: www.github.com
+     [liên-kết-khác]: www.google.com
+  </pre
+		>
+		<p>
+			Các "tham chiếu" ở trên là tập hợp ngoặc vuông thứ hai:
+			<code>[nơi khác]</code> và <code>[liên-kết-khác]</code>. Ở cuối tài liệu
+			Markdown, các ngoặc vuông này được xác định là các liên kết chính xác đến
+			các trang web bên ngoài. Một ưu điểm của kiểu liên kết tham chiếu là các
+			liên kết nhiều lần đến cùng một địa chỉ chỉ cần được cập nhật một lần. Ví
+			dụ, nếu chúng ta quyết định làm cho tất cả các liên kết
+			<code>[nơi khác]</code> trỏ đến nơi khác, chúng ta chỉ cần thay đổi một
+			liên kết tham chiếu duy nhất.
+		</p>
+		<p>
+			Các liên kết tham chiếu sẽ không xuất hiện trong Markdown được kết xuất.
+			Bạn xác định chúng bằng cách cung cấp tên thẻ giống nhau được bọc trong
+			ngoặc vuông, theo sau là dấu hai chấm, và sau đó là liên kết.
+		</p>
+		<p>
+			Trong ô dưới đây, chúng tôi đã bắt đầu viết một số liên kết tham chiếu.
+			Bạn sẽ cần hoàn thiện chúng! Đặt thẻ tham chiếu đầu tiên là "một nơi vui
+			vẻ", và liên kết nó đến www.zombo.com; liên kết thứ hai trỏ đến
+			www.stumbleupon.com.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<hr />
+	<p>Bây giờ bạn đã biết cách tạo liên kết trong Markdown!</p>
+	<a
+		class="btn btn-lg btn-success"
+		href="{{ site.data.tooltips.lesson_4[page.locale].href }}"
+		>Đến bài học tiếp theo!</a
+	>
+</div>

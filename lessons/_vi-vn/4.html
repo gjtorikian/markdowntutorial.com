@@ -1,0 +1,92 @@
+---
+layout: default
+title: Hình Ảnh
+number: 4
+---
+
+<div class="row">
+	<p>
+		Nếu bạn biết cách tạo liên kết trong Markdown, bạn cũng có thể tạo hình ảnh.
+		Cú pháp gần như y hệt.
+	</p>
+	<p>
+		Hình ảnh cũng có hai kiểu, giống như liên kết, và cả hai đều được hiển thị
+		theo cùng một cách. Sự khác biệt giữa liên kết và hình ảnh là hình ảnh được
+		bắt đầu bằng một dấu chấm than ( <code>!</code> ).
+	</p>
+	<p>
+		Kiểu hình ảnh đầu tiên được gọi là <em>liên kết hình ảnh nội tuyến</em>. Để
+		tạo một liên kết hình ảnh nội tuyến, hãy nhập một dấu chấm than (
+		<code>!</code> ), bọc văn bản thay thế trong ngoặc vuông (
+		<code>[ ]</code> ), sau đó bọc liên kết trong ngoặc đơn (
+		<code>( )</code> ). (Văn bản thay thế là một cụm từ hoặc câu mô tả hình ảnh
+		dành cho những người khiếm thị.)
+	</p>
+	<p>
+		Ví dụ, để tạo một liên kết hình ảnh nội tuyến đến
+		https://octodex.github.com/images/bannekat.png, với văn bản thay thế
+		"Benjamin Bannekat",sẽ được viết như sau trong Markdown:
+		<code
+			>![Benjamin
+			Bannekat](https://octodex.github.com/images/bannekat.png)</code
+		>.
+	</p>
+	<p>
+		Trong ô dưới đây, chuyển liên kết thành một hình ảnh, và điền vào phần ngoặc
+		vuông văn bản thay thế "Một con hổ đẹp":
+	</p>
+	<div class="col-md-5 scratchpad"></div>
+	<span
+		class="help-tooltip icon-question"
+		data-toggle="tooltip"
+		data-original-title="Nhập câu trả lời của bạn vào ô bên trái, và Markdown tương ứng sẽ hiển thị ở ô bên phải. Khi câu trả lời của bạn chính xác, bạn sẽ được chuyển sang bài học tiếp theo"
+	></span>
+	<div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Bỏ qua</button>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>Tuyệt vời!</p>
+		<p>
+			Mặc dù bạn không <em>cần</em> thêm văn bản thay thế, nhưng nó sẽ giúp nội
+			dung của bạn dễ tiếp cận hơn với người xem, bao gồm cả những người khiếm
+			thị, sử dụng trình đọc màn hình, hoặc không có kết nối internet tốc độ
+			cao.
+		</p>
+		<p>
+			Đối với hình ảnh tham chiếu, bạn sẽ làm theo cùng một mẫu như liên kết
+			tham chiếu. Bạn sẽ đặt một dấu chấm than trước Markdown, sau đó cung cấp
+			hai ngoặc vuông cho văn bản thay thế, và sau đó là hai ngoặc vuông khác
+			cho thẻ hình ảnh, như thế này: <code>![Người sáng lập][Cha]</code> Ở cuối
+			trang Markdown của bạn, bạn sẽ xác định một hình ảnh cho thẻ, như thế này:
+			<code>[Cha]: http://octodex.github.com/images/founding-father.jpg</code>.
+		</p>
+		<p>
+			Trong ô dưới đây, chúng tôi đã bắt đầu đặt một số hình ảnh tham chiếu; bạn
+			sẽ cần hoàn thiện chúng, giống như bài học trước. Đặt thẻ tham chiếu đầu
+			tiên là "Đen", và liên kết nó đến
+			<code
+				>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code
+			>; hãy liên kết hình ảnh thứ hai đến
+			<code
+				>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code
+			>.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<hr />
+	<p>
+		Tada! Bạn đã học được tất cả những gì cần thiết để có thể thêm hình ảnh
+		trong Markdown!
+	</p>
+	<a
+		class="btn btn-lg btn-success"
+		href="{{ site.data.tooltips.lesson_5[page.locale].href }}"
+		>Đến bài học tiếp theo!</a
+	>
+</div>

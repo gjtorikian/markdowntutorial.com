@@ -86,21 +86,21 @@
 		5: {
 			0: {
 				startingText:
-					'I read this interesting quote the other day:\n\n"Her eyes had called him and his soul had leaped at the call. To live, to err, to fall, to triumph, to recreate life out of life!"',
+					'Tôi đã đọc một câu trích dẫn thú vị vào hôm nọ:\n\n"Đôi mắt cô ấy đã gọi anh và tânh hồn anh đã vọt theo tiếng gọi. Để sống, để lầm lỗi, để ngã gục, để chiến thắng, để tái tạo cuộc sống từ chính cuộc sống!"',
 				renderedAnswer:
-					'<p>I read this interesting quote the other day:</p>\n<blockquote>\n<p>"Her eyes had called him and his soul had leaped at the call. To live, to err, to fall, to triumph, to recreate life out of life!"</p>\n</blockquote>',
+					'<p>Tôi đã đọc một câu trích dẫn thú vị vào hôm nọ:</p>\n<blockquote>\n<p>"Đôi mắt cô ấy đã gọi anh và tâm hồn anh đã vọt theo tiếng gọi. Để sống, để lầm lỗi, để ngã gục, để chiến thắng, để tái tạo cuộc sống từ chính cuộc sống!"</p>\n</blockquote>',
 			},
 			1: {
 				startingText:
-					'\n>Once upon a time and a very good time it was there was a moocow coming down along the road and this moocow that was coming down along the road met a nicens little boy named baby tuckoo...\n\nHis father told him that story: his father looked at him through a glass: he had a hairy face.\n\nHe was baby tuckoo. The moocow came down the road where Betty Byrne lived: she sold lemon platt.',
+					'\n>Ngày xửa ngày xưa, vào một thời điểm rất tốt đẹp, đã có một con bò con đi dọc con đường và con bò con này đi dọc con đường đã gặp một cậu bé nhỏ xinh tên là baby tuckoo...\n\nNgười cha đã kể câu chuyện đó cho cậu: ông nhìn cậu qua tấm kính: ông có một gương mặt đầy râu.\n\nCậu là baby tuckoo. Con bò con đi xuống con đường nơi Betty Byrne sống: cô ấy bán bánh chanh.',
 				renderedAnswer:
-					'<blockquote>\n<p>Once upon a time and a very good time it was there was a moocow coming down along the road and this moocow that was coming down along the road met a nicens little boy named baby tuckoo...</p>\n<p>His father told him that story: his father looked at him through a glass: he had a hairy face.</p>\n<p>He was baby tuckoo. The moocow came down the road where Betty Byrne lived: she sold lemon platt.</p>\n</blockquote>',
+					'<blockquote>\n<p>Ngày xửa ngày xưa, vào một thời điểm rất tốt đẹp, đã có một con bò con đi dọc con đường và con bò con này đi dọc con đường đã gặp một cậu bé nhỏ xinh tên là baby tuckoo...</p>\n<p>Người cha đã kể câu chuyện đó cho cậu: ông nhìn cậu qua tấm kính: ông có một gương mặt đầy râu.</p>\n<p>Cậu là baby tuckoo. Con bò con đi xuống con đường nơi Betty Byrne sống: cô ấy bán bánh chanh.</p>\n</blockquote>',
 			},
 			2: {
 				startingText:
-					"He left her quickly, fearing that her intimacy might turn to jibing and wishing to be out of the way before she offered her ware to another, a tourist from England or a student of Trinity. Grafton Street, along which he walked, prolonged that moment of discouraged poverty. In the roadway at the head of the street a slab was set to the memory of Wolfe Tone and he remembered having been present with his father at its laying. He remembered with bitterness that scene of tawdry tribute. There were four French delegates in a brake and one, a plump smiling young man, held, wedged on a stick, a card on which were printed the words: VIVE L'IRLANDE!",
+					"Anh nhanh chóng rời bỏ cô, lo sợ sự thân mật của cô có thể chuyển thành sự giễu cợt và mong muốn rời đi trước khi cô chào bán hàng của mình cho người khác, một du khách từ Anh hoặc một sinh viên của Trinity. Phố Grafton, nơi anh đi bộ, kéo dài giây phút nghèo khó chán chường. Ở lòng đường ở đầu phố, một tấm bia được dựng để tưởng nhớ Wolfe Tone và anh nhớ lại đã từng có mặt với cha mình khi đặt tấm bia. Anh nhớ lại với sự cay đắng cảnh lễ kỷ niệm giả tạo đó. Có bốn đại biểu Pháp trong một xe và một người, một chàng trai đầy đặn mỉm cười, giữ một tấm thẻ bị kẹp trên một cái que, trên đó được in những từ: VIVE L'IRLANDE!",
 				renderedAnswer:
-					"<blockquote>\n<p>He left her quickly, fearing that her intimacy might turn to jibing and wishing to be out of the way before she offered her ware to another, a tourist from England or a student of Trinity. Grafton Street, along which he walked, prolonged that moment of discouraged poverty. In the roadway at the head of the street a slab was set to the memory of Wolfe Tone and he remembered having been present with his father at its laying. He remembered with bitterness that scene of tawdry tribute. There were four French delegates in a brake and one, a plump smiling young man, held, wedged on a stick, a card on which were printed the words: <em>VIVE L'IRLANDE</em>!</p>\n</blockquote>",
+					"<blockquote>\n<p>Anh nhanh chóng rời bỏ cô, lo sợ sự thân mật của cô có thể chuyển thành sự giễu cợt và mong muốn rời đi trước khi cô chào bán hàng của mình cho người khác, một du khách từ Anh hoặc một sinh viên của Trinity. Phố Grafton, nơi anh đi bộ, kéo dài giây phút nghèo khó chán chường. Ở lòng đường ở đầu phố, một tấm bia được dựng để tưởng nhớ Wolfe Tone và anh nhớ lại đã từng có mặt với cha mình khi đặt tấm bia. Anh nhớ lại với sự cay đắng cảnh lễ kỷ niệm giả tạo đó. Có bốn đại biểu Pháp trong một xe và một người, một chàng trai đầy đặn mỉm cười, giữ một tấm thẻ bị kẹp trên một cái que, trên đó được in những từ: <em>VIVE L'IRLANDE</em>!</p>\n</blockquote>",
 			},
 		},
 		6: {

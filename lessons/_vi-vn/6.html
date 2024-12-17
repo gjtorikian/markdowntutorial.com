@@ -1,0 +1,256 @@
+---
+layout: default
+title: Danh Sách
+number: 6
+---
+
+<div class="row">
+	<p>Hướng dẫn này sẽ nói về việc tạo danh sách trong Markdown.</p>
+	<p>
+		Có hai loại danh sách trong vũ trụ: danh sách không có thứ tự (unordered
+		list) và danh sách có thứ tự (ordered list). Đó là cách nói khéo léo để chỉ
+		ra rằng có các danh sách có điểm đánh dấu và các danh sách có số.
+	</p>
+	<p>
+		Để tạo một danh sách không có thứ tự, bạn sẽ muốn đặt một dấu hoa thị hay
+		dấu sao ( <code>*</code> ) trước mỗi mục trong danh sách, sau đó theo sau
+		bằng một khoảng trắng. Mỗi mục danh sách cũng sẽ nằm trên một dòng riêng. Ví
+		dụ, một danh sách tạp hóa trong Markdown có thể trông như thế này:
+	</p>
+	<pre>
+* Sữa
+* Trứng
+* Cá hồi
+* Bơ
+</pre
+	>
+	<p>Danh sách Markdown này sẽ được hiển thị thành các điểm đánh dấu sau:</p>
+	<ul>
+		<li>Sữa</li>
+		<li>Trứng</li>
+		<li>Cá hồi</li>
+		<li>Bơ</li>
+	</ul>
+	<p>
+		Trong ô dưới đây, hãy chuyển các từ được phân tách bằng dấu phẩy thành một
+		danh sách.
+	</p>
+	<div class="col-md-5 scratchpad"></div>
+	<span
+		class="help-tooltip icon-question"
+		data-toggle="tooltip"
+		data-original-title="Nhập câu trả lời của bạn vào ô bên trái, và Markdown tương ứng sẽ hiển thị ở ô bên phải. Khi câu trả lời của bạn chính xác, bạn sẽ được chuyển sang bài học tiếp theo"
+	></span>
+	<div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Bỏ qua</button>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>
+			Được rồi! Đó là cách bạn viết một danh sách không có thứ tự (unordered
+			list). Bây giờ, hãy nói về các danh sách có thứ tự (ordered list).
+		</p>
+		<p>
+			Một danh sách có thứ tự được đánh số, thay vì sử dụng dấu hoa thị. Hãy xem
+			công thức này:
+		</p>
+		<ol>
+			<li>Đập ba quả trứng vào một cái bát</li>
+			<li>Đổ một gallon sữa vào bát</li>
+			<li>Chà xát cá hồi mạnh mẽ với bơ</li>
+			<li>Thả cá hồi vào bát trứng-sữa</li>
+		</ol>
+		<p>Để viết điều đó trong Markdown, bạn sẽ làm như sau:</p>
+		<pre>
+1. Đập ba quả trứng vào một cái bát
+2. Đổ một gallon sữa vào bát
+3. Chà xát cá hồi mạnh mẽ với bơ
+4. Thả cá hồi vào bát trứng-sữa
+</pre
+		>
+		<p>
+			Dễ dàng, phải không? Nó giống như cách bạn mong đợi một danh sách sẽ trông
+			như thế nào.
+		</p>
+		<p>
+			Trong ô dưới đây, hãy chuyển phần còn lại của công thức thành một danh
+			sách có thứ tự.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>Công việc tuyệt vời!</p>
+		<p>
+			Bạn có thể chọn thêm chữ in nghiêng, chữ đậm hoặc liên kết trong các danh
+			sách, như bạn có thể mong đợi. Trong ô dưới đây, hãy chuyển các tên khoa
+			học của cây thành chữ in nghiêng.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>Tuyệt vời!</p>
+		<p>
+			Đôi khi, bạn có thể cần tạo một danh sách có chiều sâu hơn, hay nói cách
+			khác,
+			<em>lồng</em> một danh sách trong một danh sách khác. Đừng lo, vì cú pháp
+			Markdown hoàn toàn giống nhau. Tất cả những gì bạn phải làm là nhớ thụt lề
+			mỗi dấu hoa thị <em>thêm một khoảng trắng</em> so với mục trước đó.
+		</p>
+		<p>
+			Ví dụ, trong danh sách sau, chúng ta sẽ thêm một số danh sách phụ vào mỗi
+			mục danh sách "chính", mô tả chi tiết về những người này:
+		</p>
+		<pre>
+* Tintin
+ * Một phóng viên
+ * Có mái tóc cam xù
+ * Bạn với con chó tuyệt nhất thế giới
+* Haddock
+ * Một thuyền trưởng
+ * Có bộ râu tuyệt vời
+ * Thích rượu whisky
+   * Có lẽ cũng là rượu scotch?
+</pre
+		>
+		<p>Khi được hiển thị, danh sách này sẽ trở thành nhóm sau:</p>
+		<p></p>
+		<ul>
+			<li>
+				Tintin
+				<ul>
+					<li>Một phóng viên</li>
+					<li>Có mái tóc cam xù</li>
+					<li>Bạn với con chó tuyệt nhất thế giới</li>
+				</ul>
+			</li>
+			<li>
+				Haddock
+				<ul>
+					<li>Một thuyền trưởng</li>
+					<li>Có bộ râu tuyệt vời</li>
+					<li>
+						Thích rượu whisky
+						<ul>
+							<li>Có lẽ cũng là rượu scotch?</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			Trong ô dưới đây, hãy chuyển các đặc điểm của nhân vật thành các điểm phụ.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>
+			Tuyệt vời! Mặc dù bạn có thể tiếp tục thụt lề và thêm các danh sách phụ vô
+			hạn, nhưng thông thường nên dừng lại sau ba cấp độ; nếu không, văn bản của
+			bạn sẽ trở nên rối rắm.
+		</p>
+		<p>
+			Còn một thủ thuật nữa về danh sách và thụt lề mà chúng ta sẽ khám phá, đó
+			là trường hợp của các đoạn văn. Giả sử bạn muốn tạo một danh sách điểm
+			đánh dấu yêu cầu thêm một số ngữ cảnh (nhưng không phải là một danh sách
+			khác). Ví dụ, nó có thể trông như thế này:
+		</p>
+		<ol>
+			<li>
+				<p>Đập ba quả trứng vào một cái bát.</p>
+				<p>Bây giờ, bạn sẽ muốn đập trứng theo cách không gây ra hỗn loạn.</p>
+				<p>Nếu bạn <em>có</em> gây ra hỗn loạn, hãy dùng khăn để lau dọn!</p>
+			</li>
+			<li>
+				<p>Đổ một gallon sữa vào bát.</p>
+				<p>
+					Về cơ bản, hãy tuân theo hướng dẫn tương tự như ở trên: đừng gây bẩn,
+					nhưng nếu có, hãy dọn sạch!
+				</p>
+			</li>
+			<li>
+				<p>Chà xát cá hồi mạnh mẽ với bơ.</p>
+				<p>
+					Bằng từ "mạnh mẽ", chúng tôi muốn nói đến chuyển động hoàn toàn thẳng
+					đứng. Julia Child từng nhận xét:
+				</p>
+				<blockquote>
+					<p>Lên và xuống và khắp nơi, đó là cách bơ trên cá hồi được thoa.</p>
+				</blockquote>
+			</li>
+			<li>
+				<p>Thả cá hồi vào bát trứng-sữa.</p>
+				<p>Dưới đây là một số kỹ thuật thả cá hồi:</p>
+				<ul>
+					<li>Đảm bảo không có cá hồi vằn hoặc trẻ em ở gần</li>
+					<li>Sử dụng cả hai tay</li>
+					<li>Luôn có sẵn một chiếc khăn để chùi nếu làm bẩn</li>
+				</ul>
+			</li>
+		</ol>
+		<p>
+			Để tạo loại văn bản này, đoạn văn của bạn phải bắt đầu trên một dòng riêng
+			bên dưới điểm đánh dấu, và phải được thụt lề ít nhất một khoảng trắng. Ví
+			dụ, danh sách ở trên trông như thế này trong Markdown:
+		</p>
+		<pre>
+1. Đập ba quả trứng vào một cái bát.
+Bây giờ, bạn sẽ muốn đập trứng theo cách không gây ra hỗn loạn.
+Nếu bạn có gây ra hỗn loạn, hãy dùng khăn để lau dọn!
+
+Đổ một gallon sữa vào bát.
+
+Về cơ bản, hãy tuân theo hướng dẫn tương tự như ở trên: đừng gây bẩn, nhưng nếu có, hãy dọn sạch!
+
+Chà xát cá hồi mạnh mẽ với bơ.
+Bằng từ "mạnh mẽ", chúng tôi muốn nói đến chuyển động hoàn toàn thẳng đứng. Julia Child từng nhận xét:
+
+Lên và xuống và khắp nơi, đó là cách bơ trên cá hồi được thoa.
+
+
+Thả cá hồi vào bát trứng-sữa.
+Dưới đây là một số kỹ thuật thả cá hồi:
+
+Đảm bảo không có cá hồi vằn hoặc trẻ em ở gần
+Sử dụng cả hai tay
+Luôn có sẵn một chiếc khăn để chùi nếu làm bẩn
+  </pre
+		>
+		<p>
+			Lưu ý rằng hai mục đầu tiên có một khoảng trắng. Điều này trông hơi lạ, vì
+			vậy bạn có thể muốn thụt lề một cách phù hợp để khớp các ký tự (như các
+			mục ba và bốn). Trong các đoạn văn này, bạn có thể bao gồm nhiều phần tử
+			Markdown khác, như khối trích dẫn, hoặc thậm chí là các danh sách khác!
+		</p>
+		<p>
+			Trong ô dưới đây, hãy chuyển các điểm đánh dấu thành các đoạn văn riêng.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<hr />
+	<p>Bây giờ bạn đã biết cách tạo danh sách trong Markdown!</p>
+	<a
+		class="btn btn-lg btn-success"
+		href="{{ site.data.tooltips.lesson_7[page.locale].href }}"
+		>Đến bài học tiếp theo!</a
+	>
+</div>

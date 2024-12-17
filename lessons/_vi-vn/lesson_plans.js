@@ -105,33 +105,32 @@
 		},
 		6: {
 			0: {
-				startingText: 'Flour, Cheese, Tomatoes',
+				startingText: 'Bột mì, Phô mai, Cà chua',
 				renderedAnswer:
-					'<ul>\n<li>Flour</li>\n<li>Cheese</li>\n<li>Tomatoes</li>\n</ul>',
+					'<ul>\n<li>Bột mì</li>\n<li>Phô mai</li>\n<li>Cà chua</li>\n</ul>',
 			},
 			1: {
-				startingText:
-					'Cut the cheese, Slice the tomatoes, Rub the tomatoes in flour',
+				startingText: 'Cắt phô mai, Thái cà chua, Lăn cà chua trong bột',
 				renderedAnswer:
-					'<ol>\n<li>Cut the cheese</li>\n<li>Slice the tomatoes</li>\n<li>Rub the tomatoes in flour</li>\n</ol>',
+					'<ol>\n<li>Cắt phô mai</li>\n<li>Thái cà chua</li>\n<li>Lăn cà chua trong bột</li>\n</ol>',
 			},
 			2: {
 				startingText:
-					'* Azalea (Ericaceae Rhododendron)\n* Chrysanthemum (Anthemideae Chrysanthemum)\n* Dahlia (Coreopsideae Dahlia)',
+					'* Đỗ quyên (Ericaceae Rhododendron)\n* Cúc (Anthemideae Chrysanthemum)\n* Thược dược (Coreopsideae Dahlia)',
 				renderedAnswer:
-					'<ul>\n<li>Azalea (<em>Ericaceae Rhododendron</em>)</li>\n<li>Chrysanthemum (<em>Anthemideae Chrysanthemum</em>)</li>\n<li>Dahlia (<em>Coreopsideae Dahlia</em>)</li>\n</ul>',
+					'<ul>\n<li>Đỗ quyên (<em>Ericaceae Rhododendron</em>)</li>\n<li>Cúc (<em>Anthemideae Chrysanthemum</em>)</li>\n<li>Thược dược (<em>Coreopsideae Dahlia</em>)</li>\n</ul>',
 			},
 			3: {
 				startingText:
-					'* Calculus, A professor, Has no hair, Often wears green\n* Castafiore, An opera singer, Has white hair, Is very famous',
+					'* Calculus, Một giáo sư, Không có tóc, Thường mặc màu xanh lá\n* Castafiore, Ca sĩ opera, Có tóc trắng, Rất nổi tiếng',
 				renderedAnswer:
-					'<ul>\n<li>Calculus<ul>\n<li>A professor</li>\n<li>Has no hair</li>\n<li>Often wears green</li>\n</ul>\n</li>\n<li>Castafiore<ul>\n<li>An opera singer</li>\n<li>Has white hair</li>\n<li>Is very famous</li>\n</ul>\n</li>\n</ul>',
+					'<ul>\n<li>Calculus<ul>\n<li>Một giáo sư</li>\n<li>Không có tóc</li>\n<li>Thường mặc màu xanh lá</li>\n</ul>\n</li>\n<li>Castafiore<ul>\n<li>Ca sĩ opera</li>\n<li>Có tóc trắng</li>\n<li>Rất nổi tiếng</li>\n</ul>\n</li>\n</ul>',
 			},
 			4: {
 				startingText:
-					"1. Cut the cheese\n  * Make sure that the cheese is cut into little triangles.\n\n2. Slice the tomatoes\n  * Be careful when holding the knife.\n  * For more help on tomato slicing, see Thomas Jefferson's seminal essay _Tom Ate Those_.",
+					'1. Cắt phô mai\n  * Đảm bảo phô mai được cắt thành những miếng tam giác nhỏ.\n\n2. Thái cà chua\n  * Cẩn thận khi cầm dao.\n  * Để được hướng dẫn thêm về việc thái cà chua, hãy xem bài luận nổi tiếng của Thomas Jefferson về _Tom Ate Those_.',
 				renderedAnswer:
-					"<ol>\n<li><p>Cut the cheese</p>\n<p>Make sure that the cheese is cut into little triangles.</p>\n</li>\n<li><p>Slice the tomatoes</p>\n<p>Be careful when holding the knife.</p>\n<p>For more help on tomato slicing, see Thomas Jefferson's seminal essay <em>Tom Ate Those</em>.</p>\n</li>\n</ol>",
+					'<ol>\n<li><p>Cắt phô mai</p>\n<p>Đảm bảo phô mai được cắt thành những miếng tam giác nhỏ.</p>\n</li>\n<li><p>Thái cà chua</p>\n<p>Cẩn thận khi cầm dao.</p>\n<p>Để được hướng dẫn thêm về việc thái cà chua, hãy xem bài luận nổi tiếng của Thomas Jefferson về <em>Tom Ate Those</em>.</p>\n</li>\n</ol>',
 			},
 		},
 		7: {

@@ -1,0 +1,91 @@
+---
+layout: default
+title: Đoạn Văn 
+number: 7
+---
+
+<div class="row">
+  <p>Markdown cung cấp nhiều phương pháp định dạng đoạn văn đa dạng.</p>
+  <p>
+    Chúng ta hãy sử dụng một số dòng thơ làm ví dụ minh họa. Giả sử bạn muốn 
+    trình bày văn bản theo định dạng sau:
+  </p>
+  <p>
+    Liệu tôi có mâu thuẫn với chính mình?<br />
+    Quả thực, tôi chấp nhận mâu thuẫn với chính mình,<br />
+    (Tôi to lớn, tôi chứa đựng vô số điều.)
+  </p>
+  <p>
+    Bạn có thể nghĩ rằng việc đặt mỗi câu thơ trên một dòng riêng sẽ giải quyết 
+    được vấn đề:
+  </p>
+  <pre>
+Liệu tôi có mâu thuẫn với chính mình?
+Quả thực, tôi chấp nhận mâu thuẫn với chính mình,
+(Tôi to lớn, tôi chứa đựng vô số điều.)
+</pre>
+  <p>
+    Tuy nhiên, điều này là không chính xác! Markdown sẽ hiển thị toàn bộ văn bản 
+    như một dòng liên tục: Liệu tôi có mâu thuẫn với chính mình? Quả thực, tôi chấp 
+    nhận mâu thuẫn với chính mình, (Tôi to lớn, tôi chứa đựng vô số điều.).
+  </p>
+  <p>
+    Nếu bạn "cưỡng ép" ngắt dòng (hard break), kết quả sẽ bị phân tán:
+  </p>
+  <pre>
+Liệu tôi có mâu thuẫn với chính mình?
+Quả thực, tôi chấp nhận mâu thuẫn với chính mình,
+(Tôi to lớn, tôi chứa đựng vô số điều.)
+</pre>
+  <p>
+    Đây được gọi là <em>ngắt dòng cứng</em>(hard break); trong khi bài thơ cần một <em>ngắt dòng mềm</em> (soft break). 
+    Bạn có thể đạt được điều này bằng cách chèn hai khoảng trắng <em>ngay sau</em> mỗi dòng mới. 
+    Các khoảng trắng này không thể nhìn thấy, nhưng sẽ có dạng như sau:
+  </p>
+  <pre>
+Liệu tôi có mâu thuẫn với chính mình?··
+Quả thực, tôi chấp nhận mâu thuẫn với chính mình,··
+(Tôi to lớn, tôi chứa đựng vô số điều.)
+</pre>
+  <p>Mỗi dấu chấm ( <code>·</code> ) là một ví dụ để biểu thị một khoảng trắng (space) trên bàn phím.</p>
+  <p>
+    Hãy thực hành kỹ thuật này. Trong ô bên dưới, bổ sung số lượng khoảng trắng 
+    cần thiết để hiển thị bài thơ một cách chính xác:
+  </p>
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Bỏ qua</button>
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Xuất sắc!</p>
+    <p>
+      Ngoài việc định dạng thơ, phương pháp ngắt dòng mềm còn được sử dụng rộng rãi 
+      trong việc định dạng các đoạn văn trong danh sách. Bạn có thể nhớ lại từ bài 
+      học trước rằng chúng ta đã chèn dòng mới cho các đoạn văn trong một danh sách.
+    </p>
+    <p>
+      Trong ô bên dưới, thay vì sử dụng ngắt dòng cứng, hãy sử dụng các ngắt dòng 
+      mềm để liên kết các đoạn phụ:
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Tuyệt vời! Giờ đây bạn đã thành thạo kỹ thuật tạo ngắt dòng "mềm" (soft break) trong Markdown!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.conclusion[page.locale].href }}"
+    >Đến phần kết luận!</a
+  >
+</div>

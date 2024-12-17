@@ -136,15 +136,15 @@
 		7: {
 			0: {
 				startingText:
-					'We pictured the meek mild creatures where\nThey dwelt in their strawy pen,\nNor did it occur to one of us there\nTo doubt they were kneeling then.',
+					'Chúng tôi tưởng tượng những sinh vật hiền lành ở nơi\nHọ sống trong chuồng rơm của mình,\nKhông một ai trong chúng tôi nghĩ đến việc\nNghi ngờ rằng chúng đang quỳ gối lúc ấy.',
 				renderedAnswer:
-					'<p>We pictured the meek mild creatures where<br>They dwelt in their strawy pen,<br>Nor did it occur to one of us there<br>To doubt they were kneeling then.</p>',
+					'<p>Chúng tôi tưởng tượng những sinh vật hiền lành ở nơi<br>Họ sống trong chuồng rơm của mình,<br>Không một ai trong chúng tôi nghĩ đến việc<br>Nghi ngờ rằng chúng đang quỳ gối lúc ấy.</p>',
 			},
 			1: {
 				startingText:
-					"1. Crack three eggs over a bowl.\n\n Now, you're going to want to crack the eggs in such a way that you don't make a mess.\n\n If you _do_ make a mess, use a towel to clean it up!\n\n2. Pour a gallon of milk into the bowl.\n\n Basically, take the same guidance as above: don't be messy, but if you are, clean it up!",
+					'1. Đập ba quả trứng vào một cái bát.\n\n Bây giờ, bạn sẽ muốn đập trứng sao cho không làm mất vệ sinh.\n\n Nếu _bạn_ làm vương vãi, hãy dùng khăn lau sạch!\n\n2. Đổ một gallon sữa vào bát.\n\n Về cơ bản, hãy áp dụng hướng dẫn như trên: đừng để bẩn, nhưng nếu có, hãy lau dọn sạch sẽ!',
 				renderedAnswer:
-					"<ol>\n<li><p>Crack three eggs over a bowl.<br>Now, you're going to want to crack the eggs in such a way that you don't make a mess.<br>If you <em>do</em> make a mess, use a towel to clean it up!</p>\n</li>\n<li><p>Pour a gallon of milk into the bowl.<br>Basically, take the same guidance as above: don't be messy, but if you are, clean it up!</p>\n</li>\n</ol>",
+					'<ol>\n<li><p>Đập ba quả trứng vào một cái bát.<br>Bây giờ, bạn sẽ muốn đập trứng sao cho không làm mất vệ sinh.<br>Nếu <em>bạn</em> làm vương vãi, hãy dùng khăn lau sạch!</p>\n</li>\n<li><p>Đổ một gallon sữa vào bát.<br>Về cơ bản, hãy áp dụng hướng dẫn như trên: đừng để bẩn, nhưng nếu có, hãy lau dọn sạch sẽ!</p>\n</li>\n</ol>',
 			},
 		},
 	};

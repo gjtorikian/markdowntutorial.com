@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 2
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/vi-vn"
+              data-toggle="tooltip"
+              data-original-title="Tiếng Việt"
+              >🇻🇳</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="In Nghiêng và In Đậm"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/vi-vn/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Tiêu Đề"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Liên kết (Links)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Hình Ảnh"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Khối Trích Dẫn"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Danh sách"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Đoạn văn"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/conclusion"
+              data-toggle="tooltip"
+              data-original-title="Phần Kết Luận"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Tiêu Đề</h1>
+      </div>
+
+      <div class="row">
+   <p>
+     Hãy cùng xem xét một quy ước định dạng khác: tiêu đề. Tiêu đề thường được sử dụng trên các trang web, bài báo tạp chí và thông báo để thu hút sự chú ý vào một phần hay đoạn văn. Như tên gọi của chúng, chúng hoạt động như các tiêu đề hoặc phụ đề ở trên các phần.
+   </p>
+   <p>Có sáu loại tiêu đề, với kích thước giảm dần:</p>
+   <h1>Đây là tiêu đề một</h1>
+   <h2>Đây là tiêu đề hai</h2>
+   <h3>Đây là tiêu đề ba</h3>
+   <h4>Đây là tiêu đề bốn</h4>
+   <h5>Đây là tiêu đề năm</h5>
+   <h6>Đây là tiêu đề sáu</h6>
+   <p>
+     Để tạo tiêu đề trong Markdown, bạn thêm dấu thăng (#) vào trước cụm từ. Số lượng dấu thăng sẽ bằng với kích thước của tiêu đề bạn muốn. Ví dụ, đối với tiêu đề một, bạn sẽ sử dụng một dấu thăng (<code># Tiêu Đề Một</code>), còn đối với tiêu đề ba, bạn sẽ sử dụng ba dấu thăng (<code>### Tiêu Đề Ba</code>).
+   </p>
+   <p>Trong bài học tiếp theo này, hãy đảm bảo mỗi tiêu đề có đúng kích thước.</p>
+   <div class="col-md-5 scratchpad"></div>
+   <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Nhập câu trả lời của bạn vào ô bên trái, và Markdown tương ứng sẽ hiển thị ở ô bên phải. Khi câu trả lời của bạn chính xác, bạn sẽ được chuyển sang bài học tiếp theo"></span>
+   <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Bỏ qua</button>
+<div class="toBeRevealed">
+   <div class="row">
+     <hr />
+     <p>Được rồi!</p>
+     <p>
+       Việc sử dụng tiêu đề nào phụ thuộc vào quyết định của bạn. Nhìn chung, tiêu đề một và sáu nên được sử dụng một cách hạn chế.
+     </p>
+     <p>
+       Bạn cũng có thể kết hợp các định dạng kiểu chữ khác trong tiêu đề, chẳng hạn như <em>in nghiêng</em> chúng. Trong ô dưới đây, hãy đặt dòng đầu tiên làm tiêu đề cấp bốn và in nghiêng tên của cuốn sách:
+     </p>
+     <div class="col-md-5 scratchpad"></div>
+     <div class="col-md-5 renderpad"></div>
+   </div>
+   <button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+   <hr />
+   <p>Và đó là tất cả những gì bạn cần biết để tạo tiêu đề trong Markdown.</p>
+   <a class="btn btn-lg btn-success" href="/vi-vn/lesson/3">Đến bài học tiếp theo!</a>
+</div>
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script type="text/javascript" integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js"></script> 
+    <script src="/vi-vn/lesson_plans.js"></script>
+    
+  </body>
+</html>

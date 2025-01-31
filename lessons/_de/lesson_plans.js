@@ -7,7 +7,8 @@
     1: {
       0: {
         startingText: "Schreiben in Markdown ist gar nicht so schwer!",
-        renderedAnswer: "<p>Schreiben in Markdown ist gar <em>nicht</em> schwer!</p>",
+        renderedAnswer:
+          "<p>Schreiben in Markdown ist gar <em>nicht</em> so schwer!</p>",
       },
       1: {
         startingText: "Ich werde diese Lektionen abschließen!",
@@ -18,7 +19,7 @@
         startingText:
           '"Natürlich", flüsterte sie. Dann rief sie: "Alles, was ich brauche, ist ein bisschen Mut!"',
         renderedAnswer:
-          '<p>"<em>Natürlich</em>," flüsterte sie. Dann rief sie: "Alles, was ich brauche, ist ein bisschen Mut!"</p>',
+          '<p>"<em>Natürlich</em>", flüsterte sie. Dann rief sie: "Alles, was ich brauche, ist <strong>ein bisschen Mut</strong>!"</p>',
       },
       3: {
         startingText:
@@ -36,10 +37,9 @@
       },
       1: {
         startingText:
-          "Die Kolumbianische Symbolik in Hundert Jahre Einsamkeit\n\nHier ein paar Worte über das Buch _Hundert Jahre..._.",
+          "Die Kolumbianische Symbolik in Hundert Jahre Einsamkeit\n\nHier ein paar Worte über das Buch _Hundert Jahre Einsamkeit_.",
         renderedAnswer:
-          "<h4>Die Kolumbianische Symbolik in <em>Hundert Jahre Einsamkeit</em></h4>\n<p>Hier ist ein paar Worte über das Buch <em>Hundert Jahre...</em>.</p>",
-          
+          "<h4>Die Kolumbianische Symbolik in <em>Hundert Jahre Einsamkeit</em></h4>\n<p>Hier ein paar Worte über das Buch <em>Hundert Jahre Einsamkeit</em>.</p>",
       },
     },
     3: {
@@ -49,7 +49,7 @@
           '<p><a href="http://www.google.com">Suche danach.</a></p>',
       },
       1: {
-        startingText: "Das werden Sie sich wirklich, wirklich ansehen wollen",
+        startingText: "Das werden Sie sich wirklich, wirklich ansehen wollen.",
         renderedAnswer:
           '<p><a href="http://www.dailykitten.com">Das werden Sie sich <strong>wirklich, wirklich</strong> ansehen wollen.</a></p>',
       },
@@ -60,9 +60,9 @@
       },
       3: {
         startingText:
-          "Willst du [etwas Lustiges sehen][]?\n\nDann, habe ich [die richtige Website für dich][ein weiterer lustiger Ort]",
+          "Willst du [etwas Lustiges sehen][]?\n\nDann, habe ich [die richtige Website für dich][ein weiterer lustiger Ort]!",
         renderedAnswer:
-          '<p>Willst du <a href="http://www.zombo.com">etwas Lustiges sehen</a>?</p>\n<p>Dann, habe ich <a href="http://www.stumbleupon.com">die richtige Webseite für dich</a>!</p>',
+          '<p>Willst du <a href="http://www.zombo.com">etwas Lustiges sehen</a>?</p>\n<p>Dann, habe ich <a href="http://www.stumbleupon.com">die richtige Website für dich</a>!</p>',
       },
     },
     4: {
@@ -74,7 +74,7 @@
       },
       1: {
         startingText:
-          "[Schwarze Katze][]\n\n[Orange Katze][Orange]\n\n[Schwarze]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg",
+          "[Schwarze Katze][]\n\n[Orange Katze][Orange]\n\n[Schwarz]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg",
         renderedAnswer:
           '<p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg" alt="Schwarze Katze"></p>\n<p><img src="http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png" alt="Orange Katze"></p>',
       },
@@ -84,13 +84,13 @@
         startingText:
           'Neulich las ich dieses interessante Zitat:\n\n"Ihre Augen hatten ihn gerufen, und seine Seele war dem Ruf gefolgt. Zu leben, zu irren, zu fallen, zu triumphieren, das Leben aus dem Leben neu zu erschaffen!"',
         renderedAnswer:
-          '<p>Neulich las ich diese interessante Zitat:\n\n</p>\n<blockquote>\n<p>"Ihre Augen hatten ihn gerufen, und seine Seel war dem Ruf gefolgt. Zu leben, zu irren, zu fallen, zu triumphieren, das Leben aus dem Leben neu zu erschaffen!"</p>\n</blockquote>',
+          '<p>Neulich las ich dieses interessante Zitat:</p>\n<blockquote>\n<p>"Ihre Augen hatten ihn gerufen, und seine Seele war dem Ruf gefolgt. Zu leben, zu irren, zu fallen, zu triumphieren, das Leben aus dem Leben neu zu erschaffen!"</p>\n</blockquote>',
       },
       1: {
         startingText:
           "\nEs war einmal vor langer Zeit, und es war eine sehr gute Zeit, da kam eine Muhkuh die Straße entlang, und diese Muhkuh, die die Straße entlang kam, traf einen netten kleinen Jungen namens Baby Tuckoo...\n\nSein Vater erzählte ihm diese Geschichte: Sein Vater schaute ihn durch ein Glas an: Er hatte ein haariges Gesicht.\n\nEr war Baby Tuckoo. Die Muhkuh kam die Straße hinunter, wo Betty Byrne wohnte: Sie verkaufte Zitronenkuchen.",
         renderedAnswer:
-          "<blockquote>\n<p>Es war einmal vor langer Zeit, und es war eine sehr gute Zeit, da kam eine Muhkuh die Straße entlang, und diese Muhkuh, die die Straße entlang kam, traf einen netten kleinen Jungen namens Baby Tuckoo...</p>\n<p>Sein Vater erzählte ihm dies Geschichte: Sein Vater schaute ihn durch ein Glas an: Er hatte ein haariges Gesicht.</p>\n<p>Er war Baby Tuckoo. Die Muhkuh kam die straße hinunter, wo Betty Byrne wohnte: Sie verkaufte Zitronenkuchen.</p>\n</blockquote>",
+          "<blockquote>\n<p>Es war einmal vor langer Zeit, und es war eine sehr gute Zeit, da kam eine Muhkuh die Straße entlang, und diese Muhkuh, die die Straße entlang kam, traf einen netten kleinen Jungen namens Baby Tuckoo...</p>\n<p>Sein Vater erzählte ihm diese Geschichte: Sein Vater schaute ihn durch ein Glas an: Er hatte ein haariges Gesicht.</p>\n<p>Er war Baby Tuckoo. Die Muhkuh kam die Straße hinunter, wo Betty Byrne wohnte: Sie verkaufte Zitronenkuchen.</p>\n</blockquote>",
       },
       2: {
         startingText:
@@ -107,9 +107,9 @@
       },
       1: {
         startingText:
-          "Den Käse schneiden, die Tomaten in Scheiben schneiden, die Tomaten mit Mehl einreiben",
+          "Den Käse schneiden, Die Tomaten in Scheiben schneiden, Die Tomaten mit Mehl einreiben",
         renderedAnswer:
-          "<ol>\n<li>Den Käse Schneiden</li>\n<li>Die Tomaten in Scheiben schneiden</li>\n<li>Die Tomaten mit mehl einreiben</li>\n</ol>",
+          "<ol>\n<li>Den Käse schneiden</li>\n<li>Die Tomaten in Scheiben schneiden</li>\n<li>Die Tomaten mit Mehl einreiben</li>\n</ol>",
       },
       2: {
         startingText:
@@ -125,15 +125,15 @@
       },
       4: {
         startingText:
-          "1. Den Käse schneiden\n  * Stellen Sie sicher, dass der Käse in kleinen Dreiecke geschnitten werden.\n\n2. Die Tomaten in Scheiben schneiden\n  * Sei vorsichtig beim halten des Messers.\n  * Weitere Informationen zum Schneiden von Tomaten finden Sie in Thomas Jeffersons Essay _Tom Ate Those_.",
+          "1. Den Käse schneiden\n  * Stellen Sie sicher, dass der Käse in kleine Dreiecke geschnitten wird.\n\n2. Die Tomaten in Scheiben schneiden\n  * Sei vorsichtig beim Halten des Messers.\n  * Weitere Informationen zum Schneiden von Tomaten finden Sie in Thomas Jeffersons Essay _Tom Ate Those_.",
         renderedAnswer:
-          "<ol>\n<li><p>Den Käse schneiden</p>\n<p>Stellen Sie sicher, dass der Käse in kleinen Dreiecke geschnitten werden.</p>\n</li>\n<li><p>Die Tomaten in Scheiben schneiden</p>\n<p>Sei vorsichtig beim halten des Messers.</p>\n<p>Weitere Informationen zum Schneiden von Tomaten finden Sie in Thomas Jeffersons Essay <em>Tom Ate Those</em>.</p>\n</li>\n</ol>",
+          "<ol>\n<li><p>Den Käse schneiden</p>\n<p>Stellen Sie sicher, dass der Käse in kleine Dreiecke geschnitten wird.</p>\n</li>\n<li><p>Die Tomaten in Scheiben schneiden</p>\n<p>Sei vorsichtig beim Halten des Messers.</p>\n<p>Weitere Informationen zum Schneiden von Tomaten finden Sie in Thomas Jeffersons Essay <em>Tom Ate Those</em>.</p>\n</li>\n</ol>",
       },
     },
     7: {
       0: {
         startingText:
-          "Wir stellten uns die sanftmütigen, milden Geschöpfe vor,\n Die in ihrem strohigen Stall lebten,\nUnd es kam keinem von uns in den Sinn,\nDaran zu zweifeln, dass sie damals niederknieten.",
+          "Wir stellten uns die sanftmütigen, milden Geschöpfe vor,\nDie in ihrem strohigen Stall lebten,\nUnd es kam keinem von uns in den Sinn,\nDaran zu zweifeln, dass sie damals niederknieten.",
         renderedAnswer:
           "<p>Wir stellten uns die sanftmütigen, milden Geschöpfe vor,<br>Die in ihrem strohigen Stall lebten,<br>Und es kam keinem von uns in den Sinn,<br>Daran zu zweifeln, dass sie damals niederknieten.</p>",
       },

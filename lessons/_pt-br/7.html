@@ -1,0 +1,102 @@
+---
+layout: default
+title: Parágrafos
+number: 7
+locale: pt-br
+---
+
+<div class="row">
+  <p>O Markdown tem várias maneiras de formatar parágrafos.</p>
+
+  <p>
+    Vamos pegar algumas linhas de poesia como exemplo. Suponha que você queira escrever
+    um texto que pareça assim:
+  </p>
+  <p>
+    Eu me contradigo?<br />
+    Muito bem, então eu me contradigo,<br />
+    (Eu sou grande, eu contenho multidões.)
+  </p>
+  <p>
+    Agora, você pode pensar que simplesmente digitar cada verso em sua própria linha seria
+    suficiente para resolver o problema:
+  </p>
+  <pre>
+Eu me contradigo?
+Muito bem, então eu me contradigo,
+(Eu sou grande, eu contenho multidões.)
+</pre
+  >
+  <p>
+    Infelizmente, você estaria errado! Este Markdown seria renderizado simplesmente como uma única
+    linha reta: Eu me contradigo? Muito bem, então eu me contradigo,
+    (Eu sou grande, eu contenho multidões.).
+  </p>
+  <p>
+    Se você inserir uma nova linha à força, acabará quebrando a unidade:
+  </p>
+  <pre>
+Eu me contradigo?
+
+Muito bem, então eu me contradigo,
+
+(Eu sou grande, eu contenho multidões.)
+</pre
+  >
+  <p>
+    Isso é o que é conhecido como uma <em>quebra dura</em>; o que nossa poesia pede é uma
+    <em>quebra suave</em>. Você pode conseguir isso inserindo dois espaços
+    <em>depois</em> de cada nova linha. Isso não é possível de ver, pois os espaços são
+    invisíveis, mas pareceria algo assim:
+  </p>
+  <pre>
+Eu me contradigo?··
+Muito bem, então eu me contradigo,··
+(Eu sou grande, eu contenho multidões.)
+</pre
+  >
+  <p>Cada ponto ( <code>·</code> ) representa um espaço no teclado.</p>
+
+  <p>
+    Vamos tentar essa técnica. Na caixa abaixo, insira o número necessário
+    de espaços para que o poema seja renderizado corretamente:
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Digite suas respostas na caixa à esquerda, e o Markdown resultante aparecerá na caixa à direita. Quando sua resposta estiver correta, você será levado para a próxima lição"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Pular</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Trabalho fantástico!</p>
+    <p>
+      Além de formatar poesia, um dos usos comuns dessas quebras suaves
+      é na formatação de parágrafos em listas. Lembre-se da lição anterior em que
+      inserimos uma nova linha para múltiplos parágrafos dentro de uma lista.
+    </p>
+    <p>
+      Na caixa abaixo, em vez de usar quebras duras, aperte os sub-parágrafos
+      com quebras suaves:
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Et voila! Agora você sabe como fazer quebras suaves no Markdown!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.conclusion[page.locale].href }}"
+    >Para a próxima lição!</a
+  >
+</div>

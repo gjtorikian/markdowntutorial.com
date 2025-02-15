@@ -32,6 +32,9 @@ lesson_1:
   vi-vn:
     href: /vi-vn/lesson/1
     title: In Nghiêng và In Đậm
+  pt-br:
+    href: /pt-br/lesson/1
+    title: Itálico e Negrito
 lesson_2:
   en:
     href: /lesson/2
@@ -66,6 +69,9 @@ lesson_2:
   vi-vn:
     href: /vi-vn/lesson/2
     title: Tiêu Đề
+  pt-br:
+    href: /pt-br/lesson/2
+    title: Cabeçalhos
 lesson_3:
   en:
     href: /lesson/3
@@ -100,6 +106,9 @@ lesson_3:
   vi-vn:
     href: /vi-vn/lesson/3
     title: Liên kết (Links)
+  pt-br:
+    href: /pt-br/lesson/3
+    title: Links
 lesson_4:
   en:
     href: /lesson/4
@@ -134,6 +143,9 @@ lesson_4:
   vi-vn:
     href: /vi-vn/lesson/4
     title: Hình Ảnh
+  pt-br:
+    href: /pt-br/lesson/4
+    title: Imagens
 lesson_5:
   en:
     href: /lesson/5
@@ -168,6 +180,9 @@ lesson_5:
   vi-vn:
     href: /vi-vn/lesson/5
     title: Khối Trích Dẫn
+  pt-br:
+    href: /pt-br/lesson/5
+    title: Citações
 lesson_6:
   en:
     href: /lesson/6
@@ -202,6 +217,9 @@ lesson_6:
   vi-vn:
     href: /vi-vn/lesson/6
     title: Danh sách
+  pt-br:
+    href: /pt-br/lesson/6
+    title: Listas
 lesson_7:
   en:
     href: /lesson/7
@@ -236,6 +254,9 @@ lesson_7:
   vi-vn:
     href: /vi-vn/lesson/7
     title: Đoạn văn
+  pt-br:
+    href: /pt-br/lesson/7
+    title: Parágrafos
 conclusion:
   en:
     href: /conclusion
@@ -270,3 +291,6 @@ conclusion:
   vi-vn:
     href: /vi-vn/conclusion
     title: Phần Kết Luận
+  pt-br:
+    href: /pt-br/conclusion
+    title: Conclusão

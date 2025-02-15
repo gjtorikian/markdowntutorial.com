@@ -66,7 +66,9 @@ collections:
   vi-vn:
     output: true
     permalink: vi-vn/lesson/:name/    
-    
+  pt-br:
+    output: true
+    permalink: pt-br/lesson/:name/
 
 defaults:
   - scope:
@@ -123,5 +125,11 @@ defaults:
       path: ""
       type: "vi-vn"
     values:
-      locale: "vi-vn"      
+      locale: "vi-vn"
+  - scope:
+      path: ""
+      type: "pt-br"
+    values:
+      locale: "pt-br"
+      
       

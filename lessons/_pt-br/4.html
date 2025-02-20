@@ -1,0 +1,55 @@
+---
+layout: default
+title: Imagens
+number: 4
+---
+
+<div class="row">
+<p>Se você sabe como criar links no Markdown, também pode criar imagens. A
+  sintaxe é quase a mesma.</p>
+
+<p>As imagens também têm dois estilos, assim como os links, e ambos são renderizados da mesma
+  maneira. A diferença entre links e imagens é que as imagens
+  são precedidas por um ponto de exclamação ( <code>!</code> ).</p>
+
+<p>O primeiro estilo de imagem é chamado de <em>link de imagem inline</em>. Para criar um link de imagem inline,
+  insira um ponto de exclamação ( <code>!</code> ), envolva o texto alternativo entre colchetes ( <code>[ ]</code> ) e depois envolva o link
+  entre parênteses ( <code>( )</code> ). (O texto alternativo é uma frase ou sentença que descreve a
+  imagem para deficientes visuais.)</p>
+
+<p>Por exemplo, para criar um link de imagem inline para https://octodex.github.com/images/bannekat.png, com um texto alternativo
+  que diz, Benjamin Bannekat, você escreveria isso no Markdown: <code>![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)</code>.</p>
+
+<p>Na caixa abaixo, transforme o link em uma imagem e preencha os colchetes do texto alternativo
+   para dizer "Um tigre bonito":</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Digite suas respostas na caixa à esquerda, e o Markdown resultante aparecerá na caixa à direita. Quando sua resposta estiver correta, você será levado para a próxima lição"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Pular</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Maravilhoso!</p>
+  <p>Embora você não <em>precise</em> adicionar texto alternativo, isso tornará seu conteúdo acessível ao seu público,
+    incluindo pessoas com deficiência visual, que usam leitores de tela ou que não têm conexões de internet de alta velocidade. </p>
+  <p>Para uma imagem de referência, você seguirá o mesmo padrão de um link de referência.
+    Você precederá o Markdown com um ponto de exclamação, depois fornecerá dois colchetes
+    para o texto alternativo e depois mais dois para a tag da imagem, assim: <code>![O pai fundador][Pai]</code> Na parte inferior da sua página Markdown, 
+    você definirá uma imagem para a tag, assim: <code>[Pai]: http://octodex.github.com/images/founding-father.jpg</code>.</p>
+  <p>Na caixa abaixo, começamos a colocar algumas imagens de referência; você
+    precisará completá-las, assim como na última lição. Chame a primeira tag de referência de "Preto" e faça
+    um link para <code>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code>; faça a
+    segunda imagem linkar para <code>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code>.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Ta da! Você aprendeu tudo sobre como adicionar imagens no Markdown!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_5[page.locale].href }}">Para a próxima lição!</a>
+</div>

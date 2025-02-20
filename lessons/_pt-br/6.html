@@ -1,0 +1,256 @@
+---
+layout: default
+title: Listas
+number: 6
+---
+
+<div class="row">
+  <p>Este tutorial é sobre como criar listas em Markdown.</p>
+
+  <p>
+    Existem dois tipos de listas no universo conhecido: não ordenadas e ordenadas.
+    Isso é uma maneira chique de dizer que existem listas com pontos e
+    listas com números.
+  </p>
+  <p>
+    Para criar uma lista não ordenada, você deve prefixar cada item da lista
+    com um asterisco ( <code>*</code> ), seguido por um espaço. Cada item da lista
+    também recebe sua própria linha. Por exemplo, uma lista de compras em Markdown pode
+    parecer assim:
+  </p>
+  <pre>
+* Leite
+* Ovos
+* Salmão
+* Manteiga
+</pre
+  >
+  <p>Esta lista em Markdown seria renderizada nos seguintes pontos de bala:</p>
+  <ul>
+    <li>Leite</li>
+    <li>Ovos</li>
+    <li>Salmão</li>
+    <li>Manteiga</li>
+  </ul>
+  <p>Na caixa abaixo, transforme as palavras separadas por vírgula em uma lista.</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Digite suas respostas na caixa à esquerda, e o Markdown resultante aparecerá na caixa à direita. Quando sua resposta estiver correta, você será levado para a próxima lição"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Pular</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>
+      Tudo certo! É assim que você escreve uma lista não ordenada. Agora, vamos falar sobre
+      listas ordenadas.
+    </p>
+    <p>
+      Uma lista ordenada é prefixada com números, em vez de asteriscos. Veja
+      esta receita:
+    </p>
+    <ol>
+      <li>Quebre três ovos sobre uma tigela</li>
+      <li>Despeje um litro de leite na tigela</li>
+      <li>Esfregue o salmão vigorosamente com manteiga</li>
+      <li>Coloque o salmão na tigela de leite com ovos</li>
+    </ol>
+    <p>Para escrever isso em Markdown, você faria assim:</p>
+    <pre>
+1. Quebre três ovos sobre uma tigela
+2. Despeje um litro de leite na tigela
+3. Esfregue o salmão vigorosamente com manteiga
+4. Coloque o salmão na tigela de leite com ovos
+</pre
+    >
+    <p>Fácil, certo? É exatamente como você esperaria que uma lista parecesse.</p>
+    <p>Na caixa abaixo, transforme o restante da receita em uma lista ordenada.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Trabalho fantástico!</p>
+    <p>
+      Você pode optar por adicionar itálico, negrito ou links dentro das listas, como você pode
+      esperar. Na caixa abaixo, transforme os nomes latinos das plantas em
+      itálico.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>Magnífico!</p>
+    <p>
+      Ocasionalmente, você pode achar necessário fazer uma lista com mais profundidade, ou,
+      para <em>aninhar</em> uma lista dentro de outra. Não tenha medo, porque a
+      sintaxe do Markdown é exatamente a mesma. Tudo o que você precisa fazer é lembrar de
+      indentar cada asterisco <em>um espaço a mais</em> do que o item anterior.
+    </p>
+    <p>
+      Por exemplo, na lista a seguir, vamos adicionar algumas sub-listas a
+      cada item "principal" da lista, descrevendo as pessoas em detalhes:
+    </p>
+    <pre>
+* Tintim
+ * Um repórter
+ * Tem cabelo laranja fofo
+ * Amigo do cachorro mais incrível do mundo
+* Haddock
+ * Um capitão do mar
+ * Tem uma barba fantástica
+ * Ama uísque
+   * Possivelmente também escocês?
+</pre
+    >
+    <p>Quando renderizada, esta lista se transforma no seguinte agrupamento:</p>
+    <p></p>
+    <ul>
+      <li>
+        Tintim
+        <ul>
+          <li>Um repórter</li>
+          <li>Tem cabelo laranja fofo</li>
+          <li>Amigo do cachorro mais incrível do mundo</li>
+        </ul>
+      </li>
+      <li>
+        Haddock
+        <ul>
+          <li>Um capitão do mar</li>
+          <li>Tem uma barba fantástica</li>
+          <li>
+            Ama uísque
+            <ul>
+              <li>Possivelmente também escocês?</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      Na caixa abaixo, transforme as características dos personagens em sub-pontos.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>
+      Estupendo! Embora você possa continuar a indentar e adicionar sub-listas
+      indefinidamente, geralmente é uma boa ideia parar após três níveis;
+      caso contrário, seu texto se torna uma bagunça.
+    </p>
+    <p>
+      Há mais um truque para listas e indentação que vamos explorar, e
+      isso lida com o caso de parágrafos. Suponha que você queira criar uma
+      lista com marcadores que exija algum contexto adicional (mas não outra lista).
+      Por exemplo, pode parecer assim:
+    </p>
+    <ol>
+      <li>
+        <p>Quebre três ovos sobre uma tigela.</p>
+        <p>
+          Agora, você vai querer quebrar os ovos de uma maneira que
+          não faça bagunça.
+        </p>
+        <p>Se você <em>fizer</em> bagunça, use uma toalha para limpar!</p>
+      </li>
+      <li>
+        <p>Despeje um litro de leite na tigela.</p>
+        <p>
+          Basicamente, siga as mesmas orientações acima: não faça bagunça, mas se fizer, limpe!
+        </p>
+      </li>
+      <li>
+        <p>Esfregue o salmão vigorosamente com manteiga.</p>
+        <p>
+          Por "vigorosamente", queremos dizer um movimento estritamente vertical. Julia Child uma vez
+          disse:
+        </p>
+        <blockquote>
+          <p>Para cima e para baixo e ao redor, é assim que a manteiga vai no salmão.</p>
+        </blockquote>
+      </li>
+      <li>
+        <p>Coloque o salmão na tigela de leite com ovos.</p>
+        <p>Aqui estão algumas técnicas sobre como colocar o salmão:</p>
+        <ul>
+          <li>Certifique-se de que não há trutas ou crianças presentes</li>
+          <li>Use as duas mãos</li>
+          <li>Sempre tenha uma toalha por perto em caso de bagunça</li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+      Para criar esse tipo de texto, seu parágrafo deve começar em uma linha
+      sozinho abaixo do ponto da lista e deve ser indentado por pelo menos
+      um espaço. Por exemplo, a lista acima parece assim em Markdown:
+    </p>
+    <pre>
+1. Quebre três ovos sobre uma tigela.
+
+ Agora, você vai querer quebrar os ovos de uma maneira que não faça bagunça.
+
+ Se você _fizer_ bagunça, use uma toalha para limpar!
+
+2. Despeje um litro de leite na tigela.
+
+ Basicamente, siga as mesmas orientações acima: não faça bagunça, mas se fizer, limpe!
+
+3. Esfregue o salmão vigorosamente com manteiga.
+
+   Por "vigorosamente", queremos dizer um movimento estritamente vertical. Julia Child uma vez disse:
+   > Para cima e para baixo e ao redor, é assim que a manteiga vai no salmão.
+4. Coloque o salmão na tigela de leite com ovos.
+
+   Aqui estão algumas técnicas sobre como colocar o salmão:
+
+   * Certifique-se de que não há trutas ou crianças presentes
+   * Use as duas mãos
+   * Sempre tenha uma toalha por perto em caso de bagunça
+  </pre
+    >
+
+    <p>
+      Observe que os dois primeiros itens têm um único espaço. Isso parece um pouco estranho,
+      então você pode querer indentar corretamente para alinhar os caracteres (como
+      itens três e quatro). Nesses parágrafos, você pode incluir todos os tipos de
+      outros elementos Markdown, como citações, ou até mesmo outras listas!
+    </p>
+    <p>
+      Na caixa abaixo, converta os pontos da lista em seus próprios parágrafos.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Agora você sabe como fazer listas em Markdown!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="{{ site.data.tooltips.lesson_7[page.locale].href }}"
+    >Para a próxima lição!</a
+  >
+</div>

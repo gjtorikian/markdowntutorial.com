@@ -1,0 +1,86 @@
+---
+layout: default
+title: Links
+number: 3
+---
+
+<div class="row">
+<p>Agora vamos aprender como fazer links para outros sites na World Wide Web.</p>
+
+<p>Existem dois tipos diferentes de links no Markdown, mas ambos são renderizados da mesma
+  maneira. O primeiro estilo de link é chamado de <em>link inline</em>. Para criar um link inline,
+  você envolve o texto do link entre colchetes ( <code>[ ]</code> ), e depois envolve o link
+  entre parênteses ( <code>( )</code> ). Por exemplo, para criar um hyperlink para www.github.com, com um texto de link
+  que diz, Visite o GitHub!, você escreveria isso no Markdown: <code>[Visite o GitHub!](www.github.com)</code>.</p>
+
+<p>Na caixa abaixo, faça um link para www.google.com, com o texto do link que diz "Busque por isso."</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Digite suas respostas na caixa à esquerda, e o Markdown resultante aparecerá na caixa à direita. Quando sua resposta estiver correta, você será levado para a próxima lição"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Pular</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Bom trabalho!</p>
+  <p>Você pode adicionar ênfase ao texto do link, se quiser. Na caixa abaixo, deixe a
+  frase "muito, muito" negrito e faça com que toda a frase seja um link para www.dailykitten.com.
+  Você vai querer garantir que a formatação em negrito ocorra dentro dos colchetes do texto do link.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Fantástico!</p>
+  <p>Embora possa tornar a experiência um pouco estranha, você pode fazer links dentro
+  de cabeçalhos também.</p>
+  <p>Para esta próxima lição, faça o texto um cabeçalho tamanho quatro e transforme a frase
+  "da BBC" em um link para www.bbc.com/news:</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>Isso é tudo para escrever links inline.</p>
+  <p>O outro tipo de link é chamado de <em>link de referência</em>. Como o nome sugere,
+    o link é na verdade uma referência a outro lugar no documento. Aqui está um exemplo do que
+    queremos dizer:</p>
+  <pre>
+     Aqui está [um link para outro lugar][outro lugar].
+     Aqui está [mais um link][outro-link].
+     E agora de volta ao [primeiro link][outro lugar].
+
+     [outro lugar]: www.github.com
+     [outro-link]: www.google.com
+  </pre>
+  <p>As "referências" acima são o segundo conjunto de colchetes: <code>[outro lugar]</code> e
+    <code>[outro-link]</code>. Na parte inferior de um documento Markdown, esses colchetes são definidos
+    como links adequados para sites externos. Uma vantagem do estilo de link de referência
+    é que vários links para o mesmo lugar só precisam ser atualizados uma vez. Por
+    exemplo, se decidirmos fazer com que todos os links <code>[outro lugar]</code> vão para outro lugar,
+    só precisamos mudar o link de referência único.</p>
+  <p>Links de referência não aparecem no Markdown renderizado. Você os define fornecendo
+    o mesmo nome de tag envolto em colchetes, seguido por dois pontos, seguido pelo link.</p>
+  <p>Na caixa abaixo, começamos a escrever alguns links de referência. Você
+    precisará terminá-los! Chame a primeira tag de referência de "um lugar divertido" e faça
+    um link para www.zombo.com; faça o segundo link para www.stumbleupon.com.</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Pular</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr>
+  <p>Agora você sabe como fazer links no Markdown!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.data.tooltips.lesson_4[page.locale].href }}">Para a próxima lição!</a>
+</div>

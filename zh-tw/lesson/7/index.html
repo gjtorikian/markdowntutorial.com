@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 7
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/vi-vn"
+              data-toggle="tooltip"
+              data-original-title="Tiếng Việt"
+              >🇻🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pt-br"
+              data-toggle="tooltip"
+              data-original-title="Em Português Brasileiro"
+              >🇧🇷</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="斜體及粗體（Italics and Bold）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="標題（Headers）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="超連結（Links）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="圖片（Images）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="引用區塊（Blockquotes）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="清單（Lists）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/zh-tw/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="段落（Paragraphs）"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/zh-tw/conclusion"
+              data-toggle="tooltip"
+              data-original-title="總結"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">段落（Paragraphs）</h1>
+      </div>
+
+      <div class="row">
+  <p>Markdown 有數種標記段落的方法。</p>
+
+  <p>作為範例，我們來看看幾行詩。假設你希望寫一段這樣的文字：
+  </p>
+  <p>
+    Do I contradict myself?<br />
+    Very well then I contradict myself,<br />
+    (I am large, I contain multitudes.)
+  </p>
+  <p>
+    你可能會想，這沒什麼難的，照每行的順序輸入就好：
+  </p>
+  <pre>
+Do I contradict myself?
+Very well then I contradict myself,
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>
+    遺憾的是，事情並非如此。對 Markdown 語法而言，會將其呈現為同一行：Do I contradict myself? Very well then I contradict myself,
+    (I am large, I contain multitudes.).
+  </p>
+  <p>
+    如果你硬是在他們之間插入空行，結果反而會將其分段，會變成：
+  </p>
+  <pre>
+Do I contradict myself?
+
+Very well then I contradict myself,
+
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>
+    這樣的結果其實就是 <em>硬換行（Hard break）</em>，然而對我們的詩而言，想要的是 <em>軟換行（Soft break）</em>。軟換行的標記方式，是在每行 <em>行末</em> 多輸入兩個空格字元。
+  </p>
+  <pre>
+Do I contradict myself?··
+Very well then I contradict myself,··
+(I am large, I contain multitudes.)
+</pre
+  >
+  <p>此處的點 ( <code>·</code> ) 是用來表示空格。</p>
+
+  <p>
+    那麼就來練習這個技巧吧。在下方的文字框，插入適當數量的空格，好讓詩詞能正確呈現：
+  </p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="在左邊的文字框中輸入答案，Markdown 的結果會呈現在右邊。答案正確時，下一步課程就會出現。"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">略過</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>做得好！</p>
+    <p>除了用來排版詩詞，還有一個常用到軟換行的場合，是對清單裡的段落進行排版。回憶上一堂課的內容，我們在清單裡以插入空行的方式，來將多個段落分段。</p>
+    <p>在下方的文字框，將硬換行替換為軟換行，以縮緊子段落：</p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">略過</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>現在你知道如何在 Markdown 中插入軟換行了。</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/zh-tw/conclusion"
+    >前往下堂課</a
+  >
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous" type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js"></script> 
+    <script src="/zh-tw/lesson_plans.js"></script>
+    
+  </body>
+</html>

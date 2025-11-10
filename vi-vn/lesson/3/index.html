@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 3
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/vi-vn"
+              data-toggle="tooltip"
+              data-original-title="Tiếng Việt"
+              >🇻🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pt-br"
+              data-toggle="tooltip"
+              data-original-title="Em Português Brasileiro"
+              >🇧🇷</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="In Nghiêng và In Đậm"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Tiêu Đề"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/vi-vn/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Liên kết (Links)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Hình Ảnh"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Khối Trích Dẫn"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Danh sách"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Đoạn văn"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/vi-vn/conclusion"
+              data-toggle="tooltip"
+              data-original-title="Phần Kết Luận"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Liên Kết</h1>
+      </div>
+
+      <div class="row">
+	<p>
+		Bây giờ chúng ta sẽ học cách tạo liên kết đến các trang web khác trên World
+		Wide Web.
+	</p>
+	<p>
+		Có hai loại liên kết khác nhau trong Markdown, nhưng cả hai đều được hiển
+		thị theo cùng một cách. Kiểu liên kết đầu tiên được gọi là
+		<em>liên kết nội tuyến</em> (inline link). Để tạo một liên kết nội tuyến,
+		bạn bọc văn bản liên kết trong ngoặc vuông ( <code>[ ]</code> ), sau đó bọc
+		liên kết trong ngoặc đơn ( <code>( )</code> ). Ví dụ, để tạo một siêu liên
+		kết đến www.github.com, với văn bản liên kết "Truy Cập trang GitHub!", bạn
+		sẽ viết như sau trong Markdown:
+		<code>[Truy Cập trang GitHub!](www.github.com)</code>.
+	</p>
+	<p>
+		Trong ô dưới đây, hãy tạo một liên kết đến www.google.com, với văn bản liên
+		kết "Tìm kiếm."
+	</p>
+	<div class="col-md-5 scratchpad"></div>
+	<span
+		class="help-tooltip icon-question"
+		data-toggle="tooltip"
+		data-original-title="Nhập câu trả lời của bạn vào ô bên trái, và Markdown tương ứng sẽ hiển thị ở ô bên phải. Khi câu trả lời của bạn chính xác, bạn sẽ được chuyển sang bài học tiếp theo"
+	></span>
+	<div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Bỏ qua</button>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>Làm tốt lắm!</p>
+		<p>
+			Bạn có thể thêm điểm nhấn vào văn bản liên kết nếu muốn. Trong ô dưới đây,
+			hãy in đậm cụm từ "thực sự, thực sự", và liên kết toàn bộ câu đến
+			www.dailykitten.com. Bạn sẽ muốn đảm bảo rằng phần in đậm nằm trong ngoặc
+			vuông của văn bản liên kết.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>Tuyệt vời!</p>
+		<p>
+			Mặc dù có nguy cơ tạo ra trải nghiệm hơi khó chịu, nhưng bạn vẫn có thể
+			tạo liên kết trong các tiêu đề.
+		</p>
+		<p>
+			Trong bài hướng dẫn tiếp theo, hãy đặt văn bản làm tiêu đề cấp bốn, và
+			biến cụm từ "BBC" thành một liên kết đến www.bbc.com/news:
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<div class="row">
+		<hr />
+		<p>
+			Đó là tất cả những gì bạn cần biết để viết các liên kết nội tuyến (inline
+			link).
+		</p>
+		<p>
+			Kiểu liên kết thứ hai được gọi là liên kết <em>tham chiếu</em> (reference
+			link). Như tên gọi, liên kết thực chất là một tham chiếu đến một nơi khác
+			trong tài liệu. Dưới đây là một ví dụ:
+		</p>
+		<pre>
+     Đây là [một liên kết đến thứ gì đó khác][nơi khác].
+     Đây là [một liên kết khác][liên-kết-khác].
+     Và bây giờ quay lại [liên kết đầu tiên][nơi khác].
+     [nơi khác]: www.github.com
+     [liên-kết-khác]: www.google.com
+  </pre
+		>
+		<p>
+			Các "tham chiếu" ở trên là tập hợp ngoặc vuông thứ hai:
+			<code>[nơi khác]</code> và <code>[liên-kết-khác]</code>. Ở cuối tài liệu
+			Markdown, các ngoặc vuông này được xác định là các liên kết chính xác đến
+			các trang web bên ngoài. Một ưu điểm của kiểu liên kết tham chiếu là các
+			liên kết nhiều lần đến cùng một địa chỉ chỉ cần được cập nhật một lần. Ví
+			dụ, nếu chúng ta quyết định làm cho tất cả các liên kết
+			<code>[nơi khác]</code> trỏ đến nơi khác, chúng ta chỉ cần thay đổi một
+			liên kết tham chiếu duy nhất.
+		</p>
+		<p>
+			Các liên kết tham chiếu sẽ không xuất hiện trong Markdown được kết xuất.
+			Bạn xác định chúng bằng cách cung cấp tên thẻ giống nhau được bọc trong
+			ngoặc vuông, theo sau là dấu hai chấm, và sau đó là liên kết.
+		</p>
+		<p>
+			Trong ô dưới đây, chúng tôi đã bắt đầu viết một số liên kết tham chiếu.
+			Bạn sẽ cần hoàn thiện chúng! Đặt thẻ tham chiếu đầu tiên là "một nơi vui
+			vẻ", và liên kết nó đến www.zombo.com; liên kết thứ hai trỏ đến
+			www.stumbleupon.com.
+		</p>
+		<div class="col-md-5 scratchpad"></div>
+		<div class="col-md-5 renderpad"></div>
+	</div>
+	<button class="btn btn-default btn-skip">Bỏ qua</button>
+</div>
+<div class="toBeRevealed">
+	<hr />
+	<p>Bây giờ bạn đã biết cách tạo liên kết trong Markdown!</p>
+	<a
+		class="btn btn-lg btn-success"
+		href="/vi-vn/lesson/4"
+		>Đến bài học tiếp theo!</a
+	>
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous" type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js"></script> 
+    <script src="/vi-vn/lesson_plans.js"></script>
+    
+  </body>
+</html>

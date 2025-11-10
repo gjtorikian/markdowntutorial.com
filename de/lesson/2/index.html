@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: Don't hard code the conclusion as page 8 -->
+    <title>
+      Markdown Tutorial | Lesson 2
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" integrity="sha256-yB8Y4tOkfbZyLyGR5IzIzImHQIiqQjDmHhW/CFujmmY=" crossorigin="anonymous" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a
+              class="nav-link icon-github"
+              href="//github.com/gjtorikian/markdown-tutorial"
+              data-toggle="tooltip"
+              data-original-title="Get the source code to this website"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/"
+              data-toggle="tooltip"
+              data-original-title="In English"
+              >🇺🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/es"
+              data-toggle="tooltip"
+              data-original-title="En español"
+              >🇪🇸</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/fr"
+              data-toggle="tooltip"
+              data-original-title="En français"
+              >🇫🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/kr"
+              data-toggle="tooltip"
+              data-original-title="In Korean"
+              >🇰🇷</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/jp"
+              data-toggle="tooltip"
+              data-original-title="In Japanese"
+              >🇯🇵</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/nl"
+              data-toggle="tooltip"
+              data-original-title="In Dutch"
+              >🇳🇱</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-cn"
+              data-toggle="tooltip"
+              data-original-title="In Simplified Chinese"
+              >🇨🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/zh-tw"
+              data-toggle="tooltip"
+              data-original-title="In Traditional Chinese"
+              >🇹🇼</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pl"
+              data-toggle="tooltip"
+              data-original-title="Po Polsku"
+              >🇵🇱</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/de"
+              data-toggle="tooltip"
+              data-original-title="Auf Deutsch"
+              >🇩🇪</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/vi-vn"
+              data-toggle="tooltip"
+              data-original-title="Tiếng Việt"
+              >🇻🇳</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="/pt-br"
+              data-toggle="tooltip"
+              data-original-title="Em Português Brasileiro"
+              >🇧🇷</a
+            >
+          </li>
+        </ul>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/1"
+              data-toggle="tooltip"
+              data-original-title="Kursiv- und Fettdruck"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/de/lesson/2"
+              data-toggle="tooltip"
+              data-original-title="Überschriften"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Links"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="Bilder"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="Blockquotes"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="Listen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="Paragraphen"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/de/conclusion"
+              data-toggle="tooltip"
+              data-original-title="Fazit"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <div id="ad">
+      <script
+        async
+        type="text/javascript"
+        src="//cdn.carbonads.com/carbon.js?serve=CE7DCK7J&placement=wwwmarkdowntutorialcom"
+        id="_carbonads_js"
+      ></script>
+    </div>
+
+    <div class="container">
+      <div id="heroku-alert" class="alert alert-info" style="display: none">
+        Don't use this ugly Heroku app URL! Check out
+        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+        instead.
+      </div>
+      <div class="row">
+        <h1 class="title">Überschriften</h1>
+      </div>
+
+      <div class="row">
+  <p>
+    Werfen wir einen Blick auf eine andere Formatierungskonvention: die Überschriften. 
+    Überschriften werden häufig auf Webseiten, in Zeitschriftenartikeln und Mitteilungen verwendet, 
+    um die Aufmerksamkeit auf einen Abschnitt zu lenken. Wie der Name schon sagt, wirken sie wie Titel 
+    oder Untertitel über den Abschnitten..
+  </p>
+
+  <p>Es gibt sechs Arten von Überschriften, in absteigender Größe:</p>
+  <h1>Dies ist Überschrift eins</h1>
+  <h2>Dies ist Überschrift zwei</h2>
+  <h3>Dies ist Überschrift drei</h3>
+  <h4>Dies ist Überschrift vier</h4>
+  <h5>Dies ist Überschrift fünf</h5>
+  <h6>Dies ist Überschrift sechs</h6>
+
+  <p>
+    Um Überschriften in Markdown zu erstellen, stellen Sie der Zeile ein Rautenzeichen 
+    (<code>#</code>) voran. Sie setzen die gleiche Anzahl von Rautenzeichen wie die Größe 
+    der gewünschten Überschrift. Für eine Überschrift eins verwenden Sie beispielsweise ein 
+    Rautenzeichen (<code># Überschrift eins</code>), während Sie für eine Überschrift drei,
+    (<code>### Überschrift drei</code>), drei verwenden.
+  </p>
+
+  <p>Für die nächste Lektion passen Sie jede Überschrift der richtigen Größe an.</p>
+
+  <div class="col-md-5 scratchpad"></div>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Geben Sie Ihre Antworten in das linke Feld ein, und das Ergebniss erscheint im rechten Feld. Wenn Ihre Antwort richtig ist, werden Sie zur nächsten Lektion weitergeleitet"
+  ></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Überspringen</button>
+
+<div class="toBeRevealed">
+  <div class="row">
+    <hr />
+    <p>In Ordnung!</p>
+    <p>
+      Es liegt an Ihnen zu entscheiden, wann es angebracht ist, welche Überschrift zu verwenden. 
+      Im Allgemeinen sollten die Überschriften eins und sechs sparsam verwendet werden.
+    </p>
+    <p>
+      Sie können auch verschiedene Inline-Stile innerhalb von Überschriften kombinieren,
+      z. B. <em>kursiv setzen</em>. Formartieren Sie im folgenden Biespiel die erste Zeile als Überschrift vier und den Namen des Buches kursiv: 
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Überspringen</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>Und das ist auch schon alles, was es zum Erstellen von Überschriften in Markdown gibt.</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/de/lesson/3"
+    >Auf zur nächsten Lektion!</a
+  >
+</div>
+
+
+      <hr />
+
+      <div class="footer"></div>
+    </div>
+    <!-- /container -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      // TODO: If possible, we should make this change to "development" where
+      // appropriate.
+      var environment = "production";
+    </script>
+
+    <script integrity="sha256-G8JxN5czYP8Aba38OgfVxT/BqMV2FX43UZTPeVv+UPQ=" crossorigin="anonymous" type="text/javascript" src="/assets/main-1bc27137973360ff006dadfc3a07d5c53fc1a8c576157e375194cf795bfe50f4.js"></script> 
+    <script src="/de/lesson_plans.js"></script>
+    
+  </body>
+</html>
